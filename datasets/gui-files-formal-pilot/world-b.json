@@ -1,0 +1,5 @@
+{
+  "variant_id": "stale-content",
+  "patches": [{"op": "update", "app_id": "files", "semantic_ref": "file-01", "set": {"content": "GuiPilotContentV2"}}],
+  "allowed_changed_fields": ["files.file-01.content"]
+}

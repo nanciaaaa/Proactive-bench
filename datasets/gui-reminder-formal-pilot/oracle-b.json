@@ -1,0 +1,3 @@
+{"episode_id": "gui-reminder-formal-b", "variant_id": "clock-disabled", "passive_class": "active_required", "expected_need_set": [
+  {"type": "update_clock_alarm", "target": "alarm-01", "time": "14:30", "enabled": true}
+]}

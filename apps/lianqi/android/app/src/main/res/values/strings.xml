@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">连汽约车</string>
+    <string name="title_activity_main">连汽约车</string>
+    <string name="package_name">com.ku.simulator.lianqi</string>
+    <string name="custom_url_scheme">com.ku.simulator.lianqi</string>
+</resources>

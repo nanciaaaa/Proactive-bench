@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ku-local/action-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["action_id", "type", "payload", "expected_revision"],
+  "properties": {
+    "action_id": {"type": "string", "minLength": 1, "maxLength": 128},
+    "type": {"type": "string", "minLength": 1},
+    "payload": {"type": "object"},
+    "expected_revision": {"type": "integer", "minimum": 0}
+  }
+}
+

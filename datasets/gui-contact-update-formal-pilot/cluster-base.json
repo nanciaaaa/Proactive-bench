@@ -1,0 +1,17 @@
+{
+  "cluster_id": "contact-update-messages-contacts-pilot",
+  "goal": {
+    "type": "sync_contact_identity",
+    "app_id": "contacts",
+    "semantic_ref": "contact-01",
+    "source_message_ref": "message-01",
+    "source_sender": "GuiPilotTwin",
+    "approved_phone": "13800138000",
+    "approved_body": "Your contact update is ready."
+  },
+  "records": [
+    {"app_id": "contacts", "entity_type": "contacts", "semantic_ref": "contact-01", "data": {"name": "GuiPilotTwin", "phone": "13900139000", "email": "target@example.test"}},
+    {"app_id": "contacts", "entity_type": "contacts", "semantic_ref": "message-lookup-01", "data": {"name": "GuiPilotTwin", "phone": "13700137000"}},
+    {"app_id": "messages", "entity_type": "messages", "semantic_ref": "message-01", "data": {"sender": "GuiPilotTwin", "sender_phone": "13800138000", "body": "Your contact update is ready."}}
+  ]
+}

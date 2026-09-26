@@ -1,0 +1,180 @@
+{
+  "schema_version": "0.1.0",
+  "app_id": "chaowei",
+  "status": "verified",
+  "provenance": [
+    {
+      "ui_location": "首页卡片列表（resource=articles）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "articles.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        },
+        {
+          "field": "subtitle",
+          "semantic_ref": "articles.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "首页卡片列表（resource=tags）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "tags.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        },
+        {
+          "field": "subtitle",
+          "semantic_ref": "tags.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "首页文案、计划器及账户昵称",
+      "data_points": [
+        {
+          "field": "profile_name",
+          "semantic_ref": "ui_content.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "记录页（收藏与创作）",
+      "data_points": [
+        {
+          "field": "item_id",
+          "semantic_ref": "favorite.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        },
+        {
+          "field": "text",
+          "semantic_ref": "note.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "账户页统计",
+      "data_points": [
+        {
+          "field": "favorites.length",
+          "semantic_ref": "favorite.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        },
+        {
+          "field": "notes.length",
+          "semantic_ref": "note.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "业务弹窗（title/message/kind）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "popup.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        },
+        {
+          "field": "message",
+          "semantic_ref": "popup.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "服务面板（title/subtitle）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "articles.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        },
+        {
+          "field": "subtitle",
+          "semantic_ref": "articles.*",
+          "inject": "POST /local/v1/apps/chaowei/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "个人资料字段页",
+      "data_points": [
+        {
+          "field": "key",
+          "semantic_ref": "account_field.*",
+          "inject": "POST /local/v1/apps/chaowei/seed",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        },
+        {
+          "field": "value",
+          "semantic_ref": "account_field.*",
+          "inject": "POST /local/v1/apps/chaowei/seed",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "话题内文章条目",
+      "data_points": [
+        {
+          "field": "topic_id",
+          "semantic_ref": "articles.*",
+          "inject": "POST /local/v1/apps/chaowei/seed",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "文章正文",
+      "data_points": [
+        {
+          "field": "body",
+          "semantic_ref": "articles.*",
+          "inject": "POST /local/v1/apps/chaowei/seed",
+          "readback": "POST /local/v1/apps/chaowei/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    }
+  ],
+  "note": "P0 骨架：data_points 由共享模板（apps/shared/src/main.js）推导，verified 留待 P1 实机回读验证。"
+}

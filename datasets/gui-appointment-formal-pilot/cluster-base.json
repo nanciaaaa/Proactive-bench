@@ -1,0 +1,45 @@
+{
+  "cluster_id": "appointment-sync-mail-calendar-pilot",
+  "goal": {
+    "type": "sync_event_time",
+    "app_id": "calendar",
+    "semantic_ref": "meeting-01",
+    "source_mail_ref": "mail-01",
+    "source_sender": "organizer@example.com",
+    "approved_start_at": "2026-09-25T11:30:00+08:00",
+    "approved_end_at": "2026-09-25T12:00:00+08:00"
+  },
+  "records": [
+    {
+      "app_id": "calendar",
+      "entity_type": "events",
+      "semantic_ref": "meeting-01",
+      "data": {
+        "title": "GuiSyncMeeting",
+        "start_at": "2026-09-25T11:30:00+08:00",
+        "end_at": "2026-09-25T12:00:00+08:00",
+        "location": "Online",
+        "description": "Team review",
+        "reminder_minutes_before": 30,
+        "source": "manual"
+      }
+    },
+    {
+      "app_id": "mail",
+      "entity_type": "mails",
+      "semantic_ref": "mail-01",
+      "data": {
+        "headers": {
+          "subject": "GuiSyncUpdate",
+          "date": "Sep 25",
+          "from": "Organizer",
+          "to": "user@email.com",
+          "sender": "organizer@example.com",
+          "senderLogo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGUlEQVR4nGPIml75nxLMMGrAqAGjBgwXAwBG23kf/rbRGQAAAABJRU5ErkJggg=="
+        },
+        "body": "GuiSyncMeeting now 2026-09-25T11:30:00+08:00 to 2026-09-25T12:00:00+08:00.",
+        "status": "read"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "appId": "com.ku.simulator.lianqi",
+  "appName": "连汽约车",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

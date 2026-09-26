@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">超威</string>
+    <string name="title_activity_main">超威</string>
+    <string name="package_name">com.ku.simulator.chaowei</string>
+    <string name="custom_url_scheme">com.ku.simulator.chaowei</string>
+</resources>

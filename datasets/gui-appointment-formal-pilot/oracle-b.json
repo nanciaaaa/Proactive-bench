@@ -1,0 +1,4 @@
+{"episode_id":"gui-appointment-formal-b","variant_id":"calendar-stale","passive_class":"active_required","expected_need_set":[
+  {"type":"update_calendar_event","target":"meeting-01",
+   "start_at":"2026-09-25T11:30:00+08:00","end_at":"2026-09-25T12:00:00+08:00"}
+]}

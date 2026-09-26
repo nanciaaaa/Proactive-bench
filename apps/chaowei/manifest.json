@@ -1,0 +1,11 @@
+{
+  "name": "超威",
+  "appid": "com.ku.simulator.chaowei",
+  "app-plus": {
+    "distribute": {
+      "android": {
+        "packagename": "com.ku.simulator.chaowei"
+      }
+    }
+  }
+}

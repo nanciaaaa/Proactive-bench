@@ -1,0 +1,9 @@
+{
+  "instance_id": "blueprint-audit",
+  "resets": 50,
+  "elapsed_seconds": 224,
+  "all_apps_installed": true,
+  "boot_completed": true,
+  "reverse_verified": true,
+  "state_residue": false
+}

@@ -1,0 +1,9 @@
+{
+  "passive_id": "mail-time-update-v1",
+  "packets": [{"packet_id": "p001", "sequence": 1, "type": "gui", "source": "mail",
+    "observed_at": "2026-09-25T10:00:00+08:00",
+    "text_projection": "Organizer 的邮件说 GuiSyncMeeting 改为 11:30 至 12:00。",
+    "capture": {"surface": "app_screen", "app_id": "mail", "view_id": "mail_detail",
+      "subject_ref": "mail-01", "frame_id": "p001_f1",
+      "visible_assertions": ["subject", "from", "date", "body"]}}]
+}

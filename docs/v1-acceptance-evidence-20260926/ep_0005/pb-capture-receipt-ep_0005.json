@@ -1,0 +1,640 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "ep_0005",
+  "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+  "plan_sha256": "4b9f0ed641d31012615b2edf89606d496b8c8e3d12e6a8d311fc1da775d8abbb",
+  "source_assets": {
+    "gui_plan": {
+      "schema_version": "pb-gui-bridge.plan.v1",
+      "sha256": "d0c35e8a8915286ed633571cd25b8913435efd9713fbceed3f2836ed3e6576f3"
+    },
+    "backend_plan": {
+      "schema_version": "pb-backend-plan.v1",
+      "sha256": "b8740e7c8c4f58de543c177e5a6dd420af30616ca052769101dff2bc8a9122d1"
+    },
+    "backend_receipt": {
+      "schema_version": "pb-backend-apply-receipt.v1",
+      "sha256": "3557a5608f34c6a8fd04e16c8c97ad5d1a0dbc247e4efe042d8f43c3619527e7"
+    },
+    "gate_plan": {
+      "schema_version": "pb-gui-capture-gate.v1",
+      "sha256": "a7aff9341c881eb0221af8eb04e14ebc1d555a8d85f2a05ff3d574a870ce87be"
+    }
+  },
+  "instance_id": "pb-gui-20260926",
+  "adb_serial": "127.0.0.1:5556",
+  "status": "capture_complete",
+  "frames": [
+    {
+      "packet_id": "p003",
+      "frame_id": "p003_f1",
+      "episode_id": "ep_0005",
+      "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+      "instance_id": "pb-gui-20260926",
+      "source_assets": {
+        "gui_plan": {
+          "schema_version": "pb-gui-bridge.plan.v1",
+          "sha256": "d0c35e8a8915286ed633571cd25b8913435efd9713fbceed3f2836ed3e6576f3"
+        },
+        "backend_plan": {
+          "schema_version": "pb-backend-plan.v1",
+          "sha256": "b8740e7c8c4f58de543c177e5a6dd420af30616ca052769101dff2bc8a9122d1"
+        },
+        "backend_receipt": {
+          "schema_version": "pb-backend-apply-receipt.v1",
+          "sha256": "3557a5608f34c6a8fd04e16c8c97ad5d1a0dbc247e4efe042d8f43c3619527e7"
+        },
+        "gate_plan": {
+          "schema_version": "pb-gui-capture-gate.v1",
+          "sha256": "a7aff9341c881eb0221af8eb04e14ebc1d555a8d85f2a05ff3d574a870ce87be"
+        }
+      },
+      "sequence": 5,
+      "source": "calendar",
+      "observed_at": "2026-09-14T08:30:26+08:00",
+      "captured_at": "2026-09-26T13:15:29.146265+00:00",
+      "android_time": "2026-09-14T08:30:33+08:00",
+      "clock_synced_at": "2026-09-14T08:30:26+08:00",
+      "package": "org.fossify.calendar",
+      "activity": "topResumedActivity=ActivityRecord{6101217 u0 org.fossify.calendar/.activities.MainActivity t79}",
+      "notification_policy": "dnd_none",
+      "navigation": [
+        "calendar:direct-event-day",
+        "wait:calendar_list"
+      ],
+      "readback": {
+        "id": 17,
+        "title": "项目评审 R7K2",
+        "start_ts": 1789347600,
+        "end_ts": 1789349400,
+        "location": "会议室 A",
+        "description": "项目评审 R7K2：开场演示后进入讨论。",
+        "reminder_1_minutes": -1,
+        "source": "calendar",
+        "time_zone": "Asia/Shanghai",
+        "import_id": "gui-5a8459dd2a3b502c6c20947a"
+      },
+      "ready": {
+        "ui_dump_sha256": "4136d7923daa66ec3b5a3026abcdae594bf62eeef5ebb7b912398acd02f83646",
+        "visible_assertions": {
+          "day_label": true,
+          "event_title": true,
+          "event_time": true,
+          "event_description": true
+        }
+      },
+      "png": "images/b4bd984aa8ea3794e9184311e87d7c4b.png",
+      "sha256": "20ad1ed9f17ace4f45b83a485b482d51981713bd88f9940f0a977e0b0f85d33f",
+      "ui_dump": "ui/b4bd984aa8ea3794e9184311e87d7c4b.xml",
+      "ui_dump_sha256": "4136d7923daa66ec3b5a3026abcdae594bf62eeef5ebb7b912398acd02f83646",
+      "width": 1080,
+      "height": 2400,
+      "device_env": {
+        "resolution": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "font_scale": "default",
+        "locale": "en-US",
+        "theme": "Night mode: no",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
+      "packet_id": "p004",
+      "frame_id": "p004_f1",
+      "episode_id": "ep_0005",
+      "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+      "instance_id": "pb-gui-20260926",
+      "source_assets": {
+        "gui_plan": {
+          "schema_version": "pb-gui-bridge.plan.v1",
+          "sha256": "d0c35e8a8915286ed633571cd25b8913435efd9713fbceed3f2836ed3e6576f3"
+        },
+        "backend_plan": {
+          "schema_version": "pb-backend-plan.v1",
+          "sha256": "b8740e7c8c4f58de543c177e5a6dd420af30616ca052769101dff2bc8a9122d1"
+        },
+        "backend_receipt": {
+          "schema_version": "pb-backend-apply-receipt.v1",
+          "sha256": "3557a5608f34c6a8fd04e16c8c97ad5d1a0dbc247e4efe042d8f43c3619527e7"
+        },
+        "gate_plan": {
+          "schema_version": "pb-gui-capture-gate.v1",
+          "sha256": "a7aff9341c881eb0221af8eb04e14ebc1d555a8d85f2a05ff3d574a870ce87be"
+        }
+      },
+      "sequence": 6,
+      "source": "calendar",
+      "observed_at": "2026-09-14T08:30:48+08:00",
+      "captured_at": "2026-09-26T13:15:40.818497+00:00",
+      "android_time": "2026-09-14T08:30:57+08:00",
+      "clock_synced_at": "2026-09-14T08:30:48+08:00",
+      "package": "org.fossify.calendar",
+      "activity": "topResumedActivity=ActivityRecord{346558b u0 org.fossify.calendar/.activities.EventActivity t80}",
+      "notification_policy": "dnd_none",
+      "navigation": [
+        "calendar:direct-event-day",
+        "calendar:direct-event-item",
+        "wait:event_editor"
+      ],
+      "readback": {
+        "id": 17,
+        "title": "项目评审 R7K2",
+        "start_ts": 1789347600,
+        "end_ts": 1789349400,
+        "location": "会议室 A",
+        "description": "项目评审 R7K2：开场演示后进入讨论。",
+        "reminder_1_minutes": -1,
+        "source": "calendar",
+        "time_zone": "Asia/Shanghai",
+        "import_id": "gui-5a8459dd2a3b502c6c20947a"
+      },
+      "ready": {
+        "ui_dump_sha256": "57e07939bab86d13a14fda6286a391f3902731b9a92f511159a4526ca9979890",
+        "visible_assertions": {
+          "title": true,
+          "location": true,
+          "description": true,
+          "start_at": true,
+          "end_at": true
+        }
+      },
+      "png": "images/754849ffef62f8d6a0c3364fd6efe6da.png",
+      "sha256": "3f260a4025d053e0846045b4ef6526f8e05e58260da966b860ffa2bd0d9c4161",
+      "ui_dump": "ui/754849ffef62f8d6a0c3364fd6efe6da.xml",
+      "ui_dump_sha256": "57e07939bab86d13a14fda6286a391f3902731b9a92f511159a4526ca9979890",
+      "width": 1080,
+      "height": 2400,
+      "device_env": {
+        "resolution": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "font_scale": "default",
+        "locale": "en-US",
+        "theme": "Night mode: no",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
+      "packet_id": "p009",
+      "frame_id": "p009_f1",
+      "episode_id": "ep_0005",
+      "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+      "instance_id": "pb-gui-20260926",
+      "source_assets": {
+        "gui_plan": {
+          "schema_version": "pb-gui-bridge.plan.v1",
+          "sha256": "d0c35e8a8915286ed633571cd25b8913435efd9713fbceed3f2836ed3e6576f3"
+        },
+        "backend_plan": {
+          "schema_version": "pb-backend-plan.v1",
+          "sha256": "b8740e7c8c4f58de543c177e5a6dd420af30616ca052769101dff2bc8a9122d1"
+        },
+        "backend_receipt": {
+          "schema_version": "pb-backend-apply-receipt.v1",
+          "sha256": "3557a5608f34c6a8fd04e16c8c97ad5d1a0dbc247e4efe042d8f43c3619527e7"
+        },
+        "gate_plan": {
+          "schema_version": "pb-gui-capture-gate.v1",
+          "sha256": "a7aff9341c881eb0221af8eb04e14ebc1d555a8d85f2a05ff3d574a870ce87be"
+        }
+      },
+      "sequence": 12,
+      "source": "mail",
+      "observed_at": "2026-09-14T08:31:39+08:00",
+      "captured_at": "2026-09-26T13:15:48.771214+00:00",
+      "android_time": "2026-09-14T08:31:44+08:00",
+      "clock_synced_at": "2026-09-14T08:31:39+08:00",
+      "package": "com.gmailclone",
+      "activity": "topResumedActivity=ActivityRecord{3fa960c u0 com.gmailclone/.MainActivity t81}",
+      "notification_policy": "dnd_none",
+      "navigation": [
+        "mail:inbox-cold-start",
+        "wait:mail_inbox"
+      ],
+      "readback": "ffd48ea8df0376ee151d5a81a5556ec1422fc62ac2ba2ff09530172f0226f293",
+      "ready": {
+        "ui_dump_sha256": "78aba2958f05615810ecb976d49b085792f12d7ed5486b4aa5319c41eb1be492",
+        "visible_assertions": {
+          "row_1_sender": true,
+          "row_1_subject": true,
+          "row_1_snippet": true,
+          "row_2_sender": true,
+          "row_2_subject": true,
+          "row_2_snippet": true
+        }
+      },
+      "png": "images/4261f6dadc66a54b1ee7a0b84b892408.png",
+      "sha256": "bfc147807ccbe07189873f44dbddba9b56451298a0f0eff7783b1eb47490ec27",
+      "ui_dump": "ui/4261f6dadc66a54b1ee7a0b84b892408.xml",
+      "ui_dump_sha256": "78aba2958f05615810ecb976d49b085792f12d7ed5486b4aa5319c41eb1be492",
+      "width": 1080,
+      "height": 2400,
+      "device_env": {
+        "resolution": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "font_scale": "default",
+        "locale": "en-US",
+        "theme": "Night mode: no",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
+      "packet_id": "p010",
+      "frame_id": "p010_f1",
+      "episode_id": "ep_0005",
+      "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+      "instance_id": "pb-gui-20260926",
+      "source_assets": {
+        "gui_plan": {
+          "schema_version": "pb-gui-bridge.plan.v1",
+          "sha256": "d0c35e8a8915286ed633571cd25b8913435efd9713fbceed3f2836ed3e6576f3"
+        },
+        "backend_plan": {
+          "schema_version": "pb-backend-plan.v1",
+          "sha256": "b8740e7c8c4f58de543c177e5a6dd420af30616ca052769101dff2bc8a9122d1"
+        },
+        "backend_receipt": {
+          "schema_version": "pb-backend-apply-receipt.v1",
+          "sha256": "3557a5608f34c6a8fd04e16c8c97ad5d1a0dbc247e4efe042d8f43c3619527e7"
+        },
+        "gate_plan": {
+          "schema_version": "pb-gui-capture-gate.v1",
+          "sha256": "a7aff9341c881eb0221af8eb04e14ebc1d555a8d85f2a05ff3d574a870ce87be"
+        }
+      },
+      "sequence": 13,
+      "source": "mail",
+      "observed_at": "2026-09-14T08:31:53+08:00",
+      "captured_at": "2026-09-26T13:15:59.077710+00:00",
+      "android_time": "2026-09-14T08:32:01+08:00",
+      "clock_synced_at": "2026-09-14T08:31:53+08:00",
+      "package": "com.gmailclone",
+      "activity": "topResumedActivity=ActivityRecord{3f44b91 u0 com.gmailclone/.MainActivity t82}",
+      "notification_policy": "dnd_none",
+      "navigation": [
+        "mail:tap-unique-subject",
+        "wait:mail_detail"
+      ],
+      "readback": "ffbf273e8733b1703378a18d47a0ebe2fb78e9e5639359f7751270de585768ea",
+      "ready": {
+        "ui_dump_sha256": "53683efe455b2b5174856a220f25471e3dff250729dc106dfe936a41caf74d8a",
+        "visible_assertions": {
+          "subject": true,
+          "from": true,
+          "body": true
+        }
+      },
+      "png": "images/48bc1651c530e377656c16927ebcaf9a.png",
+      "sha256": "6f5bed65417fa3bb8500e40beb6441288b9ec7ee37bcfdb2180948b66dd2a7c3",
+      "ui_dump": "ui/48bc1651c530e377656c16927ebcaf9a.xml",
+      "ui_dump_sha256": "53683efe455b2b5174856a220f25471e3dff250729dc106dfe936a41caf74d8a",
+      "width": 1080,
+      "height": 2400,
+      "device_env": {
+        "resolution": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "font_scale": "default",
+        "locale": "en-US",
+        "theme": "Night mode: no",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
+      "packet_id": "p013",
+      "frame_id": "p013_f1",
+      "episode_id": "ep_0005",
+      "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+      "instance_id": "pb-gui-20260926",
+      "source_assets": {
+        "gui_plan": {
+          "schema_version": "pb-gui-bridge.plan.v1",
+          "sha256": "d0c35e8a8915286ed633571cd25b8913435efd9713fbceed3f2836ed3e6576f3"
+        },
+        "backend_plan": {
+          "schema_version": "pb-backend-plan.v1",
+          "sha256": "b8740e7c8c4f58de543c177e5a6dd420af30616ca052769101dff2bc8a9122d1"
+        },
+        "backend_receipt": {
+          "schema_version": "pb-backend-apply-receipt.v1",
+          "sha256": "3557a5608f34c6a8fd04e16c8c97ad5d1a0dbc247e4efe042d8f43c3619527e7"
+        },
+        "gate_plan": {
+          "schema_version": "pb-gui-capture-gate.v1",
+          "sha256": "a7aff9341c881eb0221af8eb04e14ebc1d555a8d85f2a05ff3d574a870ce87be"
+        }
+      },
+      "sequence": 15,
+      "source": "mail",
+      "observed_at": "2026-09-14T08:32:35+08:00",
+      "captured_at": "2026-09-26T13:16:09.390131+00:00",
+      "android_time": "2026-09-14T08:32:42+08:00",
+      "clock_synced_at": "2026-09-14T08:32:35+08:00",
+      "package": "com.gmailclone",
+      "activity": "topResumedActivity=ActivityRecord{8be8511 u0 com.gmailclone/.MainActivity t83}",
+      "notification_policy": "dnd_none",
+      "navigation": [
+        "mail:tap-unique-subject",
+        "wait:mail_detail"
+      ],
+      "readback": "aafb875b70d18d372632b5c50ba4ebdd3e27dcb309a237cdbd9896c5ce5709eb",
+      "ready": {
+        "ui_dump_sha256": "9fc47378432d7f80817519b08aea9c46cdaa97c0cff428228ce3b88b429ec592",
+        "visible_assertions": {
+          "subject": true,
+          "from": true,
+          "body": true
+        }
+      },
+      "png": "images/56ea16a137dd35831ada55e48dd42212.png",
+      "sha256": "2c5585b9b0f92d201c5deecb1c98291335e4a603110ff7c86a9af703b57c410a",
+      "ui_dump": "ui/56ea16a137dd35831ada55e48dd42212.xml",
+      "ui_dump_sha256": "9fc47378432d7f80817519b08aea9c46cdaa97c0cff428228ce3b88b429ec592",
+      "width": 1080,
+      "height": 2400,
+      "device_env": {
+        "resolution": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "font_scale": "default",
+        "locale": "en-US",
+        "theme": "Night mode: no",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
+      "packet_id": "p015",
+      "frame_id": "p015_f1",
+      "episode_id": "ep_0005",
+      "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+      "instance_id": "pb-gui-20260926",
+      "source_assets": {
+        "gui_plan": {
+          "schema_version": "pb-gui-bridge.plan.v1",
+          "sha256": "d0c35e8a8915286ed633571cd25b8913435efd9713fbceed3f2836ed3e6576f3"
+        },
+        "backend_plan": {
+          "schema_version": "pb-backend-plan.v1",
+          "sha256": "b8740e7c8c4f58de543c177e5a6dd420af30616ca052769101dff2bc8a9122d1"
+        },
+        "backend_receipt": {
+          "schema_version": "pb-backend-apply-receipt.v1",
+          "sha256": "3557a5608f34c6a8fd04e16c8c97ad5d1a0dbc247e4efe042d8f43c3619527e7"
+        },
+        "gate_plan": {
+          "schema_version": "pb-gui-capture-gate.v1",
+          "sha256": "a7aff9341c881eb0221af8eb04e14ebc1d555a8d85f2a05ff3d574a870ce87be"
+        }
+      },
+      "sequence": 17,
+      "source": "mail",
+      "observed_at": "2026-09-14T08:33:05+08:00",
+      "captured_at": "2026-09-26T13:16:17.082051+00:00",
+      "android_time": "2026-09-14T08:33:10+08:00",
+      "clock_synced_at": "2026-09-14T08:33:05+08:00",
+      "package": "com.gmailclone",
+      "activity": "topResumedActivity=ActivityRecord{53ee451 u0 com.gmailclone/.MainActivity t84}",
+      "notification_policy": "dnd_none",
+      "navigation": [
+        "mail:inbox-cold-start",
+        "wait:mail_inbox"
+      ],
+      "readback": "aafb875b70d18d372632b5c50ba4ebdd3e27dcb309a237cdbd9896c5ce5709eb",
+      "ready": {
+        "ui_dump_sha256": "85349c232216418f09b681ff62b9042ed30f7d27cecb6cd384218940fa12e6ef",
+        "visible_assertions": {
+          "row_1_sender": true,
+          "row_1_subject": true,
+          "row_1_snippet": true,
+          "row_2_sender": true,
+          "row_2_subject": true,
+          "row_2_snippet": true
+        }
+      },
+      "png": "images/a9007b79fb4f493f3dce78913d50d17a.png",
+      "sha256": "4dae537c425723c1f791f28eb5287603a5637c423fcbefc82685fc867b7bfa54",
+      "ui_dump": "ui/a9007b79fb4f493f3dce78913d50d17a.xml",
+      "ui_dump_sha256": "85349c232216418f09b681ff62b9042ed30f7d27cecb6cd384218940fa12e6ef",
+      "width": 1080,
+      "height": 2400,
+      "device_env": {
+        "resolution": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "font_scale": "default",
+        "locale": "en-US",
+        "theme": "Night mode: no",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    {
+      "packet_id": "p018",
+      "frame_id": "p018_f1",
+      "episode_id": "ep_0005",
+      "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+      "instance_id": "pb-gui-20260926",
+      "source_assets": {
+        "gui_plan": {
+          "schema_version": "pb-gui-bridge.plan.v1",
+          "sha256": "d0c35e8a8915286ed633571cd25b8913435efd9713fbceed3f2836ed3e6576f3"
+        },
+        "backend_plan": {
+          "schema_version": "pb-backend-plan.v1",
+          "sha256": "b8740e7c8c4f58de543c177e5a6dd420af30616ca052769101dff2bc8a9122d1"
+        },
+        "backend_receipt": {
+          "schema_version": "pb-backend-apply-receipt.v1",
+          "sha256": "3557a5608f34c6a8fd04e16c8c97ad5d1a0dbc247e4efe042d8f43c3619527e7"
+        },
+        "gate_plan": {
+          "schema_version": "pb-gui-capture-gate.v1",
+          "sha256": "a7aff9341c881eb0221af8eb04e14ebc1d555a8d85f2a05ff3d574a870ce87be"
+        }
+      },
+      "sequence": 22,
+      "source": "calendar",
+      "observed_at": "2026-09-14T08:33:51+08:00",
+      "captured_at": "2026-09-26T13:16:26.492770+00:00",
+      "android_time": "2026-09-14T08:33:58+08:00",
+      "clock_synced_at": "2026-09-14T08:33:51+08:00",
+      "package": "org.fossify.calendar",
+      "activity": "topResumedActivity=ActivityRecord{9c9ceed u0 org.fossify.calendar/.activities.MainActivity t85}",
+      "notification_policy": "dnd_none",
+      "navigation": [
+        "calendar:direct-event-day",
+        "wait:calendar_list"
+      ],
+      "readback": {
+        "id": 17,
+        "title": "项目评审 R7K2",
+        "start_ts": 1789347600,
+        "end_ts": 1789349400,
+        "location": "会议室 A",
+        "description": "项目评审 R7K2：开场演示后进入讨论。",
+        "reminder_1_minutes": 10,
+        "source": "calendar",
+        "time_zone": "Asia/Shanghai",
+        "import_id": "gui-5a8459dd2a3b502c6c20947a"
+      },
+      "ready": {
+        "ui_dump_sha256": "4136d7923daa66ec3b5a3026abcdae594bf62eeef5ebb7b912398acd02f83646",
+        "visible_assertions": {
+          "day_label": true,
+          "event_title": true,
+          "event_time": true,
+          "event_description": true
+        }
+      },
+      "png": "images/a4a8b7eb9e55ee0a5d5be2cd53d10fb9.png",
+      "sha256": "9a425926d958acd9142103eb8a729ab2ef4d29d63d46048d085e2596d82d4b86",
+      "ui_dump": "ui/a4a8b7eb9e55ee0a5d5be2cd53d10fb9.xml",
+      "ui_dump_sha256": "4136d7923daa66ec3b5a3026abcdae594bf62eeef5ebb7b912398acd02f83646",
+      "width": 1080,
+      "height": 2400,
+      "device_env": {
+        "resolution": "Physical size: 1080x2400",
+        "density": "Physical density: 420",
+        "font_scale": "default",
+        "locale": "en-US",
+        "theme": "Night mode: no",
+        "timezone": "Asia/Shanghai"
+      }
+    }
+  ],
+  "seed_receipts": {
+    "calendar.event.cal_001": {
+      "id": 17,
+      "title": "项目评审 R7K2",
+      "start_ts": 1789347600,
+      "end_ts": 1789349400,
+      "location": "会议室 A",
+      "description": "项目评审 R7K2：开场演示后进入讨论。",
+      "reminder_1_minutes": -1,
+      "source": "calendar",
+      "time_zone": "Asia/Shanghai",
+      "import_id": "gui-5a8459dd2a3b502c6c20947a"
+    },
+    "mail.message.mail_001": "2593511f78d08c28fc7f981d3a54df4594f2de684e0707ea4370a9ab8e1be0e7",
+    "mail.message.mail_002": "ffd48ea8df0376ee151d5a81a5556ec1422fc62ac2ba2ff09530172f0226f293",
+    "clock.alarm.alarm_101": {
+      "_id": 3,
+      "external_uuid": "295785e8-50d0-5045-9c6c-3a8d47fe3f70",
+      "hour": 7,
+      "minutes": 0,
+      "enabled": 1,
+      "daysofweek": 0,
+      "label": "晨起"
+    }
+  },
+  "initial_readback": {
+    "calendar": "bba2614f86058dd5a4726ae11d406fa42451f719c34338420da1015feb7597b8",
+    "mail": "ffd48ea8df0376ee151d5a81a5556ec1422fc62ac2ba2ff09530172f0226f293",
+    "clock": "29fc82c8507cfe7a17bf9d3abd97b585a47a8e917003e4237253f7dc614ef3ab"
+  },
+  "readback": {
+    "calendar": [
+      {
+        "id": 17,
+        "title": "项目评审 R7K2",
+        "start_ts": 1789347600,
+        "end_ts": 1789349400,
+        "location": "会议室 A",
+        "description": "项目评审 R7K2：开场演示后进入讨论。",
+        "reminder_1_minutes": 10,
+        "source": "calendar",
+        "time_zone": "Asia/Shanghai",
+        "import_id": "gui-5a8459dd2a3b502c6c20947a"
+      }
+    ],
+    "mail": "aafb875b70d18d372632b5c50ba4ebdd3e27dcb309a237cdbd9896c5ce5709eb",
+    "clock": [
+      {
+        "_id": 3,
+        "external_uuid": "295785e8-50d0-5045-9c6c-3a8d47fe3f70",
+        "hour": 7,
+        "minutes": 0,
+        "enabled": 1,
+        "daysofweek": 0,
+        "label": "晨起"
+      }
+    ]
+  },
+  "failure_reason": null,
+  "clock_binding": {
+    "observation_start": "2026-09-14T08:30:00+08:00",
+    "decision_point": "2026-09-14T08:35:01+08:00",
+    "timezone": "Asia/Shanghai",
+    "source": "PB history/cluster"
+  },
+  "environment": {
+    "device_timezone": "Asia/Shanghai",
+    "timezone": "Asia/Shanghai",
+    "simulated_time": "2026-09-14T08:30:00+08:00",
+    "source": "PB history/cluster"
+  },
+  "device": {
+    "baseline_version": "sha256:e513d473f298961699f7a8a4bc99730cf03d7b700db6104290ba6ba3a0116a52",
+    "dataset_version": "2026.09.10",
+    "apk_versions": {
+      "dudu": "1.0.0",
+      "lianqi": "1.0.0",
+      "starrail": "1.0.0",
+      "babaquna": "1.0.0",
+      "wangyiyun": "1.0.0",
+      "chaowei": "1.0.0"
+    },
+    "android_release": "14",
+    "resolution": "Physical size: 1080x2400",
+    "density": "Physical density: 420",
+    "font_scale": "default",
+    "locale": "en-US",
+    "theme": "Night mode: no",
+    "timezone": "GMT",
+    "notification_policy": "dnd_none_for_app_screen"
+  },
+  "history_replays": [
+    {
+      "packet_id": "p009",
+      "semantic_ref": "calendar.event.cal_001",
+      "effective_at": "2026-09-14T08:31:00+08:00",
+      "set": {
+        "calendar_reminder_minutes": [
+          10,
+          -1,
+          -1
+        ],
+        "updated_at": "2026-09-14T08:31:00+08:00"
+      },
+      "function": "apply_history_change",
+      "result": {
+        "semantic_ref": "calendar.event.cal_001",
+        "import_id": "gui-5a8459dd2a3b502c6c20947a",
+        "reminder_1_minutes": 10,
+        "reminder_2_minutes": -1,
+        "reminder_3_minutes": -1,
+        "last_updated": 1789345860000
+      }
+    },
+    {
+      "packet_id": "p010",
+      "semantic_ref": "mail.message.mail_001",
+      "effective_at": "2026-09-14T08:31:45+08:00",
+      "set": {
+        "status": "read"
+      },
+      "function": "apply_history_change",
+      "result": "ffbf273e8733b1703378a18d47a0ebe2fb78e9e5639359f7751270de585768ea"
+    },
+    {
+      "packet_id": "p013",
+      "semantic_ref": "mail.message.mail_002",
+      "effective_at": "2026-09-14T08:32:35+08:00",
+      "set": {
+        "status": "read"
+      },
+      "function": "apply_history_change",
+      "result": "aafb875b70d18d372632b5c50ba4ebdd3e27dcb309a237cdbd9896c5ce5709eb"
+    }
+  ],
+  "freeze": {
+    "success": true,
+    "frozen": true
+  },
+  "reset_verified": true
+}

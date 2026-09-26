@@ -1,0 +1,546 @@
+{
+  "schema_version": "pb-gui-machine-qa-summary.v1",
+  "generated_at": "2026-09-26T14:56:46.202098+00:00",
+  "status": "pass",
+  "rule_version": "gui-pixel-ocr-v8",
+  "ocr_model_sha256": "5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747",
+  "ocr_models": {
+    "eng": "5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747",
+    "chi_sim": "a5fcb6f0db1e1d6d8522f39db4e848f05984669172e584e8d76b6b3141e1f730"
+  },
+  "device_env": {
+    "schema_version": "1.0",
+    "status": "pass",
+    "reason": null,
+    "fields": [
+      "resolution",
+      "density",
+      "font_scale",
+      "locale",
+      "theme",
+      "timezone"
+    ],
+    "episode": {
+      "resolution": "Physical size: 1080x2400",
+      "density": "Physical density: 420",
+      "font_scale": "default",
+      "locale": "en-US",
+      "theme": "Night mode: no",
+      "timezone": "Asia/Shanghai"
+    },
+    "frames": [
+      {
+        "packet_id": "p003",
+        "frame_id": "p003_f1",
+        "png": "images/b4bd984aa8ea3794e9184311e87d7c4b.png",
+        "sha256": "20ad1ed9f17ace4f45b83a485b482d51981713bd88f9940f0a977e0b0f85d33f",
+        "status": "pass",
+        "device_env": {
+          "resolution": "Physical size: 1080x2400",
+          "density": "Physical density: 420",
+          "font_scale": "default",
+          "locale": "en-US",
+          "theme": "Night mode: no",
+          "timezone": "Asia/Shanghai"
+        },
+        "png_size": [
+          1080,
+          2400
+        ]
+      },
+      {
+        "packet_id": "p004",
+        "frame_id": "p004_f1",
+        "png": "images/754849ffef62f8d6a0c3364fd6efe6da.png",
+        "sha256": "3f260a4025d053e0846045b4ef6526f8e05e58260da966b860ffa2bd0d9c4161",
+        "status": "pass",
+        "device_env": {
+          "resolution": "Physical size: 1080x2400",
+          "density": "Physical density: 420",
+          "font_scale": "default",
+          "locale": "en-US",
+          "theme": "Night mode: no",
+          "timezone": "Asia/Shanghai"
+        },
+        "png_size": [
+          1080,
+          2400
+        ]
+      },
+      {
+        "packet_id": "p009",
+        "frame_id": "p009_f1",
+        "png": "images/4261f6dadc66a54b1ee7a0b84b892408.png",
+        "sha256": "bfc147807ccbe07189873f44dbddba9b56451298a0f0eff7783b1eb47490ec27",
+        "status": "pass",
+        "device_env": {
+          "resolution": "Physical size: 1080x2400",
+          "density": "Physical density: 420",
+          "font_scale": "default",
+          "locale": "en-US",
+          "theme": "Night mode: no",
+          "timezone": "Asia/Shanghai"
+        },
+        "png_size": [
+          1080,
+          2400
+        ]
+      },
+      {
+        "packet_id": "p010",
+        "frame_id": "p010_f1",
+        "png": "images/48bc1651c530e377656c16927ebcaf9a.png",
+        "sha256": "6f5bed65417fa3bb8500e40beb6441288b9ec7ee37bcfdb2180948b66dd2a7c3",
+        "status": "pass",
+        "device_env": {
+          "resolution": "Physical size: 1080x2400",
+          "density": "Physical density: 420",
+          "font_scale": "default",
+          "locale": "en-US",
+          "theme": "Night mode: no",
+          "timezone": "Asia/Shanghai"
+        },
+        "png_size": [
+          1080,
+          2400
+        ]
+      },
+      {
+        "packet_id": "p013",
+        "frame_id": "p013_f1",
+        "png": "images/56ea16a137dd35831ada55e48dd42212.png",
+        "sha256": "2c5585b9b0f92d201c5deecb1c98291335e4a603110ff7c86a9af703b57c410a",
+        "status": "pass",
+        "device_env": {
+          "resolution": "Physical size: 1080x2400",
+          "density": "Physical density: 420",
+          "font_scale": "default",
+          "locale": "en-US",
+          "theme": "Night mode: no",
+          "timezone": "Asia/Shanghai"
+        },
+        "png_size": [
+          1080,
+          2400
+        ]
+      },
+      {
+        "packet_id": "p015",
+        "frame_id": "p015_f1",
+        "png": "images/a9007b79fb4f493f3dce78913d50d17a.png",
+        "sha256": "4dae537c425723c1f791f28eb5287603a5637c423fcbefc82685fc867b7bfa54",
+        "status": "pass",
+        "device_env": {
+          "resolution": "Physical size: 1080x2400",
+          "density": "Physical density: 420",
+          "font_scale": "default",
+          "locale": "en-US",
+          "theme": "Night mode: no",
+          "timezone": "Asia/Shanghai"
+        },
+        "png_size": [
+          1080,
+          2400
+        ]
+      },
+      {
+        "packet_id": "p018",
+        "frame_id": "p018_f1",
+        "png": "images/a4a8b7eb9e55ee0a5d5be2cd53d10fb9.png",
+        "sha256": "9a425926d958acd9142103eb8a729ab2ef4d29d63d46048d085e2596d82d4b86",
+        "status": "pass",
+        "device_env": {
+          "resolution": "Physical size: 1080x2400",
+          "density": "Physical density: 420",
+          "font_scale": "default",
+          "locale": "en-US",
+          "theme": "Night mode: no",
+          "timezone": "Asia/Shanghai"
+        },
+        "png_size": [
+          1080,
+          2400
+        ]
+      }
+    ]
+  },
+  "plan_sha256": "4b9f0ed641d31012615b2edf89606d496b8c8e3d12e6a8d311fc1da775d8abbb",
+  "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+  "source": {
+    "schema_version": "1.0",
+    "sha256": "71b068412309cd1c34d558ea96df9107dbb80eabbde0b2b3d4f460d0c22f5045"
+  },
+  "frames": [
+    {
+      "packet_id": "p003",
+      "frame_id": "p003_f1",
+      "png": "images/b4bd984aa8ea3794e9184311e87d7c4b.png",
+      "sha256": "20ad1ed9f17ace4f45b83a485b482d51981713bd88f9940f0a977e0b0f85d33f",
+      "status": "pass",
+      "fields": [
+        {
+          "field": "day_label",
+          "text": "September 14 (Mon)",
+          "confidence": 95,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        },
+        {
+          "field": "event_title",
+          "text": "项目评审 R7K2",
+          "confidence": 87,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "event_time",
+          "text": "09:00 AM - 09:30 AM",
+          "confidence": 94,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        },
+        {
+          "field": "event_description",
+          "text": "项目评审 R7K2: 开场演示后进入讨论。",
+          "confidence": 93,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "_status_time",
+          "text": "8:30",
+          "confidence": 96,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        }
+      ]
+    },
+    {
+      "packet_id": "p004",
+      "frame_id": "p004_f1",
+      "png": "images/754849ffef62f8d6a0c3364fd6efe6da.png",
+      "sha256": "3f260a4025d053e0846045b4ef6526f8e05e58260da966b860ffa2bd0d9c4161",
+      "status": "pass",
+      "fields": [
+        {
+          "field": "title",
+          "text": "项目评审 R7K2",
+          "confidence": 91,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "location",
+          "text": "会议室 A",
+          "confidence": 82,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "description",
+          "text": "项目评审 R7K2: 开场演示后进入讨论。",
+          "confidence": 83,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "start_at",
+          "text": "09:00 AM",
+          "confidence": 94,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        },
+        {
+          "field": "end_at",
+          "text": "09:30 AM",
+          "confidence": 96,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        },
+        {
+          "field": "_status_time",
+          "text": "8:30",
+          "confidence": 96,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        }
+      ]
+    },
+    {
+      "packet_id": "p009",
+      "frame_id": "p009_f1",
+      "png": "images/4261f6dadc66a54b1ee7a0b84b892408.png",
+      "sha256": "bfc147807ccbe07189873f44dbddba9b56451298a0f0eff7783b1eb47490ec27",
+      "status": "pass",
+      "fields": [
+        {
+          "field": "row_1_sender",
+          "text": "周宁",
+          "confidence": 90,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "row_1_subject",
+          "text": "项目评审 R7K2 | 设备准备说明",
+          "confidence": 92,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "row_1_snippet",
+          "text": "关于项目评审 R7K2: 投屏与麦克风.…",
+          "confidence": 90,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "row_2_sender",
+          "text": "周宁",
+          "confidence": 90,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "row_2_subject",
+          "text": "项目评审 R7K2 | 开场安排",
+          "confidence": 93,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "row_2_snippet",
+          "text": "项目评审 R7K2 将于今天 09:00 在会.…",
+          "confidence": 91,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "_status_time",
+          "text": "8:31",
+          "confidence": 96,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        }
+      ]
+    },
+    {
+      "packet_id": "p010",
+      "frame_id": "p010_f1",
+      "png": "images/48bc1651c530e377656c16927ebcaf9a.png",
+      "sha256": "6f5bed65417fa3bb8500e40beb6441288b9ec7ee37bcfdb2180948b66dd2a7c3",
+      "status": "pass",
+      "fields": [
+        {
+          "field": "subject",
+          "text": "项目评审 R7K2 | 开场安排",
+          "confidence": 92,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "from",
+          "text": "周宁",
+          "confidence": 91,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "body",
+          "text": "项目评审 R7K2 将于今天 09:00 在会议室A开\n始，09:30 结束。开场演示由你负责，之后进入讨\n论环节。",
+          "confidence": 91,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "_status_time",
+          "text": "8:32",
+          "confidence": 96,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        }
+      ]
+    },
+    {
+      "packet_id": "p013",
+      "frame_id": "p013_f1",
+      "png": "images/56ea16a137dd35831ada55e48dd42212.png",
+      "sha256": "2c5585b9b0f92d201c5deecb1c98291335e4a603110ff7c86a9af703b57c410a",
+      "status": "pass",
+      "fields": [
+        {
+          "field": "subject",
+          "text": "项目评审 R7K2 | 设备准备说明",
+          "confidence": 93,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "from",
+          "text": "周宁",
+          "confidence": 91,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "body",
+          "text": "关于项目评审 R7K2: 投屏与麦克风联调共需要连\n续 10 分钟，应在开场演示之前完成。",
+          "confidence": 92,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "_status_time",
+          "text": "8:32",
+          "confidence": 96,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        }
+      ]
+    },
+    {
+      "packet_id": "p015",
+      "frame_id": "p015_f1",
+      "png": "images/a9007b79fb4f493f3dce78913d50d17a.png",
+      "sha256": "4dae537c425723c1f791f28eb5287603a5637c423fcbefc82685fc867b7bfa54",
+      "status": "pass",
+      "fields": [
+        {
+          "field": "row_1_sender",
+          "text": "周宁",
+          "confidence": 92,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "row_1_subject",
+          "text": "项目评审 R7K2 | 设备准备说明",
+          "confidence": 92,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "row_1_snippet",
+          "text": "关于项目评审 R7K2: 投屏与麦克风.…",
+          "confidence": 90,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "row_2_sender",
+          "text": "周宁",
+          "confidence": 92,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "row_2_subject",
+          "text": "项目评审 R7K2 | 开场安排",
+          "confidence": 92,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "row_2_snippet",
+          "text": "项目评审 R7K2 将于今天 09:00 在会.…",
+          "confidence": 91,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "_status_time",
+          "text": "8:33",
+          "confidence": 96,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        }
+      ]
+    },
+    {
+      "packet_id": "p018",
+      "frame_id": "p018_f1",
+      "png": "images/a4a8b7eb9e55ee0a5d5be2cd53d10fb9.png",
+      "sha256": "9a425926d958acd9142103eb8a729ab2ef4d29d63d46048d085e2596d82d4b86",
+      "status": "pass",
+      "fields": [
+        {
+          "field": "day_label",
+          "text": "September 14 (Mon)",
+          "confidence": 95,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        },
+        {
+          "field": "event_title",
+          "text": "项目评审 R7K2",
+          "confidence": 87,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "event_time",
+          "text": "09:00 AM - 09:30 AM",
+          "confidence": 94,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        },
+        {
+          "field": "event_description",
+          "text": "项目评审 R7K2: 开场演示后进入讨论。",
+          "confidence": 93,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "chi_sim"
+        },
+        {
+          "field": "_status_time",
+          "text": "8:33",
+          "confidence": 96,
+          "minimum_confidence": 80,
+          "passed": true,
+          "language": "eng"
+        }
+      ]
+    }
+  ],
+  "claims": {
+    "raw_device_pngs_stored": false,
+    "plan_text_stored": false
+  }
+}

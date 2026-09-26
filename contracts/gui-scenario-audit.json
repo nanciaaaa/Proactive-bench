@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "basis": "AA-ACA Benchmark v1 formal plan §4.5 and GUI backend blueprint B0",
+  "rule": "A pilot view proves only its listed fields; a cluster is not GUI Gold until every selected Passive source and decisive target field has independent device readback and machine pixel QA evidence.",
+  "match_fields": {
+    "cluster": "cluster_id selects the candidate list; formal_pilot_datasets binds each dataset directory to its expected cluster-base.json cluster_id",
+    "candidate": ["packet_source", "app_id", "pilot_view", "required_assertions"],
+    "packet": ["source", "capture.app_id", "capture.view_id", "capture.visible_assertions"]
+  },
+  "conclusion_rules": [
+    "A packet is supported only when its matched candidate and the capability entry are both supported, every required assertion is present, and every asserted field is covered; a pilot candidate is never promoted to supported.",
+    "A packet is text_only only when type is \"text\" and no capture spec is declared; a non-Text packet without a capture spec is missing.",
+    "A missing capture spec on a non-Text packet, an unbound source/app/view, an assertion outside the candidate or capability coverage, an unknown status, or a missing capability declaration all fail closed to missing.",
+    "This contract-level audit claims no device evidence and never marks a cluster GUI Gold."
+  ],
+  "clusters": [
+    {
+      "cluster_id": "reminder_coverage",
+      "formal_pilot_datasets": [{"dataset": "gui-reminder-formal-pilot", "cluster_id": "reminder-coverage-mail-clock-pilot"}],
+      "candidates": [
+        {"app_id": "mail", "surface": "incoming reminder message", "status": "missing", "pilot_view": "mail_detail", "packet_source": "mail", "required_assertions": ["subject", "from", "date", "body"], "gap": "real incoming notification, source authentication, event date and preparation rule"},
+        {"app_id": "calendar", "surface": "event and reminder detail", "status": "missing", "pilot_view": "event_editor", "packet_source": "calendar", "required_assertions": ["title", "start_at", "end_at", "reminder_minutes_before"], "gap": "read-only detail, target date, source visible on screen, complete equivalent reminder coverage"},
+        {"app_id": "clock", "surface": "dated alarm coverage", "status": "missing", "pilot_view": "alarm_card", "packet_source": "clock", "required_assertions": ["label", "time", "enabled"], "gap": "target date, repeat semantics, enabled instance coverage and exhaustive scoped list"}
+      ]
+    },
+    {
+      "cluster_id": "appointment_sync",
+      "formal_pilot_datasets": [{"dataset": "gui-appointment-formal-pilot", "cluster_id": "appointment-sync-mail-calendar-pilot"}],
+      "candidates": [
+        {"app_id": "mail", "surface": "authoritative appointment update", "status": "missing", "pilot_view": "mail_detail", "packet_source": "mail", "required_assertions": ["subject", "from", "date", "body"], "gap": "real arrival and sender authority, reschedule/cancellation provenance, native heads-up if selected"},
+        {"app_id": "calendar", "surface": "corresponding event state", "status": "missing", "pilot_view": "event_editor", "packet_source": "calendar", "required_assertions": ["title", "start_at", "end_at"], "gap": "read-only detail, source/account, changed-versus-unchanged fields and event replay history"}
+      ]
+    },
+    {
+      "cluster_id": "file_availability",
+      "formal_pilot_datasets": [{"dataset": "gui-files-formal-pilot", "cluster_id": "file-availability-download-pilot"}],
+      "candidates": [
+        {"app_id": "mail", "surface": "file requirement message", "status": "missing", "pilot_view": "mail_detail", "packet_source": "mail", "required_assertions": ["subject", "from", "date", "body"], "gap": "real received request and authoritative version requirement"},
+        {"app_id": "files", "surface": "Download listing", "status": "missing", "pilot_view": "download_file", "packet_source": "files", "required_assertions": ["directory", "name"], "gap": "complete scoped file inventory, missing/corrupt/renamed alternatives and version provenance"},
+        {"app_id": "files", "surface": "Docreader body", "status": "missing", "pilot_view": "docreader_content", "packet_source": "files", "required_assertions": ["content"], "gap": "multiple candidate files, damaged-file rejection, version comparison and machine pixel QA for every selected frame"}
+      ]
+    },
+    {
+      "cluster_id": "contact_update",
+      "formal_pilot_datasets": [{"dataset": "gui-contact-update-formal-pilot", "cluster_id": "contact-update-messages-contacts-pilot"}],
+      "candidates": [
+        {"app_id": "messages", "surface": "contact update message", "status": "pilot", "pilot_view": "conversation_list", "packet_source": "messages", "required_assertions": ["sender", "body"], "gap": "formal A/B sender/body and ContactsProvider label binding, frozen Need query, and machine release are verified; alternative mail source, full contact detail mutation history and native heads-up remain unverified"},
+        {"app_id": "mail", "surface": "alternative update message", "status": "missing", "pilot_view": "mail_detail", "packet_source": "mail", "required_assertions": ["subject", "from", "date", "body"], "gap": "real received update, sender authority and applicability to target contact"},
+        {"app_id": "contacts", "surface": "identity and field detail", "status": "missing", "pilot_view": "contact_detail", "packet_source": "contacts", "required_assertions": ["name", "phone", "email"], "gap": "update source, non-target field preservation, action/readback and machine pixel identity QA"}
+      ]
+    }
+  ]
+}

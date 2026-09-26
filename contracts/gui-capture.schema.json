@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ku.local/contracts/gui-capture.schema.json",
+  "title": "Private GUI capture author input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["episode_id", "baseline_ref", "device_timezone", "fixture_ref", "packets", "eof_at"],
+  "properties": {
+    "episode_id": {"type": "string", "minLength": 1},
+    "public_group": {"type": "string", "minLength": 1},
+    "baseline_ref": {"type": "string", "minLength": 1},
+    "device_timezone": {"type": "string", "minLength": 1},
+    "fixture_ref": {"type": "string", "minLength": 1},
+    "eof_at": {"type": "string", "format": "date-time"},
+    "packets": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["packet_id", "sequence", "type", "source", "observed_at", "text_projection", "capture"],
+        "properties": {
+          "packet_id": {"type": "string", "minLength": 1},
+          "sequence": {"type": "integer", "minimum": 1},
+          "type": {"const": "gui"},
+          "source": {"type": "string", "minLength": 1},
+          "observed_at": {"type": "string", "format": "date-time"},
+          "delivered_at": {"type": "string", "format": "date-time"},
+          "text_projection": {"type": "string"},
+          "capture": {
+            "type": "object", "additionalProperties": false,
+            "required": ["surface", "app_id", "view_id", "subject_ref", "visible_assertions"],
+            "properties": {
+              "surface": {"const": "app_screen"},
+              "app_id": {"type": "string", "minLength": 1},
+              "view_id": {"type": "string", "minLength": 1},
+              "subject_ref": {"type": "string", "minLength": 1},
+              "frame_id": {"type": "string", "minLength": 1},
+              "frames": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["frame_id"], "properties": {"frame_id": {"type": "string", "minLength": 1}}}},
+              "visible_assertions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+              "timeout_seconds": {"type": "number", "minimum": 1, "maximum": 120}
+            },
+            "oneOf": [{"required": ["frame_id"]}, {"required": ["frames"]}]
+          }
+        }
+      }
+    }
+  }
+}

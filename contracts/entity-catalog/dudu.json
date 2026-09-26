@@ -1,0 +1,479 @@
+{
+  "schema_version": "0.1.0",
+  "app_id": "dudu",
+  "kind": "android_app",
+  "android_package": "com.ku.simulator.dudu",
+  "adapter_version": "dudu-adapter-v1",
+  "adapter_contract_version": "1.0",
+  "storage_scope": [
+    "local_controller_sqlite"
+  ],
+  "layout": "map",
+  "entity_types": [
+    {
+      "name": "places",
+      "fields": [
+        "semantic_ref",
+        "title",
+        "subtitle",
+        "meta",
+        "price",
+        "available",
+        "rank"
+      ],
+      "query_operations": [
+        {
+          "name": "search_places",
+          "granularity": "metadata",
+          "selector_fields": [
+            "keyword",
+            "limit",
+            "offset"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "title",
+            "subtitle",
+            "rank"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_for_query_scope"
+        },
+        {
+          "name": "get_place_details",
+          "granularity": "details",
+          "selector_fields": [
+            "semantic_ref"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "title",
+            "subtitle",
+            "meta",
+            "price",
+            "available",
+            "rank"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_single_record"
+        }
+      ]
+    },
+    {
+      "name": "vehicle_quotes",
+      "fields": [
+        "semantic_ref",
+        "title",
+        "subtitle",
+        "meta",
+        "price",
+        "available",
+        "rank"
+      ],
+      "query_operations": [
+        {
+          "name": "search_vehicle_quotes",
+          "granularity": "metadata",
+          "selector_fields": [
+            "keyword",
+            "limit",
+            "offset"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "title",
+            "subtitle",
+            "rank"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_for_query_scope"
+        },
+        {
+          "name": "get_vehicle_quote_details",
+          "granularity": "details",
+          "selector_fields": [
+            "semantic_ref"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "title",
+            "subtitle",
+            "meta",
+            "price",
+            "available",
+            "rank"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_single_record"
+        }
+      ]
+    },
+    {
+      "name": "coupons",
+      "fields": [
+        "semantic_ref",
+        "title",
+        "subtitle",
+        "meta",
+        "price",
+        "available",
+        "rank"
+      ],
+      "query_operations": [
+        {
+          "name": "search_coupons",
+          "granularity": "metadata",
+          "selector_fields": [
+            "keyword",
+            "limit",
+            "offset"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "title",
+            "subtitle",
+            "rank"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_for_query_scope"
+        },
+        {
+          "name": "get_coupon_details",
+          "granularity": "details",
+          "selector_fields": [
+            "semantic_ref"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "title",
+            "subtitle",
+            "meta",
+            "price",
+            "available",
+            "rank"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_single_record"
+        }
+      ]
+    },
+    {
+      "name": "ui_content",
+      "fields": [
+        "semantic_ref",
+        "hero",
+        "planner",
+        "profile_name"
+      ],
+      "query_operations": [
+        {
+          "name": "get_ui_content_details",
+          "granularity": "details",
+          "selector_fields": [
+            "semantic_ref"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "hero",
+            "planner",
+            "profile_name"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_single_record"
+        }
+      ]
+    },
+    {
+      "name": "order",
+      "fields": [
+        "semantic_ref",
+        "item_id",
+        "title",
+        "subtitle",
+        "base_price",
+        "discount",
+        "coupon_title",
+        "price",
+        "fare_difference",
+        "status",
+        "created_at",
+        "payments",
+        "origin",
+        "destination",
+        "service_type",
+        "reservation_time",
+        "train",
+        "train_schedule",
+        "seat",
+        "traveler_name",
+        "traveler_phone",
+        "vehicle_plate",
+        "driver",
+        "eta_minutes"
+      ],
+      "query_operations": [
+        {
+          "name": "list_orders",
+          "granularity": "metadata",
+          "selector_fields": [
+            "limit",
+            "offset"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "item_id",
+            "price",
+            "status",
+            "created_at"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_for_query_scope"
+        },
+        {
+          "name": "get_order_details",
+          "granularity": "details",
+          "selector_fields": [
+            "semantic_ref"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "item_id",
+            "title",
+            "subtitle",
+            "base_price",
+            "discount",
+            "coupon_title",
+            "price",
+            "fare_difference",
+            "status",
+            "created_at",
+            "payments",
+            "origin",
+            "destination",
+            "service_type",
+            "reservation_time",
+            "train",
+            "train_schedule",
+            "seat",
+            "traveler_name",
+            "traveler_phone",
+            "vehicle_plate",
+            "driver",
+            "eta_minutes"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_single_record"
+        }
+      ]
+    },
+    {
+      "name": "popup",
+      "fields": [
+        "semantic_ref",
+        "kind",
+        "title",
+        "message"
+      ],
+      "query_operations": [
+        {
+          "name": "list_active_popups",
+          "granularity": "metadata",
+          "selector_fields": [
+            "limit"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "kind",
+            "title",
+            "message"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_for_query_scope"
+        }
+      ]
+    },
+    {
+      "name": "favorite",
+      "fields": [
+        "semantic_ref",
+        "item_id"
+      ],
+      "query_operations": [
+        {
+          "name": "list_favorites",
+          "granularity": "metadata",
+          "selector_fields": [
+            "limit"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "item_id"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_for_query_scope"
+        }
+      ]
+    },
+    {
+      "name": "account_field",
+      "fields": [
+        "semantic_ref",
+        "key",
+        "value"
+      ],
+      "query_operations": [
+        {
+          "name": "list_account_fields",
+          "granularity": "metadata",
+          "selector_fields": [
+            "limit"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "key",
+            "value"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_for_query_scope"
+        }
+      ]
+    },
+    {
+      "name": "coupon_wallet",
+      "fields": [
+        "semantic_ref",
+        "code",
+        "title",
+        "discount"
+      ],
+      "query_operations": [
+        {
+          "name": "list_coupons",
+          "granularity": "metadata",
+          "selector_fields": [
+            "limit"
+          ],
+          "result_fields": [
+            "semantic_ref",
+            "code",
+            "title",
+            "discount"
+          ],
+          "permission": "query.read",
+          "coverage": "complete_for_query_scope"
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "query.read"
+  ],
+  "gui_mutation_types": [
+    "call_car",
+    "checkout_pay",
+    "dismiss_popup",
+    "favorite",
+    "remove_coupon",
+    "save_account_field",
+    "trigger_popup"
+  ],
+  "passive_event_types": [
+    "popup_permission",
+    "popup_promotion",
+    "popup_payment",
+    "popup_cancel_loss",
+    "popup_membership",
+    "business_error",
+    "user_action",
+    "gui_frame"
+  ],
+  "readback_scope": [
+    "places",
+    "vehicle_quotes",
+    "coupons",
+    "ui_content",
+    "order",
+    "popup",
+    "favorite",
+    "account_field",
+    "coupon_wallet"
+  ],
+  "reset_scope": [
+    "places",
+    "vehicle_quotes",
+    "coupons",
+    "ui_content",
+    "order",
+    "popup",
+    "favorite",
+    "account_field",
+    "coupon_wallet"
+  ],
+  "static_chrome": {
+    "shared": [
+      "操作成功",
+      "重试",
+      "加载更多",
+      "没有找到相关内容",
+      "这里还没有记录",
+      "知道了",
+      "返回",
+      "确认",
+      "保存",
+      "取消",
+      "完成",
+      "查看全部",
+      "为你精选以下内容",
+      "查看全部回答",
+      "更多 ›",
+      "下单时间 ",
+      "订单",
+      "收藏",
+      "优惠券",
+      "正在播放",
+      "已更新",
+      "已关闭",
+      "刚刚",
+      "价格已更新，请重新确认",
+      "当前名额不足，请选择其他方案",
+      "该时间与已有安排冲突",
+      "已经收藏过了",
+      "暂时无法刷新，请稍后重试",
+      "页面信息已更新，请重试",
+      "暂时没有可操作的订单",
+      "暂时无法完成，请稍后重试",
+      "充足",
+      "热度 ",
+      "关闭"
+    ],
+    "app_specific": [
+      "一站式出行平台",
+      "乘车人",
+      "代驾",
+      "优惠",
+      "优惠券",
+      "出租车",
+      "发票报销",
+      "嘟嘟",
+      "地点",
+      "客服帮助",
+      "常用地址",
+      "我的",
+      "我的行程",
+      "打车",
+      "现在",
+      "目的地",
+      "确认并呼叫",
+      "管理行程与常用地点",
+      "行程",
+      "行程安全",
+      "订单",
+      "设置",
+      "车型",
+      "送货",
+      "附近推荐",
+      "顺风车",
+      "首页"
+    ]
+  }
+}

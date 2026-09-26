@@ -1,0 +1,42 @@
+{
+  "episode_id": "gui-contact-update-pilot-01",
+  "baseline_ref": "init_state",
+  "device_timezone": "Asia/Shanghai",
+  "fixture_ref": "fixture.json",
+  "packets": [
+    {
+      "packet_id": "p001",
+      "sequence": 1,
+      "type": "gui",
+      "source": "contacts",
+      "observed_at": "2026-09-25T10:00:00+08:00",
+      "text_projection": "Contacts shows GuiPilotTwin with phone 13800138000 and target@example.test.",
+      "capture": {
+        "surface": "app_screen",
+        "app_id": "contacts",
+        "view_id": "contact_detail",
+        "subject_ref": "contact-update-contact-01",
+        "frame_id": "p001_f1",
+        "visible_assertions": ["name", "phone", "email"]
+      }
+    },
+    {
+      "packet_id": "p002",
+      "sequence": 2,
+      "type": "gui",
+      "source": "messages",
+      "observed_at": "2026-09-25T10:00:30+08:00",
+      "text_projection": "Google Messages shows an incoming contact update from GuiPilotTwin.",
+      "capture": {
+        "surface": "app_screen",
+        "app_id": "messages",
+        "view_id": "conversation_list",
+        "subject_ref": "contact-update-message-01",
+        "frame_id": "p002_f1",
+        "timeout_seconds": 60,
+        "visible_assertions": ["sender", "body"]
+      }
+    }
+  ],
+  "eof_at": "2026-09-25T10:01:00+08:00"
+}

@@ -1,0 +1,17 @@
+{
+  "episode_scope": "gui-clock-pilot-01",
+  "common_records": [],
+  "world_deltas": [],
+  "ku_records": [
+    {
+      "app_id": "clock",
+      "entity_type": "alarms",
+      "semantic_ref": "alarm-01",
+      "data": {
+        "label": "GuiPilotAlarm",
+        "time": "10:45",
+        "enabled": false
+      }
+    }
+  ]
+}

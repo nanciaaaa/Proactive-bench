@@ -1,0 +1,40 @@
+{
+  "cluster_id": "reminder-coverage-mail-clock-pilot",
+  "goal": {
+    "type": "ensure_reminder_coverage",
+    "app_id": "clock",
+    "semantic_ref": "alarm-01",
+    "source_mail_ref": "mail-01",
+    "source_sender": "organizer@example.com",
+    "activity_title": "GuiReminderMeeting",
+    "approved_start_at": "2026-09-25T15:00:00+08:00",
+    "approved_end_at": "2026-09-25T15:30:00+08:00",
+    "approved_reminder_minutes_before": 30,
+    "declared_channel": "clock"
+  },
+  "records": [
+    {
+      "app_id": "mail",
+      "entity_type": "mails",
+      "semantic_ref": "mail-01",
+      "data": {
+        "headers": {
+          "subject": "GuiReminderUpdate",
+          "date": "Sep 25",
+          "from": "Organizer",
+          "to": "user@email.com",
+          "sender": "organizer@example.com",
+          "senderLogo": ""
+        },
+        "body": "GuiReminderMeeting is scheduled 2026-09-25T15:00:00+08:00 to 2026-09-25T15:30:00+08:00. Keep the 30 minutes before reminder.",
+        "status": "read"
+      }
+    },
+    {
+      "app_id": "clock",
+      "entity_type": "alarms",
+      "semantic_ref": "alarm-01",
+      "data": {"label": "GuiReminderMeeting", "time": "14:30", "enabled": true}
+    }
+  ]
+}

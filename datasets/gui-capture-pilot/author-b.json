@@ -1,0 +1,12 @@
+{
+  "episode_id": "gui-pilot-b",
+  "public_group": "gui-pilot-counterfactual-1",
+  "baseline_ref": "init_state",
+  "device_timezone": "Asia/Shanghai",
+  "fixture_ref": "fixture-b.json",
+  "packets": [
+    {"packet_id": "p001", "sequence": 1, "type": "gui", "source": "dudu", "observed_at": "2026-09-24T10:00:00+08:00", "text_projection": "嘟嘟显示周末出行提醒：请提前确认您的出发地点。", "capture": {"surface": "app_screen", "app_id": "dudu", "view_id": "popup", "subject_ref": "notice-01", "frame_id": "p001_f1", "visible_assertions": ["title", "message"]}},
+    {"packet_id": "p002", "sequence": 2, "type": "gui", "source": "chaowei", "observed_at": "2026-09-24T10:02:00+08:00", "text_projection": "超威内容详情显示项目预约说明：项目预约将在明天十四点开始。", "capture": {"surface": "app_screen", "app_id": "chaowei", "view_id": "article_detail", "subject_ref": "article-pilot", "frame_id": "p002_f1", "visible_assertions": ["title", "subtitle", "body"]}}
+  ],
+  "eof_at": "2026-09-24T10:03:00+08:00"
+}

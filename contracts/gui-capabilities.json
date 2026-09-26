@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "core_apps": {
+    "calendar": {
+      "status": "pilot",
+      "authority": "Fossify events.db",
+      "seed": "scoped SQLite event",
+      "readback": "import_id and all seeded fields",
+      "views": {
+        "event_editor": [
+          "title",
+          "location",
+          "description",
+          "start_at",
+          "end_at",
+          "reminder_minutes_before"
+        ],
+        "calendar_list": [
+          "day_label",
+          "event_title",
+          "event_time",
+          "event_description"
+        ]
+      },
+      "notifications": false,
+      "reason": "editor and day-list pilots only; list pixel QA covers the day header and the unique event row text, reminder settings and the full cluster remain unverified"
+    },
+    "mail": {
+      "status": "pilot",
+      "authority": "Gmailclone state.json",
+      "seed": "scoped message append",
+      "readback": "unique subject and full state",
+      "views": {
+        "mail_detail": [
+          "subject",
+          "from",
+          "date",
+          "body"
+        ],
+        "mail_inbox": [
+          "row_1_sender",
+          "row_1_subject",
+          "row_1_snippet",
+          "row_2_sender",
+          "row_2_subject",
+          "row_2_snippet"
+        ]
+      },
+      "notifications": false,
+      "reason": "inbox list and detail pilots only; list QA covers sender/subject/snippet text nodes and the app-owned read/unread state; unread bold, read gray and the bottom count badge are not machine assertions, and the Android heads-up is not implemented or verified"
+    },
+    "clock": {
+      "status": "pilot",
+      "authority": "DeskClock alarms.db",
+      "seed": "scoped UUID alarm",
+      "readback": "UUID and all seeded fields",
+      "views": {
+        "alarm_card": [
+          "label",
+          "time",
+          "enabled"
+        ]
+      },
+      "notifications": false,
+      "reason": "one-off alarm card pilot only; target date and full reminder cluster remain unverified"
+    },
+    "contacts": {
+      "status": "pilot",
+      "authority": "Android ContactsProvider",
+      "seed": "scoped raw contact with aggregation disabled",
+      "readback": "unique phone, raw ID and all seeded data rows",
+      "views": {
+        "contact_detail": [
+          "name",
+          "phone",
+          "email"
+        ]
+      },
+      "notifications": false,
+      "reason": "same-name phone/email detail pilot only; full contact-update cluster remains unverified"
+    },
+    "files": {
+      "status": "pilot",
+      "authority": "device filesystem",
+      "seed": "scoped Download file",
+      "readback": "SHA-256 of actual device bytes",
+      "views": {
+        "download_file": [
+          "directory",
+          "name"
+        ],
+        "docreader_content": [
+          "content"
+        ]
+      },
+      "notifications": false,
+      "reason": "Download listing and short plain-text Reader pilot only; full file-availability cluster remains unverified"
+    },
+    "messages": {
+      "status": "pilot",
+      "authority": "Android SMS provider plus ContactsProvider label",
+      "seed": "adb emulator incoming SMS with optional scoped contact",
+      "readback": "sender label, sender phone, body and provider row",
+      "views": {
+        "conversation_list": [
+          "sender",
+          "body"
+        ]
+      },
+      "notifications": "native_sms_unverified",
+      "reason": "Real Google Messages conversation-list pilot; contact-label binding is verified in a two-packet Episode, but heads-up timing is not a release guarantee"
+    }
+  },
+  "extension_apps": {
+    "dudu": {
+      "status": "supported",
+      "views": {
+        "popup": [
+          "title",
+          "message"
+        ]
+      }
+    },
+    "lianqi": {
+      "status": "supported",
+      "views": {
+        "popup": [
+          "title",
+          "message"
+        ]
+      }
+    },
+    "starrail": {
+      "status": "supported",
+      "views": {
+        "popup": [
+          "title",
+          "message"
+        ]
+      }
+    },
+    "babaquna": {
+      "status": "supported",
+      "views": {
+        "popup": [
+          "title",
+          "message"
+        ]
+      }
+    },
+    "wangyiyun": {
+      "status": "supported",
+      "views": {
+        "popup": [
+          "title",
+          "message"
+        ]
+      }
+    },
+    "chaowei": {
+      "status": "supported",
+      "views": {
+        "popup": [
+          "title",
+          "message"
+        ],
+        "article_detail": [
+          "title",
+          "subtitle",
+          "body"
+        ]
+      },
+      "article_detail_device_status": "unverified"
+    }
+  },
+  "system_surface": {
+    "heads_up_notification": "missing"
+  }
+}

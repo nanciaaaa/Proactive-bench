@@ -1,0 +1,13 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "连汽约车"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#138a67"
+  }
+}

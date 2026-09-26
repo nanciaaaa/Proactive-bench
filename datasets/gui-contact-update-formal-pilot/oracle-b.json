@@ -1,0 +1,1 @@
+{"episode_id": "gui-contact-update-formal-b", "variant_id": "contact-stale", "passive_class": "active_required", "expected_need_set": [{"type": "update_contact_phone", "target": "contact-01", "phone": "13800138000"}]}

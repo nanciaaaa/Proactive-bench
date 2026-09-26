@@ -1,0 +1,7 @@
+{
+  "variant_id": "contact-synced",
+  "patches": [
+    {"op": "update", "app_id": "contacts", "semantic_ref": "contact-01", "set": {"phone": "13800138000"}}
+  ],
+  "allowed_changed_fields": ["contacts.contact-01.phone"]
+}

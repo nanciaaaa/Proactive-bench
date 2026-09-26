@@ -1,0 +1,9 @@
+{
+  "appId": "com.ku.simulator.starrail",
+  "appName": "星穹铁路",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "variant_id": "calendar-stale",
+  "patches": [{"op": "update", "app_id": "calendar", "semantic_ref": "meeting-01",
+    "set": {"start_at": "2026-09-25T10:30:00+08:00", "end_at": "2026-09-25T11:00:00+08:00"}}],
+  "allowed_changed_fields": ["calendar.meeting-01.start_at", "calendar.meeting-01.end_at"]
+}

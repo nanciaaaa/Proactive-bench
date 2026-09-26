@@ -1,0 +1,13 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "网抑云"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#e12a1d"
+  }
+}

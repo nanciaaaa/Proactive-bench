@@ -1,0 +1,9 @@
+{
+  "appId": "com.ku.simulator.dudu",
+  "appName": "嘟嘟",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

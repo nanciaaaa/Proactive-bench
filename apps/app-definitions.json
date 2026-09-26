@@ -1,0 +1,714 @@
+{
+  "dudu": {
+    "name": "嘟嘟",
+    "package": "com.ku.simulator.dudu",
+    "color": "#ff6b2c",
+    "icon": "/icons/dudu.png",
+    "domain": "出行",
+    "layout": "map",
+    "prototype": "滴滴式聚合出行",
+    "subtitle": "一站式出行平台",
+    "hero": "去哪儿？",
+    "primary": "call_car",
+    "primaryLabel": "确认并呼叫",
+    "capabilities": [
+      "打车",
+      "出租车",
+      "顺风车",
+      "代驾",
+      "送货"
+    ],
+    "services": [
+      {
+        "icon": "🚕",
+        "label": "打车",
+        "resource": "vehicle_quotes"
+      },
+      {
+        "icon": "🚖",
+        "label": "出租车",
+        "resource": "vehicle_quotes"
+      }
+    ],
+    "planner": [
+      {
+        "label": "现在",
+        "value": "人民广场"
+      },
+      {
+        "label": "目的地",
+        "value": "上海虹桥站"
+      },
+      {
+        "label": "乘车人",
+        "value": "本人"
+      }
+    ],
+    "nav": [
+      "首页",
+      "订单",
+      "我的"
+    ],
+    "utilities": [],
+    "profileName": "用户 138****5200",
+    "recordTitle": "我的行程",
+    "accountStats": [
+      {
+        "key": "orders",
+        "label": "行程"
+      },
+      {
+        "key": "coupons",
+        "label": "优惠券"
+      }
+    ],
+    "profileSubtitle": "管理行程与常用地点",
+    "accountMenu": [
+      {
+        "label": "常用地址",
+        "resource": "places",
+        "kind": "form",
+        "field": "home_address"
+      },
+      {
+        "label": "行程安全",
+        "resource": "vehicle_quotes",
+        "kind": "info"
+      },
+      {
+        "label": "发票报销",
+        "resource": "vehicle_quotes",
+        "kind": "invoices"
+      },
+      {
+        "label": "客服帮助",
+        "resource": "places",
+        "kind": "form",
+        "field": "support_message"
+      },
+      {
+        "label": "设置",
+        "resource": "places",
+        "kind": "form",
+        "field": "notification_preference"
+      }
+    ],
+    "decorativeServices": [
+      {
+        "label": "顺风车"
+      },
+      {
+        "label": "代驾"
+      },
+      {
+        "label": "送货"
+      }
+    ]
+  },
+  "lianqi": {
+    "name": "连汽约车",
+    "package": "com.ku.simulator.lianqi",
+    "color": "#138a67",
+    "icon": "/icons/lianqi.png",
+    "domain": "约车",
+    "layout": "schedule",
+    "prototype": "品质专车服务",
+    "subtitle": "专业司机 · 品质服务",
+    "hero": "安心预约每一程",
+    "primary": "create_order",
+    "primaryLabel": "立即预约",
+    "capabilities": [
+      "即时用车",
+      "预约用车",
+      "接送机",
+      "商务用车"
+    ],
+    "services": [
+      {
+        "icon": "🚘",
+        "label": "即时",
+        "resource": "routes"
+      },
+      {
+        "icon": "🕘",
+        "label": "预约",
+        "resource": "routes"
+      },
+      {
+        "icon": "✈️",
+        "label": "接送机",
+        "resource": "routes"
+      },
+      {
+        "icon": "💼",
+        "label": "商务",
+        "resource": "routes"
+      }
+    ],
+    "planner": [
+      {
+        "label": "预约时间",
+        "value": "今天 09:30"
+      },
+      {
+        "label": "预计抵达",
+        "value": "18 分钟"
+      },
+      {
+        "label": "用车人数",
+        "value": "1 人"
+      }
+    ],
+    "nav": [
+      "用车",
+      "行程",
+      "账户"
+    ],
+    "utilities": [
+      {
+        "type": "cancel_order",
+        "label": "取消预约",
+        "confirm": "取消已支付预约将按实付金额模拟退款，是否继续？"
+      }
+    ],
+    "profileName": "用户 138****5200",
+    "recordTitle": "行程记录",
+    "accountStats": [
+      {
+        "key": "orders",
+        "label": "预约"
+      },
+      {
+        "key": "favorites",
+        "label": "收藏"
+      },
+      {
+        "key": "coupons",
+        "label": "优惠券"
+      }
+    ],
+    "profileSubtitle": "查看预约与专车权益",
+    "accountMenu": [
+      {
+        "label": "常用行程",
+        "resource": "routes",
+        "kind": "orders"
+      },
+      {
+        "label": "企业用车",
+        "resource": "routes",
+        "kind": "form",
+        "field": "company_name"
+      },
+      {
+        "label": "发票管理",
+        "resource": "coupons",
+        "kind": "invoices"
+      },
+      {
+        "label": "在线客服",
+        "resource": "routes",
+        "kind": "form",
+        "field": "support_message"
+      },
+      {
+        "label": "设置",
+        "resource": "routes",
+        "kind": "form",
+        "field": "notification_preference"
+      }
+    ],
+    "decorativeServices": [
+      {
+        "label": "代驾"
+      },
+      {
+        "label": "货运"
+      }
+    ]
+  },
+  "starrail": {
+    "name": "星穹铁路",
+    "package": "com.ku.simulator.starrail",
+    "color": "#2373b9",
+    "icon": "/icons/starrail.png",
+    "domain": "铁路",
+    "layout": "ticket",
+    "prototype": "铁路12306式官方票务",
+    "subtitle": "铁路出行服务",
+    "hero": "车票查询",
+    "primary": "book",
+    "primaryLabel": "预订",
+    "capabilities": [
+      "火车票",
+      "候补",
+      "订单",
+      "本人车票"
+    ],
+    "services": [
+      {
+        "icon": "🎫",
+        "label": "车票",
+        "resource": "trains"
+      }
+    ],
+    "planner": [
+      {
+        "label": "出发",
+        "value": "上海虹桥"
+      },
+      {
+        "label": "到达",
+        "value": "杭州东"
+      },
+      {
+        "label": "日期",
+        "value": "09月20日"
+      }
+    ],
+    "nav": [
+      "首页",
+      "订单",
+      "铁路会员"
+    ],
+    "utilities": [
+      {
+        "type": "add_passenger",
+        "label": "添加乘客",
+        "input": {
+          "label": "乘客姓名",
+          "default": "张三"
+        }
+      },
+      {
+        "type": "change_order",
+        "label": "改签",
+        "confirm": "确认改签到当前选择的车次？"
+      },
+      {
+        "type": "refund",
+        "label": "退票",
+        "confirm": "确认按当前规则退票？"
+      }
+    ],
+    "profileName": "用户 138****5200",
+    "recordTitle": "车票订单",
+    "accountStats": [
+      {
+        "key": "orders",
+        "label": "车票"
+      },
+      {
+        "key": "passengers",
+        "label": "乘车人"
+      },
+      {
+        "key": "favorites",
+        "label": "收藏"
+      }
+    ],
+    "profileSubtitle": "管理车票与出行信息",
+    "accountMenu": [
+      {
+        "label": "乘车人管理",
+        "resource": "stations",
+        "kind": "passengers"
+      },
+      {
+        "label": "车票查询",
+        "resource": "trains",
+        "kind": "browse"
+      },
+      {
+        "label": "铁路会员",
+        "resource": "seats",
+        "kind": "form",
+        "field": "member_number"
+      },
+      {
+        "label": "出行提醒",
+        "resource": "trains",
+        "kind": "orders"
+      },
+      {
+        "label": "设置",
+        "resource": "stations",
+        "kind": "form",
+        "field": "notification_preference"
+      }
+    ],
+    "decorativeServices": [
+      {
+        "label": "候补"
+      },
+      {
+        "label": "餐饮"
+      },
+      {
+        "label": "接送站"
+      }
+    ]
+  },
+  "babaquna": {
+    "name": "爸爸去哪",
+    "package": "com.ku.simulator.babaquna",
+    "color": "#1677ff",
+    "icon": "/icons/babaquna.png",
+    "domain": "旅行",
+    "layout": "travel",
+    "prototype": "综合旅行服务",
+    "subtitle": "旅行从这里开始",
+    "hero": "出发，遇见更大的世界",
+    "primary": "book",
+    "primaryLabel": "预订",
+    "capabilities": [
+      "机票",
+      "酒店",
+      "火车票",
+      "门票",
+      "度假"
+    ],
+    "services": [
+      {
+        "icon": "✈️",
+        "label": "机票",
+        "resource": "flights"
+      },
+      {
+        "icon": "🏨",
+        "label": "酒店",
+        "resource": "hotels"
+      },
+      {
+        "icon": "🎟️",
+        "label": "门票",
+        "resource": "attractions"
+      }
+    ],
+    "planner": [
+      {
+        "label": "目的地",
+        "value": "杭州"
+      },
+      {
+        "label": "入住日期",
+        "value": "09/20 - 09/22"
+      },
+      {
+        "label": "出行人数",
+        "value": "2 成人"
+      }
+    ],
+    "nav": [
+      "首页",
+      "订单",
+      "我的"
+    ],
+    "utilities": [
+      {
+        "type": "add_passenger",
+        "label": "添加出行人",
+        "input": {
+          "label": "出行人姓名",
+          "default": "张三"
+        }
+      },
+      {
+        "type": "cancel_order",
+        "label": "取消预订",
+        "confirm": "取消可能产生费用，是否继续？"
+      }
+    ],
+    "profileName": "用户 138****5200",
+    "recordTitle": "我的旅行",
+    "accountStats": [
+      {
+        "key": "orders",
+        "label": "订单"
+      },
+      {
+        "key": "favorites",
+        "label": "心愿单"
+      },
+      {
+        "key": "coupons",
+        "label": "优惠券"
+      }
+    ],
+    "profileSubtitle": "查看旅行订单与心愿单",
+    "accountMenu": [
+      {
+        "label": "常用旅客",
+        "resource": "flights",
+        "kind": "passengers"
+      },
+      {
+        "label": "酒店收藏",
+        "resource": "hotels",
+        "kind": "favorites"
+      },
+      {
+        "label": "旅行优惠",
+        "resource": "attractions",
+        "kind": "coupons"
+      },
+      {
+        "label": "旅行客服",
+        "resource": "hotels",
+        "kind": "form",
+        "field": "support_message"
+      },
+      {
+        "label": "设置",
+        "resource": "flights",
+        "kind": "form",
+        "field": "notification_preference"
+      }
+    ],
+    "decorativeServices": [
+      {
+        "label": "火车票"
+      },
+      {
+        "label": "度假"
+      },
+      {
+        "label": "租车"
+      }
+    ]
+  },
+  "wangyiyun": {
+    "name": "网抑云",
+    "package": "com.ku.simulator.wangyiyun",
+    "color": "#e12a1d",
+    "icon": "/icons/wangyiyun.png",
+    "domain": "音乐",
+    "layout": "music",
+    "prototype": "网易云式音乐社区",
+    "subtitle": "音乐的力量",
+    "hero": "你的每日推荐",
+    "primary": "play",
+    "primaryLabel": "播放",
+    "capabilities": [
+      "每日推荐",
+      "私人漫游",
+      "歌单"
+    ],
+    "services": [
+      {
+        "icon": "📅",
+        "label": "每日推荐",
+        "resource": "songs"
+      },
+      {
+        "icon": "📻",
+        "label": "私人漫游",
+        "resource": "songs"
+      },
+      {
+        "icon": "🎼",
+        "label": "歌单",
+        "resource": "playlists"
+      }
+    ],
+    "planner": [
+      {
+        "label": "今日推荐",
+        "value": "30 首"
+      },
+      {
+        "label": "音质",
+        "value": "标准"
+      },
+      {
+        "label": "最近播放",
+        "value": "自动记录"
+      }
+    ],
+    "nav": [
+      "发现",
+      "音乐",
+      "我的"
+    ],
+    "utilities": [
+      {
+        "type": "add_playlist",
+        "label": "创建歌单",
+        "input": {
+          "label": "歌单名称",
+          "default": "我喜欢的音乐"
+        }
+      }
+    ],
+    "profileName": "用户 138****5200",
+    "recordTitle": "我的音乐",
+    "accountStats": [
+      {
+        "key": "play_history",
+        "label": "最近播放"
+      },
+      {
+        "key": "favorites",
+        "label": "红心"
+      },
+      {
+        "key": "playlists",
+        "label": "歌单"
+      }
+    ],
+    "profileSubtitle": "管理歌单与收听记录",
+    "accountMenu": [
+      {
+        "label": "我的歌单",
+        "resource": "playlists",
+        "kind": "playlists"
+      },
+      {
+        "label": "最近播放",
+        "resource": "songs",
+        "kind": "history"
+      },
+      {
+        "label": "听歌偏好",
+        "resource": "songs",
+        "kind": "form",
+        "field": "music_preference"
+      },
+      {
+        "label": "音乐客服",
+        "resource": "playlists",
+        "kind": "form",
+        "field": "support_message"
+      },
+      {
+        "label": "设置",
+        "resource": "songs",
+        "kind": "form",
+        "field": "notification_preference"
+      }
+    ],
+    "decorativeServices": [
+      {
+        "label": "排行榜"
+      },
+      {
+        "label": "电台"
+      }
+    ]
+  },
+  "chaowei": {
+    "name": "超威",
+    "package": "com.ku.simulator.chaowei",
+    "color": "#1677d2",
+    "icon": "/icons/chaowei.png",
+    "domain": "知识",
+    "layout": "reader",
+    "prototype": "知乎式知识社区",
+    "subtitle": "有问题，就会有答案",
+    "hero": "发现更大的世界",
+    "primary": "favorite",
+    "primaryLabel": "收藏",
+    "capabilities": [
+      "推荐",
+      "热榜",
+      "圆桌",
+      "专栏"
+    ],
+    "services": [
+      {
+        "icon": "🔥",
+        "label": "热榜",
+        "resource": "articles"
+      },
+      {
+        "icon": "💬",
+        "label": "圆桌",
+        "resource": "tags"
+      },
+      {
+        "icon": "📝",
+        "label": "专栏",
+        "resource": "articles"
+      }
+    ],
+    "planner": [
+      {
+        "label": "内容偏好",
+        "value": "科技与生活"
+      },
+      {
+        "label": "阅读模式",
+        "value": "沉浸"
+      },
+      {
+        "label": "稍后读",
+        "value": "12 篇"
+      }
+    ],
+    "nav": [
+      "首页",
+      "记录",
+      "我的"
+    ],
+    "utilities": [
+      {
+        "type": "note",
+        "label": "写想法",
+        "input": {
+          "label": "想法内容",
+          "default": "写下此刻的想法"
+        }
+      }
+    ],
+    "profileName": "用户 138****5200",
+    "recordTitle": "收藏与创作",
+    "accountStats": [
+      {
+        "key": "favorites",
+        "label": "收藏"
+      },
+      {
+        "key": "notes",
+        "label": "想法"
+      }
+    ],
+    "profileSubtitle": "管理收藏与创作内容",
+    "accountMenu": [
+      {
+        "label": "我的收藏",
+        "resource": "articles",
+        "kind": "favorites"
+      },
+      {
+        "label": "我的想法",
+        "resource": "articles",
+        "kind": "notes"
+      },
+      {
+        "label": "关注话题",
+        "resource": "tags",
+        "kind": "browse"
+      },
+      {
+        "label": "内容偏好",
+        "resource": "tags",
+        "kind": "form",
+        "field": "content_preference"
+      },
+      {
+        "label": "设置",
+        "resource": "articles",
+        "kind": "form",
+        "field": "notification_preference"
+      }
+    ],
+    "decorativeServices": [
+      {
+        "label": "课程"
+      },
+      {
+        "label": "书架"
+      }
+    ]
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "schema_version": "pb-gui-image-host-receipt.v1",
+  "status": "bound",
+  "command": "preflight",
+  "generated_at": "2026-09-26T11:40:45.577167+00:00",
+  "episode_scope": {
+    "cluster_id": "meeting-preparation-001",
+    "episode_id": "ep_0004",
+    "passive_id": "p002",
+    "world_variant_id": "w001",
+    "track": "mixed_text",
+    "decision_point": "2026-09-14T08:35:01+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "bindings": {
+    "release_report": {
+      "schema_version": "pb-gui-release-report.v1",
+      "sha256": "902257b3de44a0ab4a22119560c2e37b534f8497ebc8d97fbe8286f75c809bf8",
+      "status": "release_ready",
+      "frames": 7
+    },
+    "capture_receipt": {
+      "schema_version": "1.0",
+      "sha256": "6fea1d7a30acbe575435634026bdf61f72eaafba04930d76a270e56c9771f572",
+      "status": "capture_complete",
+      "reset_verified": true,
+      "capture_run_id": "72133fa8e739cc76856a30455d33b881",
+      "frames": 7
+    },
+    "capture_plan": {
+      "schema_version": "pb-gui-private-capture-plan.v1",
+      "sha256": "e853f19746cfa9421c5d080ca02aa569c6999bf5b27e95f49ba6febc471d8045"
+    },
+    "pb": {
+      "cluster_json_sha256": "31ba80d8167dcb769144ec5844eff613a37d47a380bccd01079b77924d88bfed",
+      "manifest_sha256": "8c574fdc5a58a4b670caa44dee26602a3f13beafa6e8d456b41a0e20da489d5a",
+      "stream_sha256": "47a0b52fa2de293810d141ff6a9bf09a59355ea0f543784c7d5dc7b361214a9d",
+      "entry": {
+        "code/runtime.py": "a552f9d66ef2eeb78e0b620908a29bd2b33d3ca056c54cb984c6546127afb0f0",
+        "code/run.py": "4aefec2eb4267fbc7219fe536a2d6496172609b1e0d8d40fcc92888f5e08c696",
+        "code/layout.py": "500f084509307704e5d578cc5ce0a306bd6d513f52bad036b878d9a12e94fa22",
+        "code/world_model.py": "62d2b52ac0554d2f2df1c66d6ea49db965603554b9d1ab80f409c27c3f6738d4",
+        "code/validate.py": "910778d5abf63b3e9d92ea7f411f2b38cd8d3daef2ebc6b087087e20fd81e043",
+        "code/evaluate.py": "b449403fbef83d106fc6e83dfc7212d7816e890a79ba92ffb516a1b23dde8492",
+        "prompts/contract": "5a9351720ba802f4e47111088eb0f5aba65e3c8df5b94c893f7807a2b1e1bd76",
+        "prompts/policy": "4bd1f361e3a017559cd5ce190e9a416f1876b99c6089bb7664fb912e3db8a46b",
+        "prompts/format_guard": "34cf6e78462f966178c8a8c9c8cd80f4b8735fa15ee6d71ff94d53499842c8d1"
+      }
+    },
+    "device_bundle": {
+      "sha256": "6f4bfe64b7be7aa0fea80579e877e3abf64125b3e3d9f11dbe6ad12e0c09a5a4",
+      "mode": "image",
+      "frames": 7
+    }
+  },
+  "pb_invariants": {
+    "gui_mode": "image",
+    "window_size": 10,
+    "search_budget": 6,
+    "summary_fallback": 0,
+    "pb_gui_packets": 7,
+    "device_frames": 7,
+    "max_images_per_window": 5,
+    "window_image_counts": [
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      5,
+      5,
+      4,
+      3,
+      3,
+      2,
+      2
+    ],
+    "pb_passive_release_status": "development_only_pending_handoff_and_visibility_review",
+    "pb_passive_provenance": "hybrid_recorded_gui_and_authored_clock_activity",
+    "pb_world_variant_id": "w001",
+    "image_capacity_declared": 5
+  },
+  "frames": [
+    {
+      "packet_id": "p003",
+      "frame_id": "p003_f1",
+      "source": "calendar",
+      "device_sha256": "20ad1ed9f17ace4f45b83a485b482d51981713bd88f9940f0a977e0b0f85d33f",
+      "bytes": 93330,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "1f181ef306953335219aedcaf4af85943a9a517f82f908982b4ad63e4b2402f7",
+      "staged_ref": "passive_inputs/p002/gui/p003.png"
+    },
+    {
+      "packet_id": "p004",
+      "frame_id": "p004_f1",
+      "source": "calendar",
+      "device_sha256": "3f260a4025d053e0846045b4ef6526f8e05e58260da966b860ffa2bd0d9c4161",
+      "bytes": 139080,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "91f69b08f6a36529b2deb09a641cb6f7af026b7b83b7913c28d13aa0e18b81a8",
+      "staged_ref": "passive_inputs/p002/gui/p004.png"
+    },
+    {
+      "packet_id": "p009",
+      "frame_id": "p009_f1",
+      "source": "mail",
+      "device_sha256": "3e5dc921c41a6734c3d3bcc935b7c645c84f09185007b624368a293fb252ea89",
+      "bytes": 249826,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "1eccc3ca60e4a9d3cc125dd03a36e8aebb553676fc82e2857e922e8fc385f870",
+      "staged_ref": "passive_inputs/p002/gui/p009.png"
+    },
+    {
+      "packet_id": "p010",
+      "frame_id": "p010_f1",
+      "source": "mail",
+      "device_sha256": "73edb710a465590e452ae98ca91f8a6f573413394112a486b147a1483f5a446c",
+      "bytes": 97856,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "7e2fde13f8224f766ec97f79bfb3f837c3a604670ef234b11f936ed4d4f8f251",
+      "staged_ref": "passive_inputs/p002/gui/p010.png"
+    },
+    {
+      "packet_id": "p013",
+      "frame_id": "p013_f1",
+      "source": "mail",
+      "device_sha256": "39c9f8c2052680e220d7a84e581b5dc5b3070d5079f4530e8138066677dab770",
+      "bytes": 94070,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "3e83b9d8fafe0063d4ffbee2847289356c62de18dcab568ef7cfec56d0d364f5",
+      "staged_ref": "passive_inputs/p002/gui/p013.png"
+    },
+    {
+      "packet_id": "p015",
+      "frame_id": "p015_f1",
+      "source": "mail",
+      "device_sha256": "1c26375bb9b1ccee641b3b50b7737bbf289bdc1ded972e5c600f1803d9ad5a92",
+      "bytes": 247612,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "7a3e391b9c53bd7cfd3f5e7b6db9c8c24e0694a2fa0075769f6d86fdaf5d3862",
+      "staged_ref": "passive_inputs/p002/gui/p015.png"
+    },
+    {
+      "packet_id": "p018",
+      "frame_id": "p018_f1",
+      "source": "calendar",
+      "device_sha256": "ad230f39f067eafd5855b570435adac1afe1e74f6f9126b6c63cdd9f22c5affb",
+      "bytes": 94202,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "7823e3ff74559031a690f2e7bdff47f5ec66d97270474df9e7fa44f049fb126b",
+      "staged_ref": "passive_inputs/p002/gui/p018.png"
+    }
+  ],
+  "capability_declaration": {
+    "schema_version": "pb-gui-image-capabilities.v1",
+    "model": "qwen27b-local",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_images_per_request": 5,
+    "source": "round-5 offline replay declaration (target adapter); not an endpoint probe",
+    "sha256": "5f5f3b623b347bc1435f5612a916f805a5dd4aadb7f089224a27979a3fd85fa4"
+  },
+  "stage": {
+    "materialized": true,
+    "ref": "runtime/pb-gui-image-host-ep0004/stage",
+    "manifest_sha256": "6878b884d733bd0c434469b45ec4c7c937021dd997997de2be29d9b34ccdb5b7",
+    "files": 18,
+    "device_frames": 7
+  },
+  "live_readiness": {
+    "status": "blocked",
+    "endpoint": "http://127.0.0.1:18771",
+    "model": "qwen27b-local",
+    "probe": {
+      "endpoint": "http://127.0.0.1:18771",
+      "credential_env": null,
+      "credential_present": false,
+      "health_status": null,
+      "model_advertised": false,
+      "models_advertised": null,
+      "error": "URLError: <urlopen error [Errno 1] Operation not permitted>"
+    },
+    "capability": {
+      "schema_version": "pb-gui-image-capabilities.v1",
+      "model": "qwen27b-local",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "max_images_per_request": 5,
+      "source": "round-5 offline replay declaration (target adapter); not an endpoint probe",
+      "sha256": "5f5f3b623b347bc1435f5612a916f805a5dd4aadb7f089224a27979a3fd85fa4"
+    },
+    "gaps": [
+      "no_reachable_model_endpoint"
+    ]
+  },
+  "gaps": [
+    "no_reachable_model_endpoint"
+  ],
+  "checks": {
+    "release_chain_verified": true,
+    "frames_rehashed": 7,
+    "pb_gui_packets": 7,
+    "report_covers_pb_gui": true,
+    "device_frames_differ_from_pb": true,
+    "pb_original_pngs_read": 0,
+    "pb_writes": 0,
+    "images_copied_into_receipt": 0,
+    "stage_materialized": true,
+    "session_probe": true,
+    "max_images_per_window": 5,
+    "capacity_sufficient": true
+  },
+  "claims": {
+    "model_called": false,
+    "live_model_run": false,
+    "pb_evaluate_run": false,
+    "gold": false,
+    "published": false,
+    "device_writes": false
+  }
+}

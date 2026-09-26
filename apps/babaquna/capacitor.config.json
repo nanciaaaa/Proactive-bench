@@ -1,0 +1,9 @@
+{
+  "appId": "com.ku.simulator.babaquna",
+  "appName": "爸爸去哪",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

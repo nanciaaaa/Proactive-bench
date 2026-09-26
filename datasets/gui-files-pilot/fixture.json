@@ -1,0 +1,8 @@
+{
+  "episode_scope": "gui-files-pilot-01",
+  "common_records": [],
+  "world_deltas": [],
+  "ku_records": [
+    {"app_id": "files", "entity_type": "files", "semantic_ref": "file-01", "data": {"path": "Download/GuiPilotProof.txt", "content": "GuiPilotContentV1", "modified_at": "2026-09-25T10:00:00+08:00"}}
+  ]
+}

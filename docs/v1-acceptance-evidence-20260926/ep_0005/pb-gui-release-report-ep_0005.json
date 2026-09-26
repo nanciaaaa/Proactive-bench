@@ -1,0 +1,148 @@
+{
+  "schema_version": "pb-gui-release-report.v1",
+  "status": "release_ready",
+  "command": "preflight",
+  "generated_at": "2026-09-26T13:17:17+00:00",
+  "release_ready": true,
+  "episode_scope": {
+    "cluster_id": "meeting-preparation-001",
+    "episode_id": "ep_0005",
+    "passive_id": "p003",
+    "world_variant_id": "w002",
+    "track": "mixed_text",
+    "decision_point": "2026-09-14T08:35:01+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "bindings": {
+    "gate_plan": {
+      "schema_version": "pb-gui-capture-gate.v1",
+      "sha256": "a7aff9341c881eb0221af8eb04e14ebc1d555a8d85f2a05ff3d574a870ce87be",
+      "status": "ready_for_device_capture",
+      "targets": 7
+    },
+    "backend_receipt": {
+      "schema_version": "pb-backend-apply-receipt.v1",
+      "sha256": "3557a5608f34c6a8fd04e16c8c97ad5d1a0dbc247e4efe042d8f43c3619527e7",
+      "status": "ok",
+      "device_applied": true,
+      "applied_at": "2026-09-26T12:54:18.455495+00:00"
+    },
+    "private_plan": {
+      "schema_version": "pb-gui-private-capture-plan.v1",
+      "sha256": "4b9f0ed641d31012615b2edf89606d496b8c8e3d12e6a8d311fc1da775d8abbb"
+    },
+    "capture_receipt": {
+      "schema_version": "1.0",
+      "sha256": "f6b44faba963fd6b0f352d395f87581e325f31bd63b4545809248d05a5208521",
+      "status": "capture_complete",
+      "reset_verified": true,
+      "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+      "frames": 7
+    },
+    "machine_qa": {
+      "schema_version": "1.0",
+      "status": "pass",
+      "rule_version": "gui-pixel-ocr-v8",
+      "ocr_model_sha256": "5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747",
+      "frames": 7,
+      "stored_reports": [
+        "qa-machine.json"
+      ]
+    }
+  },
+  "machine_qa": {
+    "rule_version": "gui-pixel-ocr-v8",
+    "ocr_model_sha256": "5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747",
+    "ocr_models": {
+      "eng": "5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747",
+      "chi_sim": "a5fcb6f0db1e1d6d8522f39db4e848f05984669172e584e8d76b6b3141e1f730"
+    }
+  },
+  "counts": {
+    "targets": 7,
+    "gate_targets": 7,
+    "unsupported_targets": 0,
+    "frames": 7,
+    "pass_frames": 7,
+    "declared_screenshot_targets": 7,
+    "derived_screenshot_targets": 0,
+    "by_source": {
+      "calendar": 3,
+      "mail": 4
+    }
+  },
+  "frames": [
+    {
+      "packet_id": "p003",
+      "frame_id": "p003_f1",
+      "png": "images/b4bd984aa8ea3794e9184311e87d7c4b.png",
+      "sha256": "20ad1ed9f17ace4f45b83a485b482d51981713bd88f9940f0a977e0b0f85d33f",
+      "width": 1080,
+      "height": 2400,
+      "status": "pass"
+    },
+    {
+      "packet_id": "p004",
+      "frame_id": "p004_f1",
+      "png": "images/754849ffef62f8d6a0c3364fd6efe6da.png",
+      "sha256": "3f260a4025d053e0846045b4ef6526f8e05e58260da966b860ffa2bd0d9c4161",
+      "width": 1080,
+      "height": 2400,
+      "status": "pass"
+    },
+    {
+      "packet_id": "p009",
+      "frame_id": "p009_f1",
+      "png": "images/4261f6dadc66a54b1ee7a0b84b892408.png",
+      "sha256": "bfc147807ccbe07189873f44dbddba9b56451298a0f0eff7783b1eb47490ec27",
+      "width": 1080,
+      "height": 2400,
+      "status": "pass"
+    },
+    {
+      "packet_id": "p010",
+      "frame_id": "p010_f1",
+      "png": "images/48bc1651c530e377656c16927ebcaf9a.png",
+      "sha256": "6f5bed65417fa3bb8500e40beb6441288b9ec7ee37bcfdb2180948b66dd2a7c3",
+      "width": 1080,
+      "height": 2400,
+      "status": "pass"
+    },
+    {
+      "packet_id": "p013",
+      "frame_id": "p013_f1",
+      "png": "images/56ea16a137dd35831ada55e48dd42212.png",
+      "sha256": "2c5585b9b0f92d201c5deecb1c98291335e4a603110ff7c86a9af703b57c410a",
+      "width": 1080,
+      "height": 2400,
+      "status": "pass"
+    },
+    {
+      "packet_id": "p015",
+      "frame_id": "p015_f1",
+      "png": "images/a9007b79fb4f493f3dce78913d50d17a.png",
+      "sha256": "4dae537c425723c1f791f28eb5287603a5637c423fcbefc82685fc867b7bfa54",
+      "width": 1080,
+      "height": 2400,
+      "status": "pass"
+    },
+    {
+      "packet_id": "p018",
+      "frame_id": "p018_f1",
+      "png": "images/a4a8b7eb9e55ee0a5d5be2cd53d10fb9.png",
+      "sha256": "9a425926d958acd9142103eb8a729ab2ef4d29d63d46048d085e2596d82d4b86",
+      "width": 1080,
+      "height": 2400,
+      "status": "pass"
+    }
+  ],
+  "checks": {
+    "private_fields_emitted": 0,
+    "absolute_paths_emitted": 0,
+    "images_copied": 0,
+    "images_rewritten": 0,
+    "device_writes": 0,
+    "gold_generated": 0,
+    "publish_invoked": 0
+  }
+}

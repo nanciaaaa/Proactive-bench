@@ -1,0 +1,70 @@
+{
+  "schema_version": "pb-gui-image-replay-receipt.v1",
+  "status": "replay_verified",
+  "command": "replay",
+  "generated_at": "2026-09-26T11:40:45.690531+00:00",
+  "episode_scope": {
+    "cluster_id": "meeting-preparation-001",
+    "episode_id": "ep_0004",
+    "passive_id": "p002",
+    "world_variant_id": "w001",
+    "track": "mixed_text",
+    "decision_point": "2026-09-14T08:35:01+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "bindings": {
+    "host_receipt": {
+      "schema_version": "pb-gui-image-host-receipt.v1",
+      "sha256": "4a8c5c0025297760315c4b6d5604f386970e60f1f50358123e66de94c32dce30"
+    },
+    "bundle": {
+      "sha256": "6f4bfe64b7be7aa0fea80579e877e3abf64125b3e3d9f11dbe6ad12e0c09a5a4",
+      "mode": "image",
+      "frames": 7
+    },
+    "stage_manifest_sha256": "6878b884d733bd0c434469b45ec4c7c937021dd997997de2be29d9b34ccdb5b7"
+  },
+  "mode": "image",
+  "window_size": 10,
+  "capability": {
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_images_per_request": 5,
+    "source": "--image-capacity"
+  },
+  "request_count": 13,
+  "windows_log": "replay-receipt.windows.jsonl",
+  "image_attachments": 51,
+  "distinct_frames": 7,
+  "max_images_per_request": 5,
+  "summary_fallbacks": 0,
+  "checks": {
+    "gui_blocks_carry_only_packet_id": true,
+    "attached_bytes_match_device_frames": true,
+    "all_bound_frames_attached": true,
+    "full_window_warmup": true,
+    "summary_fallback_refused_without_capacity": true,
+    "pb_source_snapshot_sha256": {
+      "code/runtime.py": "a552f9d66ef2eeb78e0b620908a29bd2b33d3ca056c54cb984c6546127afb0f0",
+      "code/run.py": "4aefec2eb4267fbc7219fe536a2d6496172609b1e0d8d40fcc92888f5e08c696",
+      "code/layout.py": "500f084509307704e5d578cc5ce0a306bd6d513f52bad036b878d9a12e94fa22",
+      "code/world_model.py": "62d2b52ac0554d2f2df1c66d6ea49db965603554b9d1ab80f409c27c3f6738d4",
+      "code/validate.py": "910778d5abf63b3e9d92ea7f411f2b38cd8d3daef2ebc6b087087e20fd81e043",
+      "code/evaluate.py": "b449403fbef83d106fc6e83dfc7212d7816e890a79ba92ffb516a1b23dde8492",
+      "prompts/contract": "5a9351720ba802f4e47111088eb0f5aba65e3c8df5b94c893f7807a2b1e1bd76",
+      "prompts/policy": "4bd1f361e3a017559cd5ce190e9a416f1876b99c6089bb7664fb912e3db8a46b",
+      "prompts/format_guard": "34cf6e78462f966178c8a8c9c8cd80f4b8735fa15ee6d71ff94d53499842c8d1"
+    },
+    "images_copied": 0
+  },
+  "claims": {
+    "model_called": false,
+    "live_model_run": false,
+    "pb_evaluate_run": false,
+    "gold": false,
+    "published": false,
+    "device_writes": false
+  }
+}

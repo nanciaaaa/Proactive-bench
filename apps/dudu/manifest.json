@@ -1,0 +1,11 @@
+{
+  "name": "嘟嘟",
+  "appid": "com.ku.simulator.dudu",
+  "app-plus": {
+    "distribute": {
+      "android": {
+        "packagename": "com.ku.simulator.dudu"
+      }
+    }
+  }
+}

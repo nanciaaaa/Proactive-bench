@@ -1,0 +1,11 @@
+{
+  "name": "连汽约车",
+  "appid": "com.ku.simulator.lianqi",
+  "app-plus": {
+    "distribute": {
+      "android": {
+        "packagename": "com.ku.simulator.lianqi"
+      }
+    }
+  }
+}

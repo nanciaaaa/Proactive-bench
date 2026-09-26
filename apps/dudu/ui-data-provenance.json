@@ -1,0 +1,263 @@
+{
+  "schema_version": "0.1.0",
+  "app_id": "dudu",
+  "status": "verified",
+  "provenance": [
+    {
+      "ui_location": "首页卡片列表（resource=places）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "places.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "subtitle",
+          "semantic_ref": "places.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "price",
+          "semantic_ref": "places.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "available",
+          "semantic_ref": "places.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "首页卡片列表（resource=vehicle_quotes）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "vehicle_quotes.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "subtitle",
+          "semantic_ref": "vehicle_quotes.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "price",
+          "semantic_ref": "vehicle_quotes.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "available",
+          "semantic_ref": "vehicle_quotes.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "首页文案、计划器及账户昵称",
+      "data_points": [
+        {
+          "field": "planner",
+          "semantic_ref": "ui_content.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "profile_name",
+          "semantic_ref": "ui_content.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "记录页（我的行程）",
+      "data_points": [
+        {
+          "field": "item_id",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "price",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "status",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "created_at",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "item_id",
+          "semantic_ref": "favorite.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "title",
+          "semantic_ref": "coupon_wallet.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "discount",
+          "semantic_ref": "coupon_wallet.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "账户页统计",
+      "data_points": [
+        {
+          "field": "orders.length",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "coupons.length",
+          "semantic_ref": "coupon_wallet.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "业务弹窗（title/message/kind）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "popup.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "message",
+          "semantic_ref": "popup.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "服务面板（title/subtitle）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "vehicle_quotes.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "subtitle",
+          "semantic_ref": "vehicle_quotes.*",
+          "inject": "POST /local/v1/apps/dudu/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/dudu/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "个人资料字段页",
+      "data_points": [
+        {
+          "field": "key",
+          "semantic_ref": "account_field.*",
+          "inject": "POST /local/v1/apps/dudu/seed",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "value",
+          "semantic_ref": "account_field.*",
+          "inject": "POST /local/v1/apps/dudu/seed",
+          "readback": "POST /local/v1/apps/dudu/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "订单详情、金额及支付历史",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "origin",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "destination",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "base_price",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "discount",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "coupon_title",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed",
+          "readback": "POST /local/v1/apps/dudu/query"
+        },
+        {
+          "field": "payments",
+          "semantic_ref": "order.*",
+          "inject": "POST /local/v1/apps/dudu/seed",
+          "readback": "POST /local/v1/apps/dudu/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    }
+  ],
+  "note": "P0 骨架：data_points 由共享模板（apps/shared/src/main.js）推导，verified 留待 P1 实机回读验证。"
+}

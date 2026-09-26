@@ -1,0 +1,25 @@
+{
+  "episode_id": "gui-contacts-pilot-01",
+  "baseline_ref": "init_state",
+  "device_timezone": "Asia/Shanghai",
+  "fixture_ref": "fixture.json",
+  "packets": [
+    {
+      "packet_id": "p001",
+      "sequence": 1,
+      "type": "gui",
+      "source": "contacts",
+      "observed_at": "2026-09-25T10:00:00+08:00",
+      "text_projection": "联系人详情显示 GuiPilotTwin，号码 5550112。",
+      "capture": {
+        "surface": "app_screen",
+        "app_id": "contacts",
+        "view_id": "contact_detail",
+        "subject_ref": "person-b",
+        "frame_id": "p001_f1",
+        "visible_assertions": ["name", "phone"]
+      }
+    }
+  ],
+  "eof_at": "2026-09-25T10:01:00+08:00"
+}

@@ -1,0 +1,25 @@
+{
+  "episode_id": "gui-clock-pilot-01",
+  "baseline_ref": "init_state",
+  "device_timezone": "Asia/Shanghai",
+  "fixture_ref": "fixture.json",
+  "packets": [
+    {
+      "packet_id": "p001",
+      "sequence": 1,
+      "type": "gui",
+      "source": "clock",
+      "observed_at": "2026-09-24T10:00:00+08:00",
+      "text_projection": "Clock displays a disabled 10:45 AM alarm labeled GuiPilotAlarm.",
+      "capture": {
+        "surface": "app_screen",
+        "app_id": "clock",
+        "view_id": "alarm_card",
+        "subject_ref": "alarm-01",
+        "frame_id": "p001_f1",
+        "visible_assertions": ["label", "time", "enabled"]
+      }
+    }
+  ],
+  "eof_at": "2026-09-24T10:01:00+08:00"
+}

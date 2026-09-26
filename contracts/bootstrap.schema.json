@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ku-local/bootstrap-v1",
+  "type": "object",
+  "required": ["contract_version", "adapter_contract_version", "instance", "app_config_version", "dataset", "seed", "simulated_time", "initial_state_ref"],
+  "properties": {
+    "contract_version": {"const": "1.0"},
+    "adapter_contract_version": {"const": "1.0"},
+    "instance": {"type": "object", "required": ["instance_id", "dataset_version", "seed", "lifecycle"]},
+    "app_config_version": {"type": "string"},
+    "dataset": {"type": "object", "required": ["version", "checksum", "resources"], "properties": {"checksum": {"pattern": "^sha256:[0-9a-f]{64}$"}, "resources": {"type": "array", "minItems": 1, "items": {"type": "string"}}}},
+    "seed": {"type": "integer"},
+    "simulated_time": {"type": "string"},
+    "initial_state_ref": {"type": "object", "required": ["revision"], "properties": {"revision": {"type": "integer", "minimum": 0}}}
+  }
+}

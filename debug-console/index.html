@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KU 本地模拟控制台</title>
+<style>
+  :root{color-scheme:dark;--bg:#0b0e14;--card:#171c27;--line:#2a3242;--text:#e8edf5;--muted:#94a0b5;--blue:#527cff;--green:#63d893;--red:#ff6b7a}
+  *{box-sizing:border-box}body{font:14px system-ui;margin:0;background:var(--bg);color:var(--text)}main{max-width:1280px;margin:auto;padding:28px}h1{font-size:25px;margin:0 0 5px}h2{font-size:16px;margin:0 0 13px}.sub{color:var(--muted);margin:0 0 22px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--line);padding:18px;border-radius:14px}.wide{grid-column:span 2}button,input,select{border:1px solid var(--line);border-radius:8px;background:#222938;color:var(--text);padding:9px 11px;margin:4px}button{background:var(--blue);border:0;cursor:pointer}button.secondary{background:#2c3445}button.danger{background:#a63344}pre{overflow:auto;max-height:330px;color:#bce8cb;background:#10141d;padding:11px;border-radius:8px;font-size:12px;white-space:pre-wrap}.ok{color:var(--green)}.bad{color:var(--red)}label{display:block;color:var(--muted);font-size:12px;margin-top:8px}img{width:100%;max-height:450px;object-fit:contain;background:#050608;border-radius:8px}.row{display:flex;flex-wrap:wrap;align-items:end}.row>*{flex:1;min-width:120px}.row button{flex:0 0 auto}.notice{position:fixed;right:20px;bottom:20px;background:#303a4e;padding:12px 17px;border-radius:10px;display:none}
+  @media(max-width:760px){main{padding:16px}.wide{grid-column:span 1}}
+</style>
+<main>
+  <h1>KU Local Simulation Controller</h1>
+  <p class="sub" id="health">连接中…</p>
+  <div class="grid">
+    <section class="card"><h2>实例生命周期</h2><pre id="status"></pre><button class="danger" onclick="resetState()">复位本地权威状态</button><button class="secondary" onclick="exportState()">导出实例</button></section>
+    <section class="card"><h2>设备 / ADB</h2><pre id="device"></pre><button onclick="capture()">实时截图</button><button onclick="processApp('start')">启动 App</button><button class="secondary" onclick="processApp('stop')">停止 App</button></section>
+    <section class="card"><h2>App</h2><select id="app" aria-label="选择 App" onchange="refresh()"><option>dudu</option><option>lianqi</option><option>starrail</option><option>babaquna</option><option>wangyiyun</option><option>chaowei</option></select><pre id="state"></pre></section>
+    <section class="card"><h2>SQLite 权威状态</h2><pre id="sqlite"></pre><h2>快照</h2><pre id="snapshot"></pre></section>
+    <section class="card wide"><h2>模拟时钟</h2><div class="row"><label>ISO 8601 时间<input id="clock" size="30" aria-label="模拟时间"></label><button onclick="setClock()">更新时间</button></div><h2 style="margin-top:18px">确定性故障</h2><div class="row"><label>App<select id="faultApp"><option>*</option><option>dudu</option><option>lianqi</option><option>starrail</option><option>babaquna</option><option>wangyiyun</option><option>chaowei</option></select></label><label>类型<select id="faultKind"><option>offline</option><option>delay</option><option>timeout</option><option>intermittent</option><option>http_error</option><option>pagination_failure</option></select></label><label>路径包含<input id="faultPath" value="*"></label><label>次数<input id="faultRemaining" type="number" value="1"></label><label>延迟 ms<input id="faultDelay" type="number" value="0"></label><button onclick="addFault()">添加规则</button></div><pre id="faults"></pre></section>
+    <section class="card wide"><h2>事件流</h2><pre id="events"></pre></section>
+    <section class="card wide"><h2>设备截图</h2><img id="screen" alt="模拟器实时截图（尚未获取）"></section>
+  </div>
+</main>
+<div id="notice" class="notice" role="status"></div>
+<script>
+const api=async(path,options)=>{const response=await fetch(path,options);const body=await response.json();if(!response.ok)throw new Error(body.error?.code||`HTTP_${response.status}`);return body}
+const post=(path,body={},key)=>{if(path.startsWith('/local/v1/')&&!key)key=prompt('输入 instance.json 中的 runner_key');if(path.startsWith('/local/v1/')&&!key)throw new Error('需要 runner_key');return api(path,{method:'POST',headers:{'Content-Type':'application/json',...(key?{'X-Runner-Key':key}:{})},body:JSON.stringify(body)})}
+const show=(id,value)=>document.getElementById(id).textContent=JSON.stringify(value,null,2)
+const notify=(message,bad=false)=>{notice.textContent=message;notice.className='notice '+(bad?'bad':'ok');notice.style.display='block';setTimeout(()=>notice.style.display='none',2500)}
+async function refresh(){try{const id=app.value;const [healthData,statusData,deviceData,stateData,eventData,clockData,faultData,sqliteData,snapshotData]=await Promise.all([api('/health'),api('/local/v1/instance/status'),api('/local/v1/device/status'),api(`/local/v1/apps/${id}/state`),api('/local/v1/events'),api('/local/v1/clock'),api('/local/v1/faults'),api('/local/v1/sqlite/summary'),api('/local/v1/snapshot/status')]);health.innerHTML=`<span class="${healthData.lifecycle==='FAILED'||healthData.lifecycle==='CONTAMINATED'?'bad':'ok'}">● ${healthData.status}</span> · ${healthData.lifecycle}`;show('status',statusData);show('device',deviceData);show('state',stateData);show('events',eventData);show('faults',faultData);show('sqlite',sqliteData);show('snapshot',snapshotData);if(document.activeElement!==clock)clock.value=clockData.simulated_time}catch(error){notify(error.message,true)}}
+async function resetState(){if(!confirm('确认丢弃并重建本地权威状态？真实 AVD 请使用 reset-instance.sh。'))return;try{await post('/local/v1/instance/reset');notify('本地权威状态已重建');refresh()}catch(error){notify(error.message,true)}}
+async function exportState(){const key=prompt('输入 instance.json 中的 runner_key');if(!key)return;try{const result=await post('/local/v1/instance/export',{},key);notify(`已导出 ${result.path}`)}catch(error){notify(error.message,true)}}
+async function capture(){try{const result=await post('/local/v1/device/screenshot');screen.src=result.url+'?t='+Date.now();notify('截图已更新')}catch(error){notify(error.message,true)}}
+async function processApp(action){try{await post(`/local/v1/apps/${app.value}/process`,{action});notify(action==='start'?'App 已启动':'App 已停止');refresh()}catch(error){notify(error.message,true)}}
+async function setClock(){try{await post('/local/v1/clock',{simulated_time:clock.value});notify('模拟时间已更新');refresh()}catch(error){notify(error.message,true)}}
+async function addFault(){try{await post('/local/v1/faults',{app_id:faultApp.value,path_pattern:faultPath.value,kind:faultKind.value,remaining:Number(faultRemaining.value),delay_ms:Number(faultDelay.value),status:503});notify('故障规则已添加');refresh()}catch(error){notify(error.message,true)}}
+refresh();setInterval(refresh,5000)
+</script>
+</html>

@@ -1,0 +1,4 @@
+{"default_compatibility":false,"edges":[
+  {"passive_id":"mail-time-update-v1","variant_id":"calendar-synced"},
+  {"passive_id":"mail-time-update-v1","variant_id":"calendar-stale"}
+]}

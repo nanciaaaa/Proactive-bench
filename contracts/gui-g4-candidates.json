@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "track": "gui",
+  "candidate_count": 14,
+  "split_rule": "world-paired releases stay in the same split; split membership is explicit and immutable",
+  "splits": {
+    "mechanism_a": [
+      "appointment-a-v2",
+      "appointment-b-v2",
+      "files-a-v2",
+      "files-b-v2",
+      "extension-a-v1",
+      "extension-b-v1"
+    ],
+    "mechanism_b": [
+      "calendar-mail-v1",
+      "clock-v1",
+      "contacts-v1",
+      "docreader-v2",
+      "messages-v1",
+      "contact-update-v1",
+      "contact-update-formal-a-v1",
+      "contact-update-formal-b-v1"
+    ]
+  },
+  "candidates": [
+    {"candidate_id": "appointment-a-v2", "release_dir": "gui-appointment-release-a-v2", "group": "appointment_sync", "mechanism": "native_calendar_mail"},
+    {"candidate_id": "appointment-b-v2", "release_dir": "gui-appointment-release-b-v2", "group": "appointment_sync", "mechanism": "native_calendar_mail"},
+    {"candidate_id": "files-a-v2", "release_dir": "gui-files-release-a-v2", "group": "file_availability", "mechanism": "native_documentsui"},
+    {"candidate_id": "files-b-v2", "release_dir": "gui-files-release-b-v2", "group": "file_availability", "mechanism": "native_documentsui"},
+    {"candidate_id": "extension-a-v1", "release_dir": "gui-extension-release-a-v1", "group": "extension_surface", "mechanism": "webview_app"},
+    {"candidate_id": "extension-b-v1", "release_dir": "gui-extension-release-b-v1", "group": "extension_surface", "mechanism": "webview_app"},
+    {"candidate_id": "calendar-mail-v1", "release_dir": "gui-calendar-mail-release-v1", "group": "appointment_sync", "mechanism": "native_calendar_mail"},
+    {"candidate_id": "clock-v1", "release_dir": "gui-clock-release-v1", "group": "reminder_coverage", "mechanism": "native_alarm"},
+    {"candidate_id": "contacts-v1", "release_dir": "gui-contacts-release-v1", "group": "contact_update", "mechanism": "native_contacts"},
+    {"candidate_id": "docreader-v2", "release_dir": "gui-docreader-release-v2", "group": "file_availability", "mechanism": "native_documentsui_reader"},
+    {"candidate_id": "messages-v1", "release_dir": "gui-messages-release-v1", "group": "contact_update", "mechanism": "native_sms_messages"},
+    {"candidate_id": "contact-update-v1", "release_dir": "gui-contact-update-release-v1", "group": "contact_update", "mechanism": "native_contacts_sms"},
+    {"candidate_id": "contact-update-formal-a-v1", "release_dir": "gui-contact-update-formal-release-a-20260925-v1", "group": "contact_update", "mechanism": "native_contacts_sms"},
+    {"candidate_id": "contact-update-formal-b-v1", "release_dir": "gui-contact-update-formal-release-b-20260925-v1", "group": "contact_update", "mechanism": "native_contacts_sms"}
+  ]
+}

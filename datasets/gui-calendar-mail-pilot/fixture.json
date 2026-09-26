@@ -1,0 +1,38 @@
+{
+  "episode_scope": "gui-calendar-mail-pilot-01",
+  "common_records": [],
+  "world_deltas": [],
+  "ku_records": [
+    {
+      "app_id": "calendar",
+      "entity_type": "events",
+      "semantic_ref": "meeting-01",
+      "data": {
+        "title": "GuiPilotMeeting",
+        "start_at": "2026-09-24T10:30:00+08:00",
+        "end_at": "2026-09-24T11:00:00+08:00",
+        "location": "Online",
+        "description": "Detail screen proof",
+        "reminder_minutes_before": 30,
+        "source": "manual"
+      }
+    },
+    {
+      "app_id": "mail",
+      "entity_type": "mails",
+      "semantic_ref": "mail-01",
+      "data": {
+        "headers": {
+          "subject": "GuiPilotMail",
+          "date": "Sep 24",
+          "from": "Organizer",
+          "to": "user@email.com",
+          "sender": "organizer@example.com",
+          "senderLogo": ""
+        },
+        "body": "Project Review has a new meeting time.",
+        "status": "read"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1418 @@
+{
+  "schema_version": "pb-gui-coverage-audit.v1",
+  "command": "audit",
+  "generated_at": "2026-09-26T14:56:48+00:00",
+  "read_only": true,
+  "pb": {
+    "layout_version": "proactivebench.layout.v4",
+    "benchmark_sha256": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+    "clusters": 5,
+    "episodes": 17
+  },
+  "receipts": {
+    "release_report": null,
+    "host_receipt": null,
+    "release_reports": [
+      {
+        "basename": "pb-gui-release-report-ep_0004.json",
+        "sha256": "902257b3de44a0ab4a22119560c2e37b534f8497ebc8d97fbe8286f75c809bf8",
+        "schema_version": "pb-gui-release-report.v1",
+        "status": "release_ready",
+        "episode_scope": {
+          "cluster_id": "meeting-preparation-001",
+          "episode_id": "ep_0004",
+          "passive_id": "p002",
+          "world_variant_id": "w001",
+          "track": "mixed_text",
+          "decision_point": "2026-09-14T08:35:01+08:00",
+          "timezone": "Asia/Shanghai"
+        },
+        "frames": 7,
+        "packets": [
+          "p003",
+          "p004",
+          "p009",
+          "p010",
+          "p013",
+          "p015",
+          "p018"
+        ]
+      },
+      {
+        "basename": "pb-gui-release-report-ep_0005.json",
+        "sha256": "99be7918f5f47d933db0dcc125759feab7722c462773b3245b346f2761aa2435",
+        "schema_version": "pb-gui-release-report.v1",
+        "status": "release_ready",
+        "episode_scope": {
+          "cluster_id": "meeting-preparation-001",
+          "episode_id": "ep_0005",
+          "passive_id": "p003",
+          "world_variant_id": "w002",
+          "track": "mixed_text",
+          "decision_point": "2026-09-14T08:35:01+08:00",
+          "timezone": "Asia/Shanghai"
+        },
+        "frames": 7,
+        "packets": [
+          "p003",
+          "p004",
+          "p009",
+          "p010",
+          "p013",
+          "p015",
+          "p018"
+        ]
+      }
+    ],
+    "host_receipts": [
+      {
+        "basename": "pb-gui-image-host-receipt-ep_0004.json",
+        "sha256": "4a8c5c0025297760315c4b6d5604f386970e60f1f50358123e66de94c32dce30",
+        "schema_version": "pb-gui-image-host-receipt.v1",
+        "status": "bound",
+        "episode_scope": {
+          "cluster_id": "meeting-preparation-001",
+          "episode_id": "ep_0004",
+          "passive_id": "p002",
+          "world_variant_id": "w001",
+          "track": "mixed_text",
+          "decision_point": "2026-09-14T08:35:01+08:00",
+          "timezone": "Asia/Shanghai"
+        },
+        "frames": 7,
+        "packets": [
+          "p003",
+          "p004",
+          "p009",
+          "p010",
+          "p013",
+          "p015",
+          "p018"
+        ]
+      },
+      {
+        "basename": "pb-gui-image-host-receipt-ep_0005.json",
+        "sha256": "9613367fba804cbb41a9823b7f32a37c31646ade5f016b707bb31f1d3a1e17a1",
+        "schema_version": "pb-gui-image-host-receipt.v1",
+        "status": "bound",
+        "episode_scope": {
+          "cluster_id": "meeting-preparation-001",
+          "episode_id": "ep_0005",
+          "passive_id": "p003",
+          "world_variant_id": "w002",
+          "track": "mixed_text",
+          "decision_point": "2026-09-14T08:35:01+08:00",
+          "timezone": "Asia/Shanghai"
+        },
+        "frames": 7,
+        "packets": [
+          "p003",
+          "p004",
+          "p009",
+          "p010",
+          "p013",
+          "p015",
+          "p018"
+        ]
+      }
+    ],
+    "evidence_dir": {
+      "basename": "v1-acceptance-evidence-20260926",
+      "release_reports": 2,
+      "host_receipts": 2,
+      "rejected_candidates": 14,
+      "rejected_sample": [
+        "ep_0004/episode-evidence.json",
+        "ep_0004/pb-backend-apply-receipt-ep_0004.json",
+        "ep_0004/pb-capture-receipt-ep_0004.json",
+        "ep_0004/pb-gui-image-replay-receipt-ep_0004.json",
+        "ep_0004/pb-image-refs-ep_0004.json"
+      ]
+    }
+  },
+  "counts": {
+    "clusters": 5,
+    "episodes": 17,
+    "invalid_episodes": 0,
+    "episodes_with_gui": 14,
+    "episodes_without_gui": 3,
+    "gui_packets": 38,
+    "supported_gui_packets": 23,
+    "unsupported_gui_packets": 15,
+    "declared_screenshots": 14,
+    "pending_screenshots": 24,
+    "evidence_bound_gui_packets": 14,
+    "missing_evidence_gui_packets": 24,
+    "by_status": {
+      "covered": 2,
+      "partial_evidence": 0,
+      "missing_evidence": 0,
+      "blocked_unsupported": 12,
+      "no_gui_packets": 3,
+      "invalid": 0
+    }
+  },
+  "coverage_complete": false,
+  "covered_episodes": [
+    "meeting-preparation-001/ep_0004",
+    "meeting-preparation-001/ep_0005"
+  ],
+  "episodes": [
+    {
+      "cluster_id": "contact-email-sync-001",
+      "episode_id": "ep_contact_001",
+      "cluster_path": "single-scenarios/contact-email-sync-001",
+      "manifest": "single-scenarios/contact-email-sync-001/episodes/ep_contact_001/manifest.json",
+      "episode_dir": "single-scenarios/contact-email-sync-001/episodes/ep_contact_001",
+      "stream": "single-scenarios/contact-email-sync-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w001",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "e9ace421c980312a596a82990649420753922a42b41448ef0c3740ade9755be7",
+        "passive_stream": "1990515d47861e92e33ab2e028c091ff863bf4256f402ef7cea116a8191c2b56"
+      },
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 1,
+      "unsupported_gui_packets": 1,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "contacts": {
+          "gui_packets": 1,
+          "adapter_supported": true,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "messages": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "contacts",
+          "adapter_supported": true,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "messages",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "contact-email-sync-001",
+      "episode_id": "ep_contact_002",
+      "cluster_path": "single-scenarios/contact-email-sync-001",
+      "manifest": "single-scenarios/contact-email-sync-001/episodes/ep_contact_002/manifest.json",
+      "episode_dir": "single-scenarios/contact-email-sync-001/episodes/ep_contact_002",
+      "stream": "single-scenarios/contact-email-sync-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w002",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "babf63bf6b38192675028847e304f4913032785078ae46e96b8c178c2ea9a1dc",
+        "passive_stream": "1990515d47861e92e33ab2e028c091ff863bf4256f402ef7cea116a8191c2b56"
+      },
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 1,
+      "unsupported_gui_packets": 1,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "contacts": {
+          "gui_packets": 1,
+          "adapter_supported": true,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "messages": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "contacts",
+          "adapter_supported": true,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "messages",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "contact-email-sync-001",
+      "episode_id": "ep_contact_003",
+      "cluster_path": "single-scenarios/contact-email-sync-001",
+      "manifest": "single-scenarios/contact-email-sync-001/episodes/ep_contact_003/manifest.json",
+      "episode_dir": "single-scenarios/contact-email-sync-001/episodes/ep_contact_003",
+      "stream": "single-scenarios/contact-email-sync-001/passive_inputs/p002/stream.jsonl",
+      "passive_id": "p002",
+      "world_variant_id": "w003",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "031c3aac46663893d5141684b87d43972bcce581e5060a0ed21e2da2b83e90ec",
+        "passive_stream": "868e2f70483b26dc3d1373cdce1fc4c5ffe57e99810a9cb184338ae19570ca1d"
+      },
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 1,
+      "unsupported_gui_packets": 1,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "contacts": {
+          "gui_packets": 1,
+          "adapter_supported": true,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "messages": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "contacts",
+          "adapter_supported": true,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "messages",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "meeting-preparation-001",
+      "episode_id": "ep_0001",
+      "cluster_path": "single-scenarios/meeting-preparation-001",
+      "manifest": "single-scenarios/meeting-preparation-001/episodes/ep_0001/manifest.json",
+      "episode_dir": "single-scenarios/meeting-preparation-001/episodes/ep_0001",
+      "stream": "single-scenarios/meeting-preparation-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w001",
+      "track": "text",
+      "decision_point": "2026-09-14T08:35:01+08:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "dd9e810aeb11d3a08a13aa282091c6a174e1b83b37c54c58754b85059dc59432",
+        "passive_stream": "12f7367237f37dc2e746a4e85d1fd479353b767215834c236bbba75cba773878"
+      },
+      "status": "no_gui_packets",
+      "reason": null,
+      "gui_packets": 0,
+      "declared_screenshots": 0,
+      "pending_screenshots": 0,
+      "supported_gui_packets": 0,
+      "unsupported_gui_packets": 0,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 0,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {},
+      "packets": []
+    },
+    {
+      "cluster_id": "meeting-preparation-001",
+      "episode_id": "ep_0002",
+      "cluster_path": "single-scenarios/meeting-preparation-001",
+      "manifest": "single-scenarios/meeting-preparation-001/episodes/ep_0002/manifest.json",
+      "episode_dir": "single-scenarios/meeting-preparation-001/episodes/ep_0002",
+      "stream": "single-scenarios/meeting-preparation-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w002",
+      "track": "text",
+      "decision_point": "2026-09-14T08:35:01+08:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "211a5019ae001eaf1d8450f4fc63fe70c646fa622bcf244a44e00da85134b8b9",
+        "passive_stream": "12f7367237f37dc2e746a4e85d1fd479353b767215834c236bbba75cba773878"
+      },
+      "status": "no_gui_packets",
+      "reason": null,
+      "gui_packets": 0,
+      "declared_screenshots": 0,
+      "pending_screenshots": 0,
+      "supported_gui_packets": 0,
+      "unsupported_gui_packets": 0,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 0,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {},
+      "packets": []
+    },
+    {
+      "cluster_id": "meeting-preparation-001",
+      "episode_id": "ep_0003",
+      "cluster_path": "single-scenarios/meeting-preparation-001",
+      "manifest": "single-scenarios/meeting-preparation-001/episodes/ep_0003/manifest.json",
+      "episode_dir": "single-scenarios/meeting-preparation-001/episodes/ep_0003",
+      "stream": "single-scenarios/meeting-preparation-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w003",
+      "track": "text",
+      "decision_point": "2026-09-14T08:35:01+08:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "96390c1459130c5e1d254f281e9a66ec235ea0a8a5ff7de1ad76df83f379cdbe",
+        "passive_stream": "12f7367237f37dc2e746a4e85d1fd479353b767215834c236bbba75cba773878"
+      },
+      "status": "no_gui_packets",
+      "reason": null,
+      "gui_packets": 0,
+      "declared_screenshots": 0,
+      "pending_screenshots": 0,
+      "supported_gui_packets": 0,
+      "unsupported_gui_packets": 0,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 0,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {},
+      "packets": []
+    },
+    {
+      "cluster_id": "meeting-preparation-001",
+      "episode_id": "ep_0004",
+      "cluster_path": "single-scenarios/meeting-preparation-001",
+      "manifest": "single-scenarios/meeting-preparation-001/episodes/ep_0004/manifest.json",
+      "episode_dir": "single-scenarios/meeting-preparation-001/episodes/ep_0004",
+      "stream": "single-scenarios/meeting-preparation-001/passive_inputs/p002/stream.jsonl",
+      "passive_id": "p002",
+      "world_variant_id": "w001",
+      "track": "mixed_text",
+      "decision_point": "2026-09-14T08:35:01+08:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "8c574fdc5a58a4b670caa44dee26602a3f13beafa6e8d456b41a0e20da489d5a",
+        "passive_stream": "47a0b52fa2de293810d141ff6a9bf09a59355ea0f543784c7d5dc7b361214a9d"
+      },
+      "status": "covered",
+      "reason": null,
+      "gui_packets": 7,
+      "declared_screenshots": 7,
+      "pending_screenshots": 0,
+      "supported_gui_packets": 7,
+      "unsupported_gui_packets": 0,
+      "evidence_bound_gui_packets": 7,
+      "missing_evidence_gui_packets": 0,
+      "evidence_sources": {
+        "release_report": 7,
+        "host_receipt": 7
+      },
+      "sources": {
+        "calendar": {
+          "gui_packets": 3,
+          "adapter_supported": true,
+          "evidence_bound": 3,
+          "missing_evidence": 0
+        },
+        "mail": {
+          "gui_packets": 4,
+          "adapter_supported": true,
+          "evidence_bound": 4,
+          "missing_evidence": 0
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p003",
+          "sequence": 3,
+          "source": "calendar",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p004",
+          "sequence": 4,
+          "source": "calendar",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p009",
+          "sequence": 8,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p010",
+          "sequence": 9,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 11,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p015",
+          "sequence": 13,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p018",
+          "sequence": 16,
+          "source": "calendar",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        }
+      ]
+    },
+    {
+      "cluster_id": "meeting-preparation-001",
+      "episode_id": "ep_0005",
+      "cluster_path": "single-scenarios/meeting-preparation-001",
+      "manifest": "single-scenarios/meeting-preparation-001/episodes/ep_0005/manifest.json",
+      "episode_dir": "single-scenarios/meeting-preparation-001/episodes/ep_0005",
+      "stream": "single-scenarios/meeting-preparation-001/passive_inputs/p003/stream.jsonl",
+      "passive_id": "p003",
+      "world_variant_id": "w002",
+      "track": "mixed_text",
+      "decision_point": "2026-09-14T08:35:01+08:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "ad9f89a13f2842110b9f4ecc424de1e7511e7cd76e85548ffe9af8ceb5f27d1d",
+        "passive_stream": "ef2ae30c5bbc89bc5755109a53f5d72e702bc407fd151e7029c95c9ebd40edf7"
+      },
+      "status": "covered",
+      "reason": null,
+      "gui_packets": 7,
+      "declared_screenshots": 7,
+      "pending_screenshots": 0,
+      "supported_gui_packets": 7,
+      "unsupported_gui_packets": 0,
+      "evidence_bound_gui_packets": 7,
+      "missing_evidence_gui_packets": 0,
+      "evidence_sources": {
+        "release_report": 7,
+        "host_receipt": 7
+      },
+      "sources": {
+        "calendar": {
+          "gui_packets": 3,
+          "adapter_supported": true,
+          "evidence_bound": 3,
+          "missing_evidence": 0
+        },
+        "mail": {
+          "gui_packets": 4,
+          "adapter_supported": true,
+          "evidence_bound": 4,
+          "missing_evidence": 0
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p003",
+          "sequence": 5,
+          "source": "calendar",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p004",
+          "sequence": 6,
+          "source": "calendar",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p009",
+          "sequence": 12,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p010",
+          "sequence": 13,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 15,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p015",
+          "sequence": 17,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        },
+        {
+          "packet_id": "p018",
+          "sequence": 22,
+          "source": "calendar",
+          "adapter_supported": true,
+          "screenshot_declared": true,
+          "evidence_sources": [
+            "host_receipt",
+            "release_report"
+          ],
+          "status": "evidence_bound"
+        }
+      ]
+    },
+    {
+      "cluster_id": "offline-demo-mode-001",
+      "episode_id": "ep_offline_001",
+      "cluster_path": "single-scenarios/offline-demo-mode-001",
+      "manifest": "single-scenarios/offline-demo-mode-001/episodes/ep_offline_001/manifest.json",
+      "episode_dir": "single-scenarios/offline-demo-mode-001/episodes/ep_offline_001",
+      "stream": "single-scenarios/offline-demo-mode-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w001",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "6bfb56340ff444b91a862fc8701e4928f0c130d3e8a53fb1c4238b05081ccf08",
+        "passive_stream": "8e776856a4ab9dbc6bcf602b24829c5f12baef3bc32fe94ecbde6d199ca84a62"
+      },
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['settings']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 1,
+      "unsupported_gui_packets": 1,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "mail": {
+          "gui_packets": 1,
+          "adapter_supported": true,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "settings": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "settings",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "offline-demo-mode-001",
+      "episode_id": "ep_offline_002",
+      "cluster_path": "single-scenarios/offline-demo-mode-001",
+      "manifest": "single-scenarios/offline-demo-mode-001/episodes/ep_offline_002/manifest.json",
+      "episode_dir": "single-scenarios/offline-demo-mode-001/episodes/ep_offline_002",
+      "stream": "single-scenarios/offline-demo-mode-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w002",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "80c5c68ab2be3d50717f6a66104237f5b72c1ec9859b49535e4d0e79c3bc5ae3",
+        "passive_stream": "8e776856a4ab9dbc6bcf602b24829c5f12baef3bc32fe94ecbde6d199ca84a62"
+      },
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['settings']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 1,
+      "unsupported_gui_packets": 1,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "mail": {
+          "gui_packets": 1,
+          "adapter_supported": true,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "settings": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "settings",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "offline-demo-mode-001",
+      "episode_id": "ep_offline_003",
+      "cluster_path": "single-scenarios/offline-demo-mode-001",
+      "manifest": "single-scenarios/offline-demo-mode-001/episodes/ep_offline_003/manifest.json",
+      "episode_dir": "single-scenarios/offline-demo-mode-001/episodes/ep_offline_003",
+      "stream": "single-scenarios/offline-demo-mode-001/passive_inputs/p002/stream.jsonl",
+      "passive_id": "p002",
+      "world_variant_id": "w003",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "f24c860a6f04bd13116c7630a2066de6a7abbfc8d1dd6aeee03baecaa80df9f1",
+        "passive_stream": "91cb1b2f8c275fd3cd844422dc355826e8776acab714b24808efe20da8e913f6"
+      },
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['settings']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 1,
+      "unsupported_gui_packets": 1,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "mail": {
+          "gui_packets": 1,
+          "adapter_supported": true,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "settings": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "settings",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "pdf-submission-size-001",
+      "episode_id": "ep_pdf_001",
+      "cluster_path": "single-scenarios/pdf-submission-size-001",
+      "manifest": "single-scenarios/pdf-submission-size-001/episodes/ep_pdf_001/manifest.json",
+      "episode_dir": "single-scenarios/pdf-submission-size-001/episodes/ep_pdf_001",
+      "stream": "single-scenarios/pdf-submission-size-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w001",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "55bc9b59d9efdfe49beb72639354782927a93a87658eb0cf7c50affccaa361a4",
+        "passive_stream": "54546109a4f3cc7a6aa2e7174abad3f3d6fb6812494601a9b4b7c74631d5bcda"
+      },
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['files']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 1,
+      "unsupported_gui_packets": 1,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "files": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "mail": {
+          "gui_packets": 1,
+          "adapter_supported": true,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "files",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "pdf-submission-size-001",
+      "episode_id": "ep_pdf_002",
+      "cluster_path": "single-scenarios/pdf-submission-size-001",
+      "manifest": "single-scenarios/pdf-submission-size-001/episodes/ep_pdf_002/manifest.json",
+      "episode_dir": "single-scenarios/pdf-submission-size-001/episodes/ep_pdf_002",
+      "stream": "single-scenarios/pdf-submission-size-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w002",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "cba3de49a6fe82138bba018022ee05603f4095c2b972a817ec88b8dba80605c5",
+        "passive_stream": "54546109a4f3cc7a6aa2e7174abad3f3d6fb6812494601a9b4b7c74631d5bcda"
+      },
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['files']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 1,
+      "unsupported_gui_packets": 1,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "files": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "mail": {
+          "gui_packets": 1,
+          "adapter_supported": true,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "files",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "pdf-submission-size-001",
+      "episode_id": "ep_pdf_003",
+      "cluster_path": "single-scenarios/pdf-submission-size-001",
+      "manifest": "single-scenarios/pdf-submission-size-001/episodes/ep_pdf_003/manifest.json",
+      "episode_dir": "single-scenarios/pdf-submission-size-001/episodes/ep_pdf_003",
+      "stream": "single-scenarios/pdf-submission-size-001/passive_inputs/p002/stream.jsonl",
+      "passive_id": "p002",
+      "world_variant_id": "w003",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "79ca3fd1ec1722f219ab4d294ea6224bc49fb6860f7f4315564b67667c52174b",
+        "passive_stream": "ce197917526a93743fd995877686927472a71a1317e0e4417dc961c4cecbf0b8"
+      },
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['files']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 1,
+      "unsupported_gui_packets": 1,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "files": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "mail": {
+          "gui_packets": 1,
+          "adapter_supported": true,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "files",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "mail",
+          "adapter_supported": true,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "photo-resolution-preparation-001",
+      "episode_id": "ep_photo_001",
+      "cluster_path": "single-scenarios/photo-resolution-preparation-001",
+      "manifest": "single-scenarios/photo-resolution-preparation-001/episodes/ep_photo_001/manifest.json",
+      "episode_dir": "single-scenarios/photo-resolution-preparation-001/episodes/ep_photo_001",
+      "stream": "single-scenarios/photo-resolution-preparation-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w001",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "80438c4d32046e5a029292c8cbde7a277e887617b845fb31872c2db9ce605a4f",
+        "passive_stream": "bd307275d7879e6edbd218a69847bc7f9ade633fb1bdd83e6e5749056405d930"
+      },
+      "status": "blocked_unsupported",
+      "reason": "2 of 2 GUI packets have no adapter for sources ['gallery', 'messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 0,
+      "unsupported_gui_packets": 2,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "gallery": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "messages": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "gallery",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "messages",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "photo-resolution-preparation-001",
+      "episode_id": "ep_photo_002",
+      "cluster_path": "single-scenarios/photo-resolution-preparation-001",
+      "manifest": "single-scenarios/photo-resolution-preparation-001/episodes/ep_photo_002/manifest.json",
+      "episode_dir": "single-scenarios/photo-resolution-preparation-001/episodes/ep_photo_002",
+      "stream": "single-scenarios/photo-resolution-preparation-001/passive_inputs/p001/stream.jsonl",
+      "passive_id": "p001",
+      "world_variant_id": "w002",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "c0a4ab32915c973eba5d47805dd5f6ad32f594de323e438c27ebc8620cde4e0d",
+        "passive_stream": "bd307275d7879e6edbd218a69847bc7f9ade633fb1bdd83e6e5749056405d930"
+      },
+      "status": "blocked_unsupported",
+      "reason": "2 of 2 GUI packets have no adapter for sources ['gallery', 'messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 0,
+      "unsupported_gui_packets": 2,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "gallery": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "messages": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "gallery",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "messages",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    },
+    {
+      "cluster_id": "photo-resolution-preparation-001",
+      "episode_id": "ep_photo_003",
+      "cluster_path": "single-scenarios/photo-resolution-preparation-001",
+      "manifest": "single-scenarios/photo-resolution-preparation-001/episodes/ep_photo_003/manifest.json",
+      "episode_dir": "single-scenarios/photo-resolution-preparation-001/episodes/ep_photo_003",
+      "stream": "single-scenarios/photo-resolution-preparation-001/passive_inputs/p002/stream.jsonl",
+      "passive_id": "p002",
+      "world_variant_id": "w003",
+      "track": "text",
+      "decision_point": "2026-09-28T10:06:00+00:00",
+      "source_hashes": {
+        "benchmark": "845aaad641b2eb3a2f8adac83b811aec7e25e20e7a4e3f28abfb2886c0581f08",
+        "manifest": "37bf77631599189b93ce50ad87a94eee9d278d09e03c423abc33c30458087468",
+        "passive_stream": "d0e26c10fc76d4b2b20d9dbdbb5c7ed8b5d79086833f9ef52f0995e8506b80aa"
+      },
+      "status": "blocked_unsupported",
+      "reason": "2 of 2 GUI packets have no adapter for sources ['gallery', 'messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "declared_screenshots": 0,
+      "pending_screenshots": 2,
+      "supported_gui_packets": 0,
+      "unsupported_gui_packets": 2,
+      "evidence_bound_gui_packets": 0,
+      "missing_evidence_gui_packets": 2,
+      "evidence_sources": {
+        "release_report": 0,
+        "host_receipt": 0
+      },
+      "sources": {
+        "gallery": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        },
+        "messages": {
+          "gui_packets": 1,
+          "adapter_supported": false,
+          "evidence_bound": 0,
+          "missing_evidence": 1
+        }
+      },
+      "packets": [
+        {
+          "packet_id": "p006",
+          "sequence": 6,
+          "source": "gallery",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        },
+        {
+          "packet_id": "p013",
+          "sequence": 13,
+          "source": "messages",
+          "adapter_supported": false,
+          "screenshot_declared": false,
+          "evidence_sources": [],
+          "status": "missing_evidence"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "cluster_id": "contact-email-sync-001",
+      "episode_id": "ep_contact_001",
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 1,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "contact-email-sync-001",
+      "episode_id": "ep_contact_002",
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 1,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "contact-email-sync-001",
+      "episode_id": "ep_contact_003",
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 1,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "offline-demo-mode-001",
+      "episode_id": "ep_offline_001",
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['settings']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 1,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "offline-demo-mode-001",
+      "episode_id": "ep_offline_002",
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['settings']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 1,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "offline-demo-mode-001",
+      "episode_id": "ep_offline_003",
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['settings']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 1,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "pdf-submission-size-001",
+      "episode_id": "ep_pdf_001",
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['files']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 1,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "pdf-submission-size-001",
+      "episode_id": "ep_pdf_002",
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['files']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 1,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "pdf-submission-size-001",
+      "episode_id": "ep_pdf_003",
+      "status": "blocked_unsupported",
+      "reason": "1 of 2 GUI packets have no adapter for sources ['files']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 1,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "photo-resolution-preparation-001",
+      "episode_id": "ep_photo_001",
+      "status": "blocked_unsupported",
+      "reason": "2 of 2 GUI packets have no adapter for sources ['gallery', 'messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 2,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "photo-resolution-preparation-001",
+      "episode_id": "ep_photo_002",
+      "status": "blocked_unsupported",
+      "reason": "2 of 2 GUI packets have no adapter for sources ['gallery', 'messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 2,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    },
+    {
+      "cluster_id": "photo-resolution-preparation-001",
+      "episode_id": "ep_photo_003",
+      "status": "blocked_unsupported",
+      "reason": "2 of 2 GUI packets have no adapter for sources ['gallery', 'messages']; 2 GUI packets also lack a PB-declared screenshot",
+      "gui_packets": 2,
+      "unsupported_gui_packets": 2,
+      "missing_evidence_gui_packets": 2,
+      "pending_screenshots": 2
+    }
+  ],
+  "checks": {
+    "pb_writes": 0,
+    "gt_reads": 0,
+    "images_copied": 0,
+    "images_rewritten": 0,
+    "device_writes": 0,
+    "scoring_invoked": 0,
+    "publish_invoked": 0,
+    "missing_evidence_marked_ready": 0
+  }
+}

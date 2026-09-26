@@ -1,0 +1,11 @@
+{
+  "name": "星穹铁路",
+  "appid": "com.ku.simulator.starrail",
+  "app-plus": {
+    "distribute": {
+      "android": {
+        "packagename": "com.ku.simulator.starrail"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "appId": "com.ku.simulator.chaowei",
+  "appName": "超威",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

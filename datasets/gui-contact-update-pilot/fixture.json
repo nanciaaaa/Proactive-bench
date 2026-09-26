@@ -1,0 +1,27 @@
+{
+  "episode_scope": "gui-contact-update-pilot-01",
+  "common_records": [],
+  "world_deltas": [],
+  "ku_records": [
+    {
+      "app_id": "contacts",
+      "entity_type": "contacts",
+      "semantic_ref": "contact-update-contact-01",
+      "data": {
+        "name": "GuiPilotTwin",
+        "phone": "13800138000",
+        "email": "target@example.test"
+      }
+    },
+    {
+      "app_id": "messages",
+      "entity_type": "messages",
+      "semantic_ref": "contact-update-message-01",
+      "data": {
+        "sender": "GuiPilotTwin",
+        "sender_phone": "13800138000",
+        "body": "Your contact update is ready."
+      }
+    }
+  ]
+}

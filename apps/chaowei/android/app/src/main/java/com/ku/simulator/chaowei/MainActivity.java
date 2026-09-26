@@ -1,0 +1,5 @@
+package com.ku.simulator.chaowei;
+
+import com.getcapacitor.BridgeActivity;
+
+public class MainActivity extends BridgeActivity {}

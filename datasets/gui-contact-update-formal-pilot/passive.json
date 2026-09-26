@@ -1,0 +1,21 @@
+{
+  "passive_id": "contact-update-passive-01",
+  "packets": [
+    {
+      "packet_id": "p001",
+      "sequence": 1,
+      "type": "gui",
+      "source": "messages",
+      "observed_at": "2026-09-25T10:00:00+08:00",
+      "text_projection": "Google Messages shows an incoming contact update from GuiPilotTwin.",
+      "capture": {
+        "surface": "app_screen",
+        "app_id": "messages",
+        "view_id": "conversation_list",
+        "subject_ref": "message-01",
+        "frame_id": "p001_f1",
+        "visible_assertions": ["sender", "body"]
+      }
+    }
+  ]
+}

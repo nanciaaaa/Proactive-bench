@@ -1,0 +1,183 @@
+{
+  "$comment": "契约升级错误码与信封状态冻结集（CONTRACT_UPGRADE_BLUEPRINT §2.2 / §4.x）。冻结日期 2026-09-22。新增/删除/改名必须先改蓝本并同步 tests/test_adapter_contract.py。",
+  "frozen_at": "2026-09-22",
+  "envelope_status": {
+    "ok": "操作成功，data 携带结果",
+    "not_found": "目标不存在（与空结果不同）",
+    "permission_denied": "凭据缺失或不符（X-Runner-Key）",
+    "stale": "记录版本冲突/过期",
+    "timeout": "后端处理超时",
+    "backend_error": "后端内部错误",
+    "feature_off": "功能默认关闭（user_memory）"
+  },
+  "error_codes": {
+    "REVISION_CONFLICT": {
+      "http": 409,
+      "retryable": true
+    },
+    "PRICE_CHANGED": {
+      "http": 409,
+      "retryable": true
+    },
+    "INVENTORY_CHANGED": {
+      "http": 409,
+      "retryable": true
+    },
+    "TIME_CONFLICT": {
+      "http": 409,
+      "retryable": false
+    },
+    "ALREADY_FAVORITED": {
+      "http": 409,
+      "retryable": false
+    },
+    "ORDER_NOT_FOUND": {
+      "http": 404,
+      "retryable": false
+    },
+    "APP_NOT_FOUND": {
+      "http": 404,
+      "retryable": false
+    },
+    "RESOURCE_NOT_FOUND": {
+      "http": 404,
+      "retryable": false
+    },
+    "SCREENSHOT_NOT_FOUND": {
+      "http": 404,
+      "retryable": false
+    },
+    "NOT_FOUND": {
+      "http": 404,
+      "retryable": false
+    },
+    "INVALID_JSON": {
+      "http": 400,
+      "retryable": false
+    },
+    "INVALID_ACTION": {
+      "http": 400,
+      "retryable": false
+    },
+    "INVALID_PAGINATION": {
+      "http": 400,
+      "retryable": false
+    },
+    "INVALID_SIMULATED_TIME": {
+      "http": 400,
+      "retryable": false
+    },
+    "INVALID_LIFECYCLE": {
+      "http": 400,
+      "retryable": false
+    },
+    "INVALID_PROCESS_ACTION": {
+      "http": 400,
+      "retryable": false
+    },
+    "INVALID_INJECTION": {
+      "http": 400,
+      "retryable": false
+    },
+    "INVALID_FAULT_KIND": {
+      "http": 400,
+      "retryable": false
+    },
+    "EXPECTED_REVISION_REQUIRED": {
+      "http": 400,
+      "retryable": false
+    },
+    "UNKNOWN_ACTION": {
+      "http": 400,
+      "retryable": false
+    },
+    "IDEMPOTENCY_KEY_REUSED": {
+      "http": 409,
+      "retryable": false
+    },
+    "SESSION_NOT_READY": {
+      "http": 409,
+      "retryable": true
+    },
+    "SIMULATED_NETWORK_FAILURE": {
+      "http": 503,
+      "retryable": true
+    },
+    "DEVICE_NOT_AVAILABLE": {
+      "http": 503,
+      "retryable": true
+    },
+    "RESET_FAILED": {
+      "http": 500,
+      "retryable": true
+    },
+    "CONTAMINATED": {
+      "http": 409,
+      "retryable": false
+    },
+    "PERMISSION_DENIED": {
+      "http": 403,
+      "retryable": false
+    },
+    "SESSION_FROZEN": {
+      "http": 409,
+      "retryable": false
+    },
+    "INVALID_OPERATION": {
+      "http": 400,
+      "retryable": false
+    },
+    "INVALID_PROJECTION": {
+      "http": 400,
+      "retryable": false
+    },
+    "INVALID_AS_OF": {
+      "http": 400,
+      "retryable": false
+    },
+    "INVALID_FIXTURE": {
+      "http": 400,
+      "retryable": false
+    },
+    "EPISODE_NOT_FOUND": {
+      "http": 404,
+      "retryable": false
+    },
+    "CURSOR_INVALID": {
+      "http": 400,
+      "retryable": false
+    },
+    "PATCH_TARGET_EXISTS": {
+      "http": 409,
+      "retryable": false
+    },
+    "PATCH_TARGET_NOT_FOUND": {
+      "http": 404,
+      "retryable": false
+    },
+    "PATCH_FIELDS_MISMATCH": {
+      "http": 400,
+      "retryable": false
+    },
+    "BASELINE_NOT_FOUND": {
+      "http": 404,
+      "retryable": false
+    },
+    "TEARDOWN_FAILED": {
+      "http": 500,
+      "retryable": true
+    },
+    "COUPON_NOT_APPLICABLE": {
+      "http": 409,
+      "retryable": false
+    }
+  },
+  "error_code_http_by_status": {
+    "not_found": 404,
+    "permission_denied": 403,
+    "stale": 409,
+    "timeout": 408,
+    "backend_error": 500,
+    "feature_off": 200
+  }
+}

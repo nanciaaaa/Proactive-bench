@@ -1,0 +1,12 @@
+node_modules/
+dist/
+apps/*/uni-dist/
+runtime/*
+!runtime/.gitkeep
+datasets/generated/
+.toolchains/
+.gradle-cache/
+.npm-cache/
+*.pyc
+__pycache__/
+.pytest_cache/

@@ -1,0 +1,4 @@
+{"default_compatibility": false, "edges": [
+  {"passive_id": "reminder-coverage-passive-01", "variant_id": "clock-covered"},
+  {"passive_id": "reminder-coverage-passive-01", "variant_id": "clock-disabled"}
+]}

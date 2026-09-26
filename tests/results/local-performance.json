@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "request_count": 1000,
+  "dataset_records": 140000,
+  "latency_ms": {
+    "p50": 2.258,
+    "p95": 4.51,
+    "max": 18.924
+  },
+  "controller_rss_bytes": 27578368,
+  "disk_bytes": {
+    "before": 33859429,
+    "after": 36584682,
+    "growth": 2725253
+  }
+}

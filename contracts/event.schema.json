@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ku-local/event-v1",
+  "type": "object",
+  "required": ["schema_version", "event_id", "instance_id", "app_id", "event_kind", "event_type", "sequence_no", "simulated_at", "written_at", "source", "payload"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "event_id": {"type": "string"},
+    "instance_id": {"type": "string"},
+    "app_id": {"enum": ["system", "dudu", "lianqi", "starrail", "babaquna", "wangyiyun", "chaowei"]},
+    "event_kind": {"enum": ["domain", "telemetry", "debug"]},
+    "event_type": {"type": "string"},
+    "sequence_no": {"type": "integer", "minimum": 1},
+    "correlation_id": {"type": ["string", "null"]},
+    "causation_id": {"type": ["string", "null"]},
+    "simulated_at": {"type": "string"},
+    "written_at": {"type": "string"},
+    "source": {"type": "string"},
+    "payload": {"type": "object"}
+  }
+}

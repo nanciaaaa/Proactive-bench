@@ -1,0 +1,13 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "星穹铁路"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#2373b9"
+  }
+}

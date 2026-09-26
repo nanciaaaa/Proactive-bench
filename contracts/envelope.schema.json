@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local/contracts/envelope.schema.json",
+  "title": "Adapter 结果信封（CONTRACT_UPGRADE_BLUEPRINT §2.2，冻结）",
+  "description": "capabilities/restore_baseline/seed/read_state/query/drain_events/read_mutations/teardown/advance_time/user_memory 的统一返回信封。冻结日期 2026-09-22，P0 起生效；修改必须先改蓝本并同步 tests/test_adapter_contract.py 锁定。",
+  "type": "object",
+  "required": ["status", "source", "operation", "observed_at", "data"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["ok", "not_found", "permission_denied", "stale", "timeout", "backend_error", "feature_off"]
+    },
+    "source": { "type": "string", "minLength": 1 },
+    "operation": { "type": "string", "minLength": 1 },
+    "semantic_ref": { "type": ["string", "null"] },
+    "record_version": { "type": ["string", "null"] },
+    "observed_at": { "type": "string", "format": "date-time" },
+    "coverage": {
+      "type": ["object", "null"],
+      "required": ["scope", "complete"],
+      "properties": {
+        "scope": { "type": "string", "enum": ["single_record", "query_scope"] },
+        "complete": { "type": "boolean" },
+        "as_of": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+    "data": {},
+    "error": {
+      "type": ["object", "null"],
+      "required": ["code", "message", "retryable"],
+      "properties": {
+        "code": { "type": "string" },
+        "message": { "type": "string" },
+        "retryable": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

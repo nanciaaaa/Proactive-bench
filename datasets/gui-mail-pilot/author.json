@@ -1,0 +1,25 @@
+{
+  "episode_id": "gui-mail-pilot-01",
+  "baseline_ref": "init_state",
+  "device_timezone": "Asia/Shanghai",
+  "fixture_ref": "fixture.json",
+  "packets": [
+    {
+      "packet_id": "p001",
+      "sequence": 1,
+      "type": "gui",
+      "source": "mail",
+      "observed_at": "2026-09-24T10:00:00+08:00",
+      "text_projection": "Organizer's GuiPilotMail says Project Review has a new meeting time.",
+      "capture": {
+        "surface": "app_screen",
+        "app_id": "mail",
+        "view_id": "mail_detail",
+        "subject_ref": "mail-01",
+        "frame_id": "p001_f1",
+        "visible_assertions": ["subject", "from", "date", "body"]
+      }
+    }
+  ],
+  "eof_at": "2026-09-24T10:01:00+08:00"
+}

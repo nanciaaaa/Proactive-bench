@@ -1,0 +1,11 @@
+{
+  "passive_id": "download-listing-v1",
+  "packets": [{
+    "packet_id": "p001", "sequence": 1, "type": "gui", "source": "files",
+    "observed_at": "2026-09-25T10:00:00+08:00",
+    "text_projection": "Files 的 Download 中显示 GuiPilotProof.txt。",
+    "capture": {"surface": "app_screen", "app_id": "files", "view_id": "download_file",
+                "subject_ref": "file-01", "frame_id": "p001_f1",
+                "visible_assertions": ["directory", "name"]}
+  }]
+}

@@ -1,0 +1,7 @@
+{
+  "variant_id": "contact-stale",
+  "patches": [
+    {"op": "update", "app_id": "contacts", "semantic_ref": "message-lookup-01", "set": {"phone": "13800138000"}}
+  ],
+  "allowed_changed_fields": ["contacts.message-lookup-01.phone"]
+}

@@ -1,0 +1,208 @@
+{
+  "schema_version": "pb-gui-image-reference-list.v1",
+  "generated_at": "2026-09-26T14:56:46.198646+00:00",
+  "episode_scope": {
+    "cluster_id": "meeting-preparation-001",
+    "episode_id": "ep_0004",
+    "passive_id": "p002",
+    "world_variant_id": "w001",
+    "track": "mixed_text",
+    "decision_point": "2026-09-14T08:35:01+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "frames": [
+    {
+      "packet_id": "p003",
+      "frame_id": "p003_f1",
+      "source": "calendar",
+      "sha256": "20ad1ed9f17ace4f45b83a485b482d51981713bd88f9940f0a977e0b0f85d33f",
+      "bytes": 93330,
+      "width": 1080,
+      "height": 2400,
+      "capture_png": "images/13d762ee599df6a333d6ba4d588ebb0c.png",
+      "release_status": "pass",
+      "qa_status": "pass",
+      "qa_fields": 5,
+      "qa_min_confidence": 87,
+      "pb_declared_sha256": "1f181ef306953335219aedcaf4af85943a9a517f82f908982b4ad63e4b2402f7",
+      "staged_ref": "passive_inputs/p002/gui/p003.png",
+      "image_bundle_path": "gui/p003.png",
+      "observed_at": "2026-09-14T08:30:30+08:00",
+      "delivered_at": "2026-09-14T08:30:30+08:00"
+    },
+    {
+      "packet_id": "p004",
+      "frame_id": "p004_f1",
+      "source": "calendar",
+      "sha256": "3f260a4025d053e0846045b4ef6526f8e05e58260da966b860ffa2bd0d9c4161",
+      "bytes": 139080,
+      "width": 1080,
+      "height": 2400,
+      "capture_png": "images/47c60b5f48859ac4481a516a88792b1c.png",
+      "release_status": "pass",
+      "qa_status": "pass",
+      "qa_fields": 6,
+      "qa_min_confidence": 82,
+      "pb_declared_sha256": "91f69b08f6a36529b2deb09a641cb6f7af026b7b83b7913c28d13aa0e18b81a8",
+      "staged_ref": "passive_inputs/p002/gui/p004.png",
+      "image_bundle_path": "gui/p004.png",
+      "observed_at": "2026-09-14T08:30:44+08:00",
+      "delivered_at": "2026-09-14T08:30:44+08:00"
+    },
+    {
+      "packet_id": "p009",
+      "frame_id": "p009_f1",
+      "source": "mail",
+      "sha256": "3e5dc921c41a6734c3d3bcc935b7c645c84f09185007b624368a293fb252ea89",
+      "bytes": 249826,
+      "width": 1080,
+      "height": 2400,
+      "capture_png": "images/60483eeef7711f820e4bfe88c35bd689.png",
+      "release_status": "pass",
+      "qa_status": "pass",
+      "qa_fields": 7,
+      "qa_min_confidence": 90,
+      "pb_declared_sha256": "1eccc3ca60e4a9d3cc125dd03a36e8aebb553676fc82e2857e922e8fc385f870",
+      "staged_ref": "passive_inputs/p002/gui/p009.png",
+      "image_bundle_path": "gui/p009.png",
+      "observed_at": "2026-09-14T08:31:35+08:00",
+      "delivered_at": "2026-09-14T08:31:35+08:00"
+    },
+    {
+      "packet_id": "p010",
+      "frame_id": "p010_f1",
+      "source": "mail",
+      "sha256": "73edb710a465590e452ae98ca91f8a6f573413394112a486b147a1483f5a446c",
+      "bytes": 97856,
+      "width": 1080,
+      "height": 2400,
+      "capture_png": "images/7193e22c6c765f9ff2dc49fe480815ab.png",
+      "release_status": "pass",
+      "qa_status": "pass",
+      "qa_fields": 4,
+      "qa_min_confidence": 91,
+      "pb_declared_sha256": "7e2fde13f8224f766ec97f79bfb3f837c3a604670ef234b11f936ed4d4f8f251",
+      "staged_ref": "passive_inputs/p002/gui/p010.png",
+      "image_bundle_path": "gui/p010.png",
+      "observed_at": "2026-09-14T08:31:48+08:00",
+      "delivered_at": "2026-09-14T08:31:48+08:00"
+    },
+    {
+      "packet_id": "p013",
+      "frame_id": "p013_f1",
+      "source": "mail",
+      "sha256": "39c9f8c2052680e220d7a84e581b5dc5b3070d5079f4530e8138066677dab770",
+      "bytes": 94070,
+      "width": 1080,
+      "height": 2400,
+      "capture_png": "images/971c3eba6b7ca052dae99fcb5422766d.png",
+      "release_status": "pass",
+      "qa_status": "pass",
+      "qa_fields": 4,
+      "qa_min_confidence": 91,
+      "pb_declared_sha256": "3e83b9d8fafe0063d4ffbee2847289356c62de18dcab568ef7cfec56d0d364f5",
+      "staged_ref": "passive_inputs/p002/gui/p013.png",
+      "image_bundle_path": "gui/p013.png",
+      "observed_at": "2026-09-14T08:32:35+08:00",
+      "delivered_at": "2026-09-14T08:32:35+08:00"
+    },
+    {
+      "packet_id": "p015",
+      "frame_id": "p015_f1",
+      "source": "mail",
+      "sha256": "1c26375bb9b1ccee641b3b50b7737bbf289bdc1ded972e5c600f1803d9ad5a92",
+      "bytes": 247612,
+      "width": 1080,
+      "height": 2400,
+      "capture_png": "images/72f1976af3740874829694a5f2924d91.png",
+      "release_status": "pass",
+      "qa_status": "pass",
+      "qa_fields": 7,
+      "qa_min_confidence": 90,
+      "pb_declared_sha256": "7a3e391b9c53bd7cfd3f5e7b6db9c8c24e0694a2fa0075769f6d86fdaf5d3862",
+      "staged_ref": "passive_inputs/p002/gui/p015.png",
+      "image_bundle_path": "gui/p015.png",
+      "observed_at": "2026-09-14T08:33:05+08:00",
+      "delivered_at": "2026-09-14T08:33:05+08:00"
+    },
+    {
+      "packet_id": "p018",
+      "frame_id": "p018_f1",
+      "source": "calendar",
+      "sha256": "ad230f39f067eafd5855b570435adac1afe1e74f6f9126b6c63cdd9f22c5affb",
+      "bytes": 94202,
+      "width": 1080,
+      "height": 2400,
+      "capture_png": "images/19021f0d97622242a1f6a75550a2cb12.png",
+      "release_status": "pass",
+      "qa_status": "pass",
+      "qa_fields": 5,
+      "qa_min_confidence": 87,
+      "pb_declared_sha256": "7823e3ff74559031a690f2e7bdff47f5ec66d97270474df9e7fa44f049fb126b",
+      "staged_ref": "passive_inputs/p002/gui/p018.png",
+      "image_bundle_path": "gui/p018.png",
+      "observed_at": "2026-09-14T08:33:50+08:00",
+      "delivered_at": "2026-09-14T08:33:50+08:00"
+    }
+  ],
+  "pb_packet_times": {
+    "p003": {
+      "sequence": 3,
+      "source": "calendar",
+      "observed_at": "2026-09-14T08:30:30+08:00",
+      "delivered_at": "2026-09-14T08:30:30+08:00"
+    },
+    "p004": {
+      "sequence": 4,
+      "source": "calendar",
+      "observed_at": "2026-09-14T08:30:44+08:00",
+      "delivered_at": "2026-09-14T08:30:44+08:00"
+    },
+    "p009": {
+      "sequence": 8,
+      "source": "mail",
+      "observed_at": "2026-09-14T08:31:35+08:00",
+      "delivered_at": "2026-09-14T08:31:35+08:00"
+    },
+    "p010": {
+      "sequence": 9,
+      "source": "mail",
+      "observed_at": "2026-09-14T08:31:48+08:00",
+      "delivered_at": "2026-09-14T08:31:48+08:00"
+    },
+    "p013": {
+      "sequence": 11,
+      "source": "mail",
+      "observed_at": "2026-09-14T08:32:35+08:00",
+      "delivered_at": "2026-09-14T08:32:35+08:00"
+    },
+    "p015": {
+      "sequence": 13,
+      "source": "mail",
+      "observed_at": "2026-09-14T08:33:05+08:00",
+      "delivered_at": "2026-09-14T08:33:05+08:00"
+    },
+    "p018": {
+      "sequence": 16,
+      "source": "calendar",
+      "observed_at": "2026-09-14T08:33:50+08:00",
+      "delivered_at": "2026-09-14T08:33:50+08:00"
+    }
+  },
+  "pb_time_binding": {
+    "source": "pb_stream_projection_via_staged_view",
+    "image_refs_path": "image-refs.jsonl",
+    "image_refs_sha256": "e18d1b63d06ec1ffda38645852a11dc991db2c106a3b7410455d4b809daa5bde",
+    "image_refs_bytes": 2122,
+    "pb_stream_sha256": "47a0b52fa2de293810d141ff6a9bf09a59355ea0f543784c7d5dc7b361214a9d"
+  },
+  "counts": {
+    "frames": 7,
+    "bytes": 1015976
+  },
+  "checks": {
+    "raw_pngs_stored": false,
+    "device_frames_differ_from_pb": true,
+    "pb_packet_times_bound": 7
+  }
+}

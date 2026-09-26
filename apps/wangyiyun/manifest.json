@@ -1,0 +1,11 @@
+{
+  "name": "网抑云",
+  "appid": "com.ku.simulator.wangyiyun",
+  "app-plus": {
+    "distribute": {
+      "android": {
+        "packagename": "com.ku.simulator.wangyiyun"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "episode_id": "gui-files-pilot-01",
+  "public_group": "gui-files-content-counterfactual-v1",
+  "baseline_ref": "init_state",
+  "device_timezone": "Asia/Shanghai",
+  "fixture_ref": "fixture.json",
+  "packets": [
+    {
+      "packet_id": "p001",
+      "sequence": 1,
+      "type": "gui",
+      "source": "files",
+      "observed_at": "2026-09-25T10:00:00+08:00",
+      "text_projection": "Files 的 Download 中显示 GuiPilotProof.txt。",
+      "capture": {
+        "surface": "app_screen",
+        "app_id": "files",
+        "view_id": "download_file",
+        "subject_ref": "file-01",
+        "frame_id": "p001_f1",
+        "visible_assertions": ["directory", "name"]
+      }
+    }
+  ],
+  "eof_at": "2026-09-25T10:01:00+08:00"
+}

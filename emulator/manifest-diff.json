@@ -1,0 +1,14 @@
+{
+  "safe": true,
+  "removed": [],
+  "added": [
+    "com.ku.simulator.babaquna",
+    "com.ku.simulator.chaowei",
+    "com.ku.simulator.dudu",
+    "com.ku.simulator.lianqi",
+    "com.ku.simulator.starrail",
+    "com.ku.simulator.wangyiyun"
+  ],
+  "changed": {},
+  "system_changes": {}
+}

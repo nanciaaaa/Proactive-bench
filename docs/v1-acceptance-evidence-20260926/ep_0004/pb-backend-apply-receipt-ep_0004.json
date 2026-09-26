@@ -1,0 +1,197 @@
+{
+  "schema_version": "pb-backend-apply-receipt.v1",
+  "status": "ok",
+  "command": "apply",
+  "device_applied": true,
+  "allow_device_apply": true,
+  "applied_at": "2026-09-26T09:04:56.489555+00:00",
+  "plan_binding": {
+    "schema_version": "pb-backend-plan.v1",
+    "plan_sha256": "ca4bd76a4acb3066b30b13b573e54d9e439c8e54ab17cfa1f3c5e5a06b284fe0",
+    "status": "planned",
+    "device_applied": false,
+    "episode_scope": {
+      "cluster_id": "meeting-preparation-001",
+      "episode_id": "ep_0004",
+      "passive_id": "p002",
+      "world_variant_id": "w001",
+      "track": "mixed_text",
+      "input_mode": "runtime_selected",
+      "passive_revision": "tagged-text-v2-expanded+unified-text-v1",
+      "passive_release_status": "development_only_pending_handoff_and_visibility_review",
+      "compatibility_status": "development_only",
+      "review_pending": true,
+      "observation_start": "2026-09-14T08:30:00+08:00",
+      "decision_point": "2026-09-14T08:35:01+08:00",
+      "timezone": "Asia/Shanghai",
+      "world_status": "new_bundle_not_applied_to_android",
+      "world_hash": "317e84abe397feabbf53cdc7beca2553bcb9e4ec89ed9307889f78e66ff06175",
+      "device_applied": false
+    },
+    "world_status": "new_bundle_not_applied_to_android",
+    "world_hash": "317e84abe397feabbf53cdc7beca2553bcb9e4ec89ed9307889f78e66ff06175"
+  },
+  "device": {
+    "serial": "127.0.0.1:5556",
+    "timezone": "Asia/Shanghai",
+    "adb": "adb"
+  },
+  "ordering": [
+    "calendar",
+    "mail",
+    "clock"
+  ],
+  "records": [
+    {
+      "order": 1,
+      "source": "calendar",
+      "semantic_ref": "calendar.event.cal_001",
+      "adapter": {
+        "module": "scripts/gui_calendar.py",
+        "seed": "seed_event",
+        "read": "read_event"
+      },
+      "seed": {
+        "at": "2026-09-14T08:30:00+08:00",
+        "function": "seed_event",
+        "result": {
+          "id": 17,
+          "title": "项目评审 R7K2",
+          "start_ts": 1789347600,
+          "end_ts": 1789349400,
+          "location": "会议室 A",
+          "description": "项目评审 R7K2：开场演示后进入讨论。",
+          "reminder_1_minutes": -1,
+          "source": "calendar",
+          "time_zone": "Asia/Shanghai",
+          "import_id": "gui-4e9e82f370263801398cf0a8"
+        }
+      },
+      "readback": {
+        "at": "2026-09-14T08:35:01+08:00",
+        "function": "read_event",
+        "result": {
+          "id": 17,
+          "title": "项目评审 R7K2",
+          "start_ts": 1789347600,
+          "end_ts": 1789349400,
+          "location": "会议室 A",
+          "description": "项目评审 R7K2：开场演示后进入讨论。",
+          "reminder_1_minutes": -1,
+          "source": "calendar",
+          "time_zone": "Asia/Shanghai",
+          "import_id": "gui-4e9e82f370263801398cf0a8"
+        }
+      },
+      "history_replays": [],
+      "status": "ok"
+    },
+    {
+      "order": 2,
+      "source": "mail",
+      "semantic_ref": "mail.message.mail_001",
+      "adapter": {
+        "module": "scripts/gui_mail.py",
+        "seed": "seed_mail",
+        "read": "read_mail"
+      },
+      "seed": {
+        "at": "2026-09-14T08:30:00+08:00",
+        "function": "seed_mail",
+        "result": "2593511f78d08c28fc7f981d3a54df4594f2de684e0707ea4370a9ab8e1be0e7"
+      },
+      "readback": {
+        "at": "2026-09-14T08:35:01+08:00",
+        "function": "read_mail",
+        "result": "9de740a04b9282885d900a78a92f8a5621299661df177788bfe658e32c9ce472"
+      },
+      "history_replays": [
+        {
+          "effective_at": "2026-09-14T08:31:45+08:00",
+          "set": {
+            "status": "read"
+          },
+          "function": "apply_history_change",
+          "result": "9de740a04b9282885d900a78a92f8a5621299661df177788bfe658e32c9ce472"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "order": 3,
+      "source": "mail",
+      "semantic_ref": "mail.message.mail_002",
+      "adapter": {
+        "module": "scripts/gui_mail.py",
+        "seed": "seed_mail",
+        "read": "read_mail"
+      },
+      "seed": {
+        "at": "2026-09-14T08:30:00+08:00",
+        "function": "seed_mail",
+        "result": "ffbf273e8733b1703378a18d47a0ebe2fb78e9e5639359f7751270de585768ea"
+      },
+      "readback": {
+        "at": "2026-09-14T08:35:01+08:00",
+        "function": "read_mail",
+        "result": "aafb875b70d18d372632b5c50ba4ebdd3e27dcb309a237cdbd9896c5ce5709eb"
+      },
+      "history_replays": [
+        {
+          "effective_at": "2026-09-14T08:32:35+08:00",
+          "set": {
+            "status": "read"
+          },
+          "function": "apply_history_change",
+          "result": "aafb875b70d18d372632b5c50ba4ebdd3e27dcb309a237cdbd9896c5ce5709eb"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "order": 4,
+      "source": "clock",
+      "semantic_ref": "clock.alarm.alarm_101",
+      "adapter": {
+        "module": "scripts/gui_clock.py",
+        "seed": "seed_alarm",
+        "read": "read_alarm"
+      },
+      "seed": {
+        "at": "2026-09-14T08:30:00+08:00",
+        "function": "seed_alarm",
+        "result": {
+          "_id": 3,
+          "external_uuid": "46d66eac-179a-56c5-bda2-2a1add47f1b3",
+          "hour": 7,
+          "minutes": 0,
+          "enabled": 1,
+          "daysofweek": 0,
+          "label": "晨起"
+        }
+      },
+      "readback": {
+        "at": "2026-09-14T08:35:01+08:00",
+        "function": "read_alarm",
+        "result": {
+          "_id": 3,
+          "external_uuid": "46d66eac-179a-56c5-bda2-2a1add47f1b3",
+          "hour": 7,
+          "minutes": 0,
+          "enabled": 1,
+          "daysofweek": 0,
+          "label": "晨起"
+        }
+      },
+      "history_replays": [],
+      "status": "ok"
+    }
+  ],
+  "checks": {
+    "seed_records": 4,
+    "seeds": 4,
+    "readbacks": 4,
+    "absence_guards": 3,
+    "failures": 0
+  }
+}

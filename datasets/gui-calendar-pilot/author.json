@@ -1,0 +1,25 @@
+{
+  "episode_id": "gui-calendar-pilot-01",
+  "baseline_ref": "init_state",
+  "device_timezone": "Asia/Shanghai",
+  "fixture_ref": "fixture.json",
+  "packets": [
+    {
+      "packet_id": "p001",
+      "sequence": 1,
+      "type": "gui",
+      "source": "calendar",
+      "observed_at": "2026-09-24T10:00:00+08:00",
+      "text_projection": "Calendar event editor displays GuiPilotMeeting, 10:30–11:00, Online, with a 30-minute reminder.",
+      "capture": {
+        "surface": "app_screen",
+        "app_id": "calendar",
+        "view_id": "event_editor",
+        "subject_ref": "meeting-01",
+        "frame_id": "p001_f1",
+        "visible_assertions": ["title", "start_at", "end_at", "location", "description", "reminder_minutes_before"]
+      }
+    }
+  ],
+  "eof_at": "2026-09-24T10:01:00+08:00"
+}

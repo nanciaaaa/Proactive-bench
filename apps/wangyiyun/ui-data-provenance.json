@@ -1,0 +1,223 @@
+{
+  "schema_version": "0.1.0",
+  "app_id": "wangyiyun",
+  "status": "verified",
+  "provenance": [
+    {
+      "ui_location": "首页卡片列表（resource=songs）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "songs.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "subtitle",
+          "semantic_ref": "songs.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "price",
+          "semantic_ref": "songs.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "首页卡片列表（resource=playlists）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "playlists.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "subtitle",
+          "semantic_ref": "playlists.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "price",
+          "semantic_ref": "playlists.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "首页文案、计划器及账户昵称",
+      "data_points": [
+        {
+          "field": "hero",
+          "semantic_ref": "ui_content.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "profile_name",
+          "semantic_ref": "ui_content.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "记录页（我的音乐）",
+      "data_points": [
+        {
+          "field": "item_id",
+          "semantic_ref": "play_history.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "item_id",
+          "semantic_ref": "favorite.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "name",
+          "semantic_ref": "user_playlist.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "账户页统计",
+      "data_points": [
+        {
+          "field": "play_history.length",
+          "semantic_ref": "play_history.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "favorites.length",
+          "semantic_ref": "favorite.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "playlists.length",
+          "semantic_ref": "user_playlist.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "业务弹窗（title/message/kind）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "popup.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "message",
+          "semantic_ref": "popup.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "服务面板（title/subtitle）",
+      "data_points": [
+        {
+          "field": "title",
+          "semantic_ref": "songs.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "subtitle",
+          "semantic_ref": "songs.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "mini-player（最近播放）",
+      "data_points": [
+        {
+          "field": "item_id",
+          "semantic_ref": "play_history.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed（typed entity，episode_scope+idempotency_key）",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "个人资料字段页",
+      "data_points": [
+        {
+          "field": "key",
+          "semantic_ref": "account_field.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        },
+        {
+          "field": "value",
+          "semantic_ref": "account_field.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "歌单内单曲列表",
+      "data_points": [
+        {
+          "field": "track_ids",
+          "semantic_ref": "playlists.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    },
+    {
+      "ui_location": "当前播放状态",
+      "data_points": [
+        {
+          "field": "playing",
+          "semantic_ref": "play_history.*",
+          "inject": "POST /local/v1/apps/wangyiyun/seed",
+          "readback": "POST /local/v1/apps/wangyiyun/query"
+        }
+      ],
+      "verified": true,
+      "evidence": "runtime/instances/acceptance/current-provenance-report.json"
+    }
+  ],
+  "note": "P0 骨架：data_points 由共享模板（apps/shared/src/main.js）推导，verified 留待 P1 实机回读验证。"
+}

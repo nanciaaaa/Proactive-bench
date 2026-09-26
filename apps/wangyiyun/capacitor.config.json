@@ -1,0 +1,9 @@
+{
+  "appId": "com.ku.simulator.wangyiyun",
+  "appName": "网抑云",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

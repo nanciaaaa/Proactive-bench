@@ -1,0 +1,11 @@
+{
+  "name": "爸爸去哪",
+  "appid": "com.ku.simulator.babaquna",
+  "app-plus": {
+    "distribute": {
+      "android": {
+        "packagename": "com.ku.simulator.babaquna"
+      }
+    }
+  }
+}

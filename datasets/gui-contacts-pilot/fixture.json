@@ -1,0 +1,9 @@
+{
+  "episode_scope": "gui-contacts-pilot-01",
+  "common_records": [],
+  "world_deltas": [],
+  "ku_records": [
+    {"app_id": "contacts", "entity_type": "contacts", "semantic_ref": "person-a", "data": {"name": "GuiPilotTwin", "phone": "5550111"}},
+    {"app_id": "contacts", "entity_type": "contacts", "semantic_ref": "person-b", "data": {"name": "GuiPilotTwin", "phone": "5550112"}}
+  ]
+}

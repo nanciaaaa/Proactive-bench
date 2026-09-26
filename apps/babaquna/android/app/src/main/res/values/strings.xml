@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">爸爸去哪</string>
+    <string name="title_activity_main">爸爸去哪</string>
+    <string name="package_name">com.ku.simulator.babaquna</string>
+    <string name="custom_url_scheme">com.ku.simulator.babaquna</string>
+</resources>

@@ -1,0 +1,239 @@
+{
+  "schema_version": "pb-gui-image-host-receipt.v1",
+  "status": "bound",
+  "command": "preflight",
+  "generated_at": "2026-09-26T13:17:43.369973+00:00",
+  "episode_scope": {
+    "cluster_id": "meeting-preparation-001",
+    "episode_id": "ep_0005",
+    "passive_id": "p003",
+    "world_variant_id": "w002",
+    "track": "mixed_text",
+    "decision_point": "2026-09-14T08:35:01+08:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "bindings": {
+    "release_report": {
+      "schema_version": "pb-gui-release-report.v1",
+      "sha256": "99be7918f5f47d933db0dcc125759feab7722c462773b3245b346f2761aa2435",
+      "status": "release_ready",
+      "frames": 7
+    },
+    "capture_receipt": {
+      "schema_version": "1.0",
+      "sha256": "f6b44faba963fd6b0f352d395f87581e325f31bd63b4545809248d05a5208521",
+      "status": "capture_complete",
+      "reset_verified": true,
+      "capture_run_id": "d33dc661d7b057e20577c6a3832c96c5",
+      "frames": 7
+    },
+    "capture_plan": {
+      "schema_version": "pb-gui-private-capture-plan.v1",
+      "sha256": "4b9f0ed641d31012615b2edf89606d496b8c8e3d12e6a8d311fc1da775d8abbb"
+    },
+    "pb": {
+      "cluster_json_sha256": "31ba80d8167dcb769144ec5844eff613a37d47a380bccd01079b77924d88bfed",
+      "manifest_sha256": "ad9f89a13f2842110b9f4ecc424de1e7511e7cd76e85548ffe9af8ceb5f27d1d",
+      "stream_sha256": "ef2ae30c5bbc89bc5755109a53f5d72e702bc407fd151e7029c95c9ebd40edf7",
+      "entry": {
+        "code/runtime.py": "a552f9d66ef2eeb78e0b620908a29bd2b33d3ca056c54cb984c6546127afb0f0",
+        "code/run.py": "4aefec2eb4267fbc7219fe536a2d6496172609b1e0d8d40fcc92888f5e08c696",
+        "code/layout.py": "500f084509307704e5d578cc5ce0a306bd6d513f52bad036b878d9a12e94fa22",
+        "code/world_model.py": "62d2b52ac0554d2f2df1c66d6ea49db965603554b9d1ab80f409c27c3f6738d4",
+        "code/validate.py": "910778d5abf63b3e9d92ea7f411f2b38cd8d3daef2ebc6b087087e20fd81e043",
+        "code/evaluate.py": "b449403fbef83d106fc6e83dfc7212d7816e890a79ba92ffb516a1b23dde8492",
+        "prompts/contract": "5a9351720ba802f4e47111088eb0f5aba65e3c8df5b94c893f7807a2b1e1bd76",
+        "prompts/policy": "4bd1f361e3a017559cd5ce190e9a416f1876b99c6089bb7664fb912e3db8a46b",
+        "prompts/format_guard": "34cf6e78462f966178c8a8c9c8cd80f4b8735fa15ee6d71ff94d53499842c8d1"
+      }
+    },
+    "device_bundle": {
+      "sha256": "129949901a4e8a7b49d64a9989856e78d77e01827d8c0b338ee1ae13f1f5cb24",
+      "mode": "image",
+      "frames": 7
+    }
+  },
+  "pb_invariants": {
+    "gui_mode": "image",
+    "window_size": 10,
+    "search_budget": 6,
+    "summary_fallback": 0,
+    "pb_gui_packets": 7,
+    "device_frames": 7,
+    "max_images_per_window": 4,
+    "window_image_counts": [
+      2,
+      2,
+      3,
+      4,
+      4,
+      4,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      2,
+      2,
+      1,
+      1
+    ],
+    "pb_passive_release_status": "development_only_pending_handoff_and_visibility_review",
+    "pb_passive_provenance": "hybrid_recorded_gui_clock_and_multisource_fixture",
+    "pb_world_variant_id": "w002",
+    "image_capacity_declared": null
+  },
+  "frames": [
+    {
+      "packet_id": "p003",
+      "frame_id": "p003_f1",
+      "source": "calendar",
+      "device_sha256": "20ad1ed9f17ace4f45b83a485b482d51981713bd88f9940f0a977e0b0f85d33f",
+      "bytes": 93330,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "0ba31694db72069217cf35c329ccc5ba73f91dec40278ea98412dc5e41b2cff6",
+      "staged_ref": "passive_inputs/p003/gui/p003.png"
+    },
+    {
+      "packet_id": "p004",
+      "frame_id": "p004_f1",
+      "source": "calendar",
+      "device_sha256": "3f260a4025d053e0846045b4ef6526f8e05e58260da966b860ffa2bd0d9c4161",
+      "bytes": 139080,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "4c8f0b1d19cf7e1dccab1afd2c67cfa394c9e524e139a8431cfadcfb74daec45",
+      "staged_ref": "passive_inputs/p003/gui/p004.png"
+    },
+    {
+      "packet_id": "p009",
+      "frame_id": "p009_f1",
+      "source": "mail",
+      "device_sha256": "bfc147807ccbe07189873f44dbddba9b56451298a0f0eff7783b1eb47490ec27",
+      "bytes": 249117,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "2cfb502817e788802b24d139240399264dbea443c0539cf2038250b638dc341c",
+      "staged_ref": "passive_inputs/p003/gui/p009.png"
+    },
+    {
+      "packet_id": "p010",
+      "frame_id": "p010_f1",
+      "source": "mail",
+      "device_sha256": "6f5bed65417fa3bb8500e40beb6441288b9ec7ee37bcfdb2180948b66dd2a7c3",
+      "bytes": 98240,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "aab23d8fd3ea26d7ee93da82324a8bc1e8e3ad845c7c8248bde77dbf9e6e17ce",
+      "staged_ref": "passive_inputs/p003/gui/p010.png"
+    },
+    {
+      "packet_id": "p013",
+      "frame_id": "p013_f1",
+      "source": "mail",
+      "device_sha256": "2c5585b9b0f92d201c5deecb1c98291335e4a603110ff7c86a9af703b57c410a",
+      "bytes": 94201,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "3eda2b186786ee67fc406d349a406ccc73b96065da3b87e577c36aa88293474d",
+      "staged_ref": "passive_inputs/p003/gui/p013.png"
+    },
+    {
+      "packet_id": "p015",
+      "frame_id": "p015_f1",
+      "source": "mail",
+      "device_sha256": "4dae537c425723c1f791f28eb5287603a5637c423fcbefc82685fc867b7bfa54",
+      "bytes": 247758,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "54b47b7336f99b4a1270c0ba7fb223366af1826198efa4db3fd6902f824f403f",
+      "staged_ref": "passive_inputs/p003/gui/p015.png"
+    },
+    {
+      "packet_id": "p018",
+      "frame_id": "p018_f1",
+      "source": "calendar",
+      "device_sha256": "9a425926d958acd9142103eb8a729ab2ef4d29d63d46048d085e2596d82d4b86",
+      "bytes": 94162,
+      "width": 1080,
+      "height": 2400,
+      "pb_declared_sha256": "0ba31694db72069217cf35c329ccc5ba73f91dec40278ea98412dc5e41b2cff6",
+      "staged_ref": "passive_inputs/p003/gui/p018.png"
+    }
+  ],
+  "capability_declaration": null,
+  "adapter_preflight": {
+    "status": "not_applicable",
+    "provider": null,
+    "reason": "missing_provider_declaration",
+    "model_called": false,
+    "network_calls": 0
+  },
+  "stage": {
+    "materialized": true,
+    "ref": null,
+    "manifest_sha256": "ca8f7b950a17a609e08c75acf5486e5ed131e27ee0ad53bbede7f4c7feb5c971",
+    "files": 18,
+    "device_frames": 7
+  },
+  "live_readiness": {
+    "status": "blocked",
+    "endpoint": "http://127.0.0.1:18771",
+    "model": "qwen27b-local",
+    "provider": null,
+    "adapter_preflight": "not_applicable",
+    "probe": {
+      "endpoint": "http://127.0.0.1:18771",
+      "provider": "openai",
+      "auth_header": "Authorization",
+      "request_path": "/v1/chat/completions",
+      "requests": [
+        "health:/health"
+      ],
+      "credential_env": null,
+      "credential_present": false,
+      "health_status": null,
+      "model_advertised": false,
+      "models_advertised": null,
+      "auth_rejected": false,
+      "error": "HTTP 502"
+    },
+    "capability": null,
+    "gaps": [
+      "missing_capability_declaration",
+      "no_reachable_model_endpoint"
+    ]
+  },
+  "gaps": [
+    "missing_capability_declaration",
+    "no_reachable_model_endpoint"
+  ],
+  "checks": {
+    "release_chain_verified": true,
+    "frames_rehashed": 7,
+    "pb_gui_packets": 7,
+    "report_covers_pb_gui": true,
+    "device_frames_differ_from_pb": true,
+    "pb_original_pngs_read": 0,
+    "pb_writes": 0,
+    "images_copied_into_receipt": 0,
+    "stage_materialized": true,
+    "session_probe": false,
+    "adapter_preflight_pass": false,
+    "max_images_per_window": 4,
+    "capacity_sufficient": false
+  },
+  "claims": {
+    "model_called": false,
+    "live_model_run": false,
+    "pb_evaluate_run": false,
+    "gold": false,
+    "published": false,
+    "device_writes": false
+  }
+}
