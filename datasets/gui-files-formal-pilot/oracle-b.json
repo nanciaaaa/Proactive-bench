@@ -1,1 +1,0 @@
-{"episode_id": "gui-files-formal-b", "variant_id": "stale-content", "passive_class": "active_required", "expected_need_set": [{"type": "restore_file_content", "target": "file-01", "content": "GuiPilotContentV1"}]}

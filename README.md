@@ -330,9 +330,9 @@ PB 树由 `benchmark.json` 注册 clusters，每个 cluster 的 manifest 通过 
 
 系统级 `heads_up_notification` 当前为 `missing`。
 
-### 5.6 私有采集输入契约（`contracts/gui-capture.schema.json`）
+### 5.6 私有采集输入契约（`pb-gui-private-capture-plan.v1`）
 
-采集作者输入需 `episode_id` / `baseline_ref` / `device_timezone` / `fixture_ref` / `packets` / `eof_at`；每个包需 `packet_id` / `sequence` / `type=gui` / `source` / `observed_at` / `text_projection` / `capture{surface, app_id, view_id, subject_ref, visible_assertions}`，`surface` 恒为 `app_screen`。
+采集入口 `gui_capture.py` 只接受 `pb_gui_capture_compile.py` 编译的 PB 私有计划，并在 `run` 前对 schema 版本、`episode_scope`、`source_assets`、时钟窗口与 GT/绝对路径泄漏做 fail-closed 复验。
 
 ---
 
@@ -352,12 +352,6 @@ V1 范围冻结为「一条可复用闭环」（蓝图 §1.1），覆盖 `meetin
 10. **PB image replay 验证** → `pb_gui_image_host.py`（replay receipt）
 
 各闸门用 sha256 互相绑定形成依赖锁：`pb_gui_capture_gate.py` → `gui_capture.py` → `gui_machine_qa.py` → `pb_gui_release_gate.py` → `pb_gui_image_host.py` → `pb_gui_coverage_audit.py`。
-
-**第 4 轮门禁默认出口**（V1 唯一链，不接 image live/评分/Gold）：
-
-```bash
-scripts/pb_gui_v1_round4_exit.sh   # preflight → replay → writeback → evidence build
-```
 
 **V1 单一验收入口**（离线复验后刷新验收清单）：
 
@@ -387,9 +381,8 @@ python3 scripts/pb_gui_v1_evidence.py checklist --bundle docs/v1-acceptance-evid
 - `apps/`：六款 Vue 3 / Uni-app / Capacitor 应用（含 `app-definitions.json`）。
 - `local-controller/`：零依赖本地 Controller（`server.py` / `store.py` / `datasets.py`）与 SQLite 权威。
 - `contracts/`：扩展契约（信封 / 事件 / 错误码 / GUI 采集 / 能力 / 实体目录）。
-- `datasets/`：合成夹具与生成目录（`fixtures/`、`generated/`、各 GUI pilot）。
+- `datasets/`：合成夹具与生成目录（`fixtures/`、`generated/`）。
 - `config/ku-runtime.env`：锁定的 KU 运行时身份与端口默认值。
-- `emulator/`：KU 基线采集与前后对比。
 - `scripts/`：KU 委托、APK 构建、Controller 与复位编排、PB GUI 全链路。
 - `tests/`：契约、复位、性能与 KU 对齐检查。
 - `runtime/`：各实例运行时数据与派生 stage（回写 bundle、replay receipt 等）。
@@ -403,7 +396,3 @@ python3 scripts/pb_gui_v1_evidence.py checklist --bundle docs/v1-acceptance-evid
 - 当前工程日志：[`docs/PB-GUI工程日志.md`](docs/PB-GUI工程日志.md)
 - V1 验收证据 bundle（ep_0004/ep_0005，仓库可见、可离线复验）：[`docs/v1-acceptance-evidence-20260926/README.md`](docs/v1-acceptance-evidence-20260926/README.md)
 - **V1 单一验收入口**：`python3 scripts/pb_gui_v1_evidence.py checklist --bundle docs/v1-acceptance-evidence-20260926`
-- **第 4 轮门禁默认出口**（V1 仅此链，不接 image live/评分/Gold）：`scripts/pb_gui_v1_round4_exit.sh`
-- 已归档工程（六款 App 契约收敛 + KU 扩展旧日志）：[`_archive/contract-upgrade-20260926/README.md`](_archive/contract-upgrade-20260926/README.md)
-- PB GUI 对齐前历史资料：[`_archive/pb-gui-prealignment-20260926/README.md`](_archive/pb-gui-prealignment-20260926/README.md)
-- 项目历史参考：[`_archive/project-history-20260926/README.md`](_archive/project-history-20260926/README.md)

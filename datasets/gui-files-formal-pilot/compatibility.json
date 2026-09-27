@@ -1,7 +1,0 @@
-{
-  "default_compatibility": false,
-  "edges": [
-    {"passive_id": "download-listing-v1", "variant_id": "approved-content"},
-    {"passive_id": "download-listing-v1", "variant_id": "stale-content"}
-  ]
-}

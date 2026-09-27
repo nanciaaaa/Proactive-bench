@@ -24,11 +24,6 @@ def publish(capture_dir, release_dir):
         raise ValueError('receipt and plan provenance mismatch')
     if receipt.get('plan_sha256') != hashlib.sha256(plan_bytes).hexdigest():
         raise ValueError('capture plan changed after collection')
-    if 'source_paths' in plan:
-        for name, expected_hash in plan['source_assets'].items():
-            path = capture_dir / 'private-assets' / f'{name}.json'
-            if not path.is_file() or path.is_symlink() or hashlib.sha256(path.read_bytes()).hexdigest() != expected_hash:
-                raise ValueError('formal source snapshot differs from capture plan')
     if not re.fullmatch(r'sha256:[0-9a-f]{64}', receipt.get('device', {}).get('baseline_version', '')):
         raise ValueError('missing device baseline version')
     frames = receipt['frames']
@@ -90,8 +85,6 @@ def publish(capture_dir, release_dir):
     (private_dir / 'receipt.json').write_bytes(receipt_bytes)
     (private_dir / 'private-plan.json').write_bytes(plan_bytes)
     (private_dir / 'qa-machine.json').write_bytes(machine_bytes)
-    if 'source_paths' in plan:
-        shutil.copytree(capture_dir / 'private-assets', private_dir / 'private-assets')
     qa = {'schema_version': '1.0', 'episode_id': receipt['episode_id'],
           'capture_run_id': receipt.get('capture_run_id'),
           'public_manifest_sha256': hashlib.sha256(raw).hexdigest(),
@@ -142,11 +135,6 @@ def verify_release(release_dir):
     plan = json.loads(plan_bytes)
     if plan['source_assets'] != qa['source_assets']:
         raise ValueError('private source asset hashes mismatch')
-    if 'source_paths' in plan:
-        for name, expected_hash in plan['source_assets'].items():
-            path = private_dir / 'private-assets' / f'{name}.json'
-            if not path.is_file() or path.is_symlink() or hashlib.sha256(path.read_bytes()).hexdigest() != expected_hash:
-                raise ValueError('released source snapshot hash mismatch')
     public_frames = {(p['packet_id'], f['frame_id']): f for p in manifest['packets'] for f in p['frames']}
     if len(public_frames) != len(qa['machine_frames']) or len(machine['frames']) != len(qa['machine_frames']):
         raise ValueError('release frame count mismatch')

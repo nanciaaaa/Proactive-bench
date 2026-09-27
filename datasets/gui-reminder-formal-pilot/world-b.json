@@ -1,6 +1,0 @@
-{
-  "variant_id": "clock-disabled",
-  "patches": [{"op": "update", "app_id": "clock", "semantic_ref": "alarm-01",
-    "set": {"enabled": false}}],
-  "allowed_changed_fields": ["clock.alarm-01.enabled"]
-}

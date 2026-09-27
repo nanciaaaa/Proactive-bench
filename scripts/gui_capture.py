@@ -19,8 +19,7 @@ from pathlib import Path
 from xml.etree import ElementTree
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-from gui_contract import CAPABILITIES, ROOT, compile_capture_plan
-from gui_formal import compile_formal_plan
+from gui_contract import CAPABILITIES, ROOT
 from gui_calendar import (PACKAGE as CALENDAR_PACKAGE,
                           apply_history_change as calendar_apply_history_change,
                           assert_absent, read_event, ready_calendar_day_list,
@@ -745,14 +744,6 @@ def run(plan, instance, output):
         reset_started = False
         try:
             clock_binding = check_pb_clock_binding(plan)
-            if 'source_paths' in plan:
-                assets = output / 'private-assets'
-                assets.mkdir()
-                for name, source in plan['source_paths'].items():
-                    raw_asset = Path(source).read_bytes()
-                    if hashlib.sha256(raw_asset).hexdigest() != plan['source_assets'][name]:
-                        raise RuntimeError('formal source changed before capture')
-                    (assets / f'{name}.json').write_bytes(raw_asset)
             if ':' in serial:
                 command('adb', 'connect', serial)
             adb(serial, 'get-state')
@@ -1318,13 +1309,8 @@ def validate_private_capture_plan(plan):
 
 
 def load_capture_plan(source):
-    """Load a CLI plan input: compiled private PB plan, formal manifest or author plan."""
-    source = Path(source)
-    document = json.loads(source.read_text())
-    if isinstance(document, dict) and document.get('schema_version') == PRIVATE_PLAN_SCHEMA:
-        return validate_private_capture_plan(document)
-    return compile_formal_plan(source) if 'world_variant_ref' in document \
-        else compile_capture_plan(source)
+    """Load a compiled ``pb-gui-private-capture-plan.v1`` CLI plan input."""
+    return validate_private_capture_plan(json.loads(Path(source).read_text()))
 
 
 def main(argv=None):

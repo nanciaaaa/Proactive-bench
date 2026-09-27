@@ -68,5 +68,4 @@ class StaticCase(unittest.TestCase):
   self.assertIn('instance remains CONTAMINATED',reset)
   setup=(ROOT/'scripts/setup-android-sdk.sh').read_text();self.assertNotIn('sdkmanager',setup);self.assertNotIn('curl ',setup)
   build=(ROOT/'scripts/build-apks.sh').read_text();self.assertIn('HOME=/workspace/.gradle-cache/ku-home',build);self.assertIn('-Duser.home="$HOME"',build);self.assertNotIn('HOME=/tmp/ku-extension-home',build)
-  overlay=(ROOT/'emulator/start-overlay.sh').read_text();self.assertNotIn('emulator -avd',overlay)
 if __name__=='__main__':unittest.main()

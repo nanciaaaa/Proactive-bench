@@ -1,9 +1,0 @@
-{
-  "episode_scope": "gui-pilot-a",
-  "common_records": [
-    {"app_id": "dudu", "entity_type": "popup", "semantic_ref": "notice-01", "data": {"kind": "promotion", "title": "周末出行提醒", "message": "请提前确认您的出发地点。"}},
-    {"app_id": "chaowei", "entity_type": "articles", "semantic_ref": "article-pilot", "data": {"title": "项目预约说明", "subtitle": "会议安排", "body": "项目预约将在明天十四点开始。", "price": 0, "available": 1, "rank": -100}},
-    {"app_id": "chaowei", "entity_type": "favorite", "semantic_ref": "favorite-hidden", "data": {"item_id": "article-other"}}
-  ],
-  "world_deltas": []
-}
